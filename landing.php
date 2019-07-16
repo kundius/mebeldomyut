@@ -7,7 +7,7 @@ if ($projects) {
     $projects = array_filter(array_map(function($row) {
         return $row['image'];
     }, $projects), function($row) {
-        return !empty($row['image']);
+        return !empty($row);
     });
 }
 ?>
