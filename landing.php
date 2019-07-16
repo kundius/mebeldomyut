@@ -4,9 +4,11 @@ Template Name: Главная
 */
 $projects = get_field('projects');
 if ($projects) {
-    $projects = array_map(function($row) {
+    $projects = array_filter(array_map(function($row) {
         return $row['image'];
-    }, $projects);
+    }, $projects), function($row) {
+        return !empty($row['image']);
+    });
 }
 ?>
 <!DOCTYPE html>

@@ -6,7 +6,6 @@ import forEach from 'lodash/forEach'
 export default class Projects {
   constructor(wrapper) {
     this.images = JSON.parse(wrapper.dataset.projects)
-    console.log(this.images)
     this.wrapper = wrapper
     this.main = wrapper.querySelector('.projects-main')
     this.thumbs = wrapper.querySelectorAll('.projects-thumb')
