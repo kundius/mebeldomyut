@@ -1,0 +1,55 @@
+@import 'variables.scss';
+
+.video {
+	lost-utility: clearfix;
+	margin-top: 17.56%;
+}
+
+.video__title {
+	color: #130011;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1.25;
+    margin-left: 45.075%;
+    margin-top: 13.367%;
+}
+
+.video-item {
+	margin-top: 50px;
+	&:first-child {
+		margin-top: 0;
+	}
+	iframe {
+		display: block;
+	}
+}
+
+@media (min-width: $breakpoint-small) {
+	.video__cell {
+		lost-column: 1/2 2 0;
+	}
+}
+
+@media (max-width: $breakpoint-small-max) {
+	.video {
+	    margin-top: 13.2%;
+	}
+
+	.video__title {
+	    font-size: 14px;
+	    margin-left: 68px;
+	    margin-top: 0;
+        margin-bottom: 10px;
+	    letter-spacing: 0;
+	}
+
+	.video-item {
+		margin-top: 20px;
+		&:first-child {
+			margin-top: 0;
+		}
+		iframe {
+			height: 152px;
+		}
+	}
+}

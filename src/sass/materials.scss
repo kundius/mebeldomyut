@@ -1,0 +1,149 @@
+@import 'variables.scss';
+
+.materials {
+    position: relative;
+    z-index: 10;
+    margin-top: 7.65%;
+    lost-utility: clearfix
+}
+
+.materials__title-first {
+    z-index: 20;
+    position: absolute;
+    color: #60615f;
+    font-size: 100px;
+    font-weight: 800;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 2.3px;
+    left: 6.61%;
+    top: -3.63%;
+    opacity: 0.5;
+}
+
+.materials__title-second {
+    z-index: 20;
+    position: absolute;
+    color: #f0f9fe;
+    font-size: 100px;
+    font-weight: 800;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    right: 2.7%;
+    top: 33.4%;
+    opacity: 0.5;
+}
+
+.materials-item {
+    width: 100%;
+    padding-bottom: 100%;
+    background-color: #1b1b1c;
+    position: relative;
+    &:hover {
+        position: relative;
+        z-index: 30;
+    }
+}
+
+.materials-item__image {
+    object-fit: cover;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 1;
+    transition: opacity .3s ease;
+    .materials-item:hover & {
+        opacity: 0.1;
+    }
+}
+
+.materials-item__title {
+    color: #eae9e7;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.6px;
+    position: absolute;
+    right: 4.3%;
+    bottom: 3.2%;
+    .materials-item_dark & {
+        color: #2a221c;
+    }
+}
+
+.materials-item__text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 70%;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.8;
+    opacity: 0;
+    transition: opacity .3s ease;
+    p {
+        margin: 40px 0;
+    }
+    .materials-item:hover & {
+        opacity: 1;
+    }
+}
+
+@media (min-width: $breakpoint-large) {
+    .materials__cell {
+        lost-waffle: 1/2 2 100px;
+    }
+}
+
+@media (min-width: $breakpoint-small) and (max-width: $breakpoint-medium-max) {
+    .materials__cell {
+        lost-waffle: 1/2 2 50px;
+    }
+
+    .materials-item__text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: $breakpoint-small-max) {
+    .materials {
+        margin-top: 27.5%;
+    }
+
+    .materials__cell {
+        margin-bottom: 10px;
+    }
+    
+    .materials__title-first {
+        left: -1%;
+        top: -3.7%;
+        letter-spacing: 1.8px;
+        font-size: 36px;
+    }
+
+    .materials__title-second {
+        font-size: 36px;
+        right: -1.3%;
+        top: -0.2%;
+        letter-spacing: 0.8px;
+    }
+
+    .materials-item__title {
+        font-size: 12px;
+        letter-spacing: 0.4px;
+        right: 2.2%;
+        bottom: 2.8%;
+    }
+
+    .materials-item__text {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+}

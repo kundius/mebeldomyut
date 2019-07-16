@@ -1,0 +1,99 @@
+.feedback {
+    padding: 40px 0;
+}
+
+.feedback__title {
+	color: #ffffff;
+	font-size: 24px;
+	font-weight: 900;
+	line-height: 1;
+	text-transform: uppercase;
+	letter-spacing: 0.12px;
+}
+
+.feedback__desc {
+	color: #d4d4d3;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.667;
+	letter-spacing: 0.09px;
+	margin-top: 12px;
+}
+
+.feedback__form {
+	margin-top: 27px;
+}
+
+.feedback-form {
+	lost-flex-container: row;
+}
+
+.feedback-form__control {
+    margin-bottom: 10px;
+}
+
+.feedback-form__textarea {
+    lost-column: 1/1;
+    margin-bottom: 12px;
+}
+
+.feedback-form__rights {
+	color: #d4d4d3;
+	font-size: 12px;
+	line-height: 1;
+	display: block;
+	margin-top: 21px;
+	cursor: pointer;
+	margin-left: 32px;
+	padding-left: 46px;
+    margin-right: 30px;
+	position: relative;
+	.form-checkbox {
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	a {
+		text-decoration: underline;
+		color: #d4d4d3 ;
+		&:hover {
+			color: #ffffff;
+		}
+	}
+}
+
+.feedback-form__submit {
+    lost-column: 1/1;
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width: $breakpoint-medium) {
+	.feedback {
+    	lost-offset: 1/2 row 100px;
+	}
+
+	.feedback-form__control {
+	    lost-column: 1/2 2 45px flex;
+	}
+}
+
+@media (min-width: $breakpoint-medium) and (max-width: $breakpoint-medium-max) {
+	.feedback {
+    	lost-offset: 2/5 row 50px;
+	}
+}
+
+@media (max-width: $breakpoint-small-max) {
+	.feedback-form__control {
+	    width: 100%;
+	}
+
+	.feedback-form__submit {
+	    flex-wrap: wrap;
+	}
+
+	.feedback-form__rights {
+		margin: 20px 0;
+	}
+}

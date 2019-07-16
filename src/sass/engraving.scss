@@ -1,0 +1,148 @@
+@import 'variables.scss';
+
+.engraving {
+	margin-top: 21.4%;
+}
+
+.engraving__title {
+	color: #fefefd;
+	font-size: 90px;
+	font-weight: 900;
+	text-transform: uppercase;
+	line-height: 1;
+	letter-spacing: 0.9px;
+	margin-left: -5px;
+	svg {
+		display: block;
+		margin: -28px 0 -16px -4px;
+	}
+    text {
+        color: #ffffff;
+        font-size: 90px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.9px;
+        font-family: 'Montserrat', sans-serif;
+        fill: none;
+        stroke: rgba(254, 254, 253, 0.54);
+        stroke-width: 2px;
+        line-height: 1;
+        text-anchor: middle;
+        dominant-baseline: central;
+    }
+}
+
+.engraving__grid {
+	lost-utility: clearfix;
+	position: relative;
+}
+
+.engraving__cell {
+	lost-column: 1/2 2 0;
+	position: relative;
+}
+
+.engraving__main {
+	position: relative;
+}
+
+.engraving__before {
+	position: absolute;
+	top: 0;
+	right: 100%;
+	height: 100%;
+	margin-right: 56px;
+}
+
+.engraving__after {
+	position: absolute;
+	top: 0;
+	left: 100%;
+	height: 100%;
+	margin-left: 56px;
+}
+
+.engraving__image {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.engraving__type {
+	font-size: 70px;
+	font-weight: 800;
+	line-height: 1;
+	text-transform: uppercase;
+	letter-spacing: -1.75px;
+	position: absolute;
+}
+
+.engraving__type_left {
+	color: #ffffff;
+	left: -94px;
+	bottom: -28px;
+}
+
+.engraving__type_right {
+	color: #000;
+	left: 50%;
+	bottom: -30px;
+	transform: translateX(-50%);
+}
+
+@media (max-width: $breakpoint-large-max) {
+	.engraving__type {
+		font-size: 50px;
+	}
+
+	.engraving__type_left {
+		left: 50%;
+		bottom: -30px;
+		transform: translateX(-50%);
+	}
+}
+
+@media (max-width: $breakpoint-small-max) {
+	.engraving {
+	    margin-top: 19.4%;
+	}
+
+	.engraving__title {
+	    letter-spacing: 0.4px;
+    	margin-left: -3px;
+		font-size: 36px;
+		svg {
+		    margin: -4px 0 -2px 0px;
+		}
+		text {
+			font-size: 32px;
+		    stroke-width: 1px;
+	        letter-spacing: 0;
+		}
+	}
+
+	.engraving__before {
+	    margin-right: 16px;
+	}
+
+	.engraving__after {
+	    margin-left: 16px;
+	}
+
+	.engraving__type {
+		font-size: 12px;
+		letter-spacing: -.3px;
+	}
+
+	.engraving__type_left {
+	    left: 0px;
+	    bottom: -5px;
+	    transform: none;
+	}
+
+	.engraving__type_right {
+	    left: 14px;
+	    bottom: -5px;
+	    transform: none;
+	}
+}

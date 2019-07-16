@@ -1,0 +1,120 @@
+@import 'variables.scss';
+
+.leather {
+    margin-top: 17.7%;
+}
+
+.leather__title {
+	color: #fefefd;
+	font-size: 100px;
+	font-weight: 900;
+	text-transform: uppercase;
+	line-height: 1;
+	letter-spacing: 4.8px;
+	svg {
+		display: block;
+		margin: -28px 0 0;
+	}
+    text {
+        color: #ffffff;
+        font-size: 90px;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 0;
+        font-family: 'Montserrat', sans-serif;
+        fill: none;
+        stroke: rgba(254, 254, 253, 0.54);
+        stroke-width: 2px;
+        line-height: 1;
+        text-anchor: middle;
+        dominant-baseline: central;
+    }
+}
+
+.leather__text {
+	position: relative;
+	z-index: 20;
+}
+
+.leather__body {
+	background: url('../img/leather-pattern.jpg') repeat 50% 50%;
+	position: relative;
+	color: #d4d4d3;
+	font-size: 18px;
+	line-height: 2;
+	letter-spacing: 0.18px;
+	margin-top: 216px;
+	padding: 5.753% 22.586% 6.322%;
+}
+
+.leather__body::before {
+	content: '';
+	position: absolute;
+	right: 100%;
+	top: 0;
+	height: 100%;
+	width: 9999px;
+	background-color: #81817e;
+	margin-right: 56px;
+}
+
+.leather__body::after {
+	content: '';
+	position: absolute;
+	left: 100%;
+	top: 0;
+	height: 100%;
+	width: 9999px;
+	background-color: #81817e;
+	margin-left: 56px;
+}
+
+.leather__example {
+    position: absolute;
+    z-index: 10;
+    right: 1.076%;
+    top: -64.65%;
+    width: 45.1%;
+}
+
+@media (max-width: $breakpoint-medium-max) {
+}
+
+@media (max-width: $breakpoint-small-max) {
+	.leather {
+	    margin-top: 13%;
+	}
+
+	.leather__title {
+		font-size: 36px;
+	    letter-spacing: 1.8px;
+		svg {
+			margin: -10px 0 0;
+		}
+		text {
+		    font-size: 32px;
+		    stroke-width: 1px;
+		}
+	}
+
+	.leather__body {
+		font-size: 14px;
+		line-height: 24px;
+		margin-top: 55px;
+		padding: 59px 12px 56px;
+	}
+
+	.leather__body::before {
+		margin-right: 16px;
+	}
+
+	.leather__body::after {
+		margin-left: 16px;
+	}
+
+	.leather__example {
+	    right: -53.924%;
+	    top: -26.65%;
+	    width: 277px;
+	}
+}
