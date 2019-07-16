@@ -5,9 +5,7 @@ Template Name: Главная
 $projects = get_field('projects');
 if ($projects) {
     $projects = array_map(function($row) {
-        return [
-            'image' => $row['image']['url']
-        ];
+        return $row['image'];
     }, $projects);
 }
 ?>

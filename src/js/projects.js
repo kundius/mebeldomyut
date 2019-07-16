@@ -44,7 +44,7 @@ export default class Projects {
         }
         SimpleLightbox.open({
           startAt: image,
-          items: this.images.map(row => row.image),
+          items: this.images.map(row => row.url),
           beforeSetContent: this.beforeSetContent
         })
       })
@@ -53,7 +53,7 @@ export default class Projects {
     this.main.addEventListener('click', e => {
       SimpleLightbox.open({
         startAt: this.active,
-        items: this.images.map(row => row.image),
+        items: this.images.map(row => row.url),
         beforeSetContent: this.beforeSetContent
       })
     })
@@ -86,13 +86,13 @@ export default class Projects {
     if (this.active === index) return false
 
     if (this.active === null) {
-      this.main.style.backgroundImage = `url(${this.images[index].image})`
+      this.main.style.backgroundImage = `url(${this.images[index].url})`
       this.main.style.backgroundPosition = `50% 50%`
 
-      this.thumbs[0].style.backgroundImage = `url(${this.images[this.getNextImage(index)].image})`
+      this.thumbs[0].style.backgroundImage = `url(${this.images[this.getNextImage(index)].url})`
       this.thumbs[0].style.backgroundPosition = `50% 50%`
 
-      this.thumbs[1].style.backgroundImage = `url(${this.images[this.getNextImage(this.getNextImage(index))].image})`
+      this.thumbs[1].style.backgroundImage = `url(${this.images[this.getNextImage(this.getNextImage(index))].url})`
       this.thumbs[1].style.backgroundPosition = `50% 50%`
     } else {
       TweenLite.to(this.wrapper, .3, {
@@ -104,22 +104,22 @@ export default class Projects {
           let progress = this.progress()
 
           if (direction === 'forward') {
-            self.main.style.backgroundImage = `url(${self.images[self.getPreviousImage(index)].image}), url(${self.images[index].image})`
+            self.main.style.backgroundImage = `url(${self.images[self.getPreviousImage(index)].url}), url(${self.images[index].url})`
             self.main.style.backgroundPosition = `${width*progress*-1}px 50%, ${width-width*progress}px 50%`
 
-            self.thumbs[0].style.backgroundImage = `url(${self.images[index].image}), url(${self.images[self.getNextImage(index)].image})`
+            self.thumbs[0].style.backgroundImage = `url(${self.images[index].url}), url(${self.images[self.getNextImage(index)].url})`
             self.thumbs[0].style.backgroundPosition = `${widthNext*progress*-1}px 50%, ${widthNext-widthNext*progress}px 50%`
 
-            self.thumbs[1].style.backgroundImage = `url(${self.images[self.getNextImage(index)].image}), url(${self.images[self.getNextImage(self.getNextImage(index))].image})`
+            self.thumbs[1].style.backgroundImage = `url(${self.images[self.getNextImage(index)].url}), url(${self.images[self.getNextImage(self.getNextImage(index))].url})`
             self.thumbs[1].style.backgroundPosition = `${widthAfterNext*progress*-1}px 50%, ${widthAfterNext-widthAfterNext*progress}px 50%`
           } else {
-            self.main.style.backgroundImage = `url(${self.images[index].image}), url(${self.images[self.getNextImage(index)].image})`
+            self.main.style.backgroundImage = `url(${self.images[index].url}), url(${self.images[self.getNextImage(index)].url})`
             self.main.style.backgroundPosition = `${width*-1 + width*progress}px 50%, ${width*progress}px 50%`
 
-            self.thumbs[0].style.backgroundImage = `url(${self.images[self.getNextImage(index)].image}), url(${self.images[self.getNextImage(self.getNextImage(index))].image})`
+            self.thumbs[0].style.backgroundImage = `url(${self.images[self.getNextImage(index)].url}), url(${self.images[self.getNextImage(self.getNextImage(index))].url})`
             self.thumbs[0].style.backgroundPosition = `${widthNext*-1 + widthNext*progress}px 50%, ${widthNext*progress}px 50%`
 
-            self.thumbs[1].style.backgroundImage = `url(${self.images[self.getNextImage(self.getNextImage(index))].image}), url(${self.images[self.getNextImage(self.getNextImage(self.getNextImage(index)))].image})`
+            self.thumbs[1].style.backgroundImage = `url(${self.images[self.getNextImage(self.getNextImage(index))].url}), url(${self.images[self.getNextImage(self.getNextImage(self.getNextImage(index)))].url})`
             self.thumbs[1].style.backgroundPosition = `${widthAfterNext*-1 + widthAfterNext*progress}px 50%, ${widthAfterNext*progress}px 50%`
           }
         }

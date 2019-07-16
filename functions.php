@@ -12,6 +12,7 @@ add_action('wp_enqueue_scripts', function() {
 }, 99);
 
 add_theme_support( 'post-thumbnails', array( 'post', 'product', 'page' ) );
+add_image_size('w800h800', 800, 800, true);
 
 function icon($name, $scale = 1) {
     $width = $scale * 20;
