@@ -139,7 +139,7 @@ function seo() {
 	} elseif (is_search()) {
 		$title = sprintf(__('Search Results for %s', 'roots'), get_search_query());
 	} elseif (is_404()) {
-		$title = __e('Not Found', 'roots');
+		$title = 'Not Found';
 	} else {
 		$title = get_field('title');
 		if (empty($title)) {
