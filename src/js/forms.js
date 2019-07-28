@@ -41,6 +41,9 @@ forEach(document.querySelectorAll('.js-form'), function(form) {
         message.innerHTML = response.message
         message.style.display = 'block'
         form.reset()
+        if (typeof gtag_report_conversion === 'function') {
+          gtag_report_conversion()
+        }
       }
 
       if (response.status == 'mail_failed' || response.status == 'acceptance_missing') {
