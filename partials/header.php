@@ -50,6 +50,7 @@ $categories = get_terms('product_category', array(
             <?php endif; ?>
 
             <a href="<?php the_permalink(140) ?>" class="header-contacts">Контакты</a>
+            <a href="<?php the_permalink(671) ?>" class="header-contacts">Контакты</a>
 
             <div class="header-telephony">
                 <div class="header-phone">

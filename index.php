@@ -11,14 +11,18 @@
                 <div class="breadcrumbs">
                     <?php bcn_display() ?>
                 </div>
+            </div>
 
-                <div class="content">
-					<?php if (have_posts()) : while ( have_posts() ) : the_post(); ?>
-						<h1><?php the_title(); ?></h1>
-						<?php the_content(); ?>
-					<?php endwhile; else: ?>
-						<p>Извините, ничего не найдено.</p>
-					<?php endif; ?>
+            <div class="section-content">
+                <div class="container container_small">
+                    <div class="content">
+                        <?php if (have_posts()) : while ( have_posts() ) : the_post(); ?>
+                            <h1><?php the_title(); ?></h1>
+                            <?php the_content(); ?>
+                        <?php endwhile; else: ?>
+                            <p>Извините, ничего не найдено.</p>
+                        <?php endif; ?>
+                    </div>
                 </div>
             </div>
 

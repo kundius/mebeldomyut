@@ -131,6 +131,9 @@ p {
 	&_wide {
 		max-width: $container-width-wide;
 	}
+	&_small {
+		max-width: 868px;
+	}
 	@media (max-width: $breakpoint-small-max) {
 		padding-left: 25px;
 		padding-right: 25px;
