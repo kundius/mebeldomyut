@@ -162,6 +162,17 @@ p {
 	background: #e0e0e0;
 }
 
+.section-related {
+	background: #fffffe;
+	padding: 50px 0;
+	position: relative;
+}
+
+.section-related__title {
+	color: #000;
+	margin-bottom: 0;
+}
+
 .overlay-email {
 	position: fixed;
 	left: calc(50% - #{$container-width-wide/2 - 6});

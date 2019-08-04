@@ -51,8 +51,9 @@
             ?>
 
             <?php if ($also_query && $also_query->have_posts()): ?>
-            <div class="section-white">
+            <div class="section-related">
                 <div class="container">
+                    <h2 class="section-related__title">Вам может быть интересно:</h2>
                     <div class="products grid" data-match-height='<?php echo json_encode([".products-item__title", ".products-item__desc"]) ?>'>
                         <?php while($also_query->have_posts()): $also_query->the_post(); ?>
                         <div class="products-item">
