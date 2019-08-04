@@ -64,7 +64,7 @@ export default function() {
 
   if (departureOrder) {
     const departureOrderCoords = getCoords(departureOrder)
-    backgrounds.push(`url(/wp-content/themes/homeliness/assets/bg-benefits.jpg) no-repeat 50% ${departureOrderCoords.top + departureOrderCoords.height / 2}px`)
+    backgrounds.push(`url(/wp-content/themes/mebeldomyut/assets/bg-benefits.jpg) no-repeat 50% ${departureOrderCoords.top + departureOrderCoords.height / 2}px`)
     backgrounds.push(`linear-gradient(to bottom, ${strings.join(', ')})`)
   }
 

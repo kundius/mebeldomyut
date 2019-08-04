@@ -19,7 +19,7 @@ module.exports = {
 
     output: {
         path: PATHS.build,
-        publicPath: '/wp-content/themes/homeliness/dist/',
+        publicPath: '/wp-content/themes/mebeldomyut/dist/',
         filename: '[name].js',
         chunkFilename: '[name].js',
     },
