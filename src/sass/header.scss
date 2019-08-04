@@ -223,37 +223,37 @@
         transition-property: width, height, background-color;
     }
 
-    .header-contacts {
-        color: #d4d4d3;
-        font-size: 14px;
-        letter-spacing: 0.7px;
-        text-decoration: none;
-        position: relative;
-        display: inline-block;
-        &::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 3px;
-            background-color: #ecc12d;
-            bottom: -4px;
-            left: 50%;
-            transform: translateX(-50%);
-            transition: .3s ease;
-        }
-        &:hover {
-            color: #fff;
-            &::after {
-                width: 27px;
-            }
-			.page_light & {
-				color: #000000;
-			}
-        }
-		.page_light & {
-			color: #4d4d4d;
-		}
-    }
+  //   .header-contacts {
+  //       color: #d4d4d3;
+  //       font-size: 14px;
+  //       letter-spacing: 0.7px;
+  //       text-decoration: none;
+  //       position: relative;
+  //       display: inline-block;
+  //       &::after {
+  //           content: '';
+  //           position: absolute;
+  //           width: 0;
+  //           height: 3px;
+  //           background-color: #ecc12d;
+  //           bottom: -4px;
+  //           left: 50%;
+  //           transform: translateX(-50%);
+  //           transition: .3s ease;
+  //       }
+  //       &:hover {
+  //           color: #fff;
+  //           &::after {
+  //               width: 27px;
+  //           }
+		// 	.page_light & {
+		// 		color: #000000;
+		// 	}
+  //       }
+		// .page_light & {
+		// 	color: #4d4d4d;
+		// }
+  //   }
 
     .header-telephony {
         display: flex;
@@ -626,23 +626,23 @@
         }
     }
 
-    .header-contacts {
-        display: block;
-        color: #3b3b3b;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 1.25;
-        text-decoration: none;
-        padding: 17px 24px;
-        background-color: #f9f9fc;
-        border-top: 1px solid #ebebee;
-        border-bottom: 1px solid #ebebee;
-        &:hover {
-            background-color: #f9cb2e;
-            text-decoration: none;
-            color: #3b3b3b;
-        }
-    }
+    // .header-contacts {
+    //     display: block;
+    //     color: #3b3b3b;
+    //     font-size: 14px;
+    //     font-weight: 700;
+    //     line-height: 1.25;
+    //     text-decoration: none;
+    //     padding: 17px 24px;
+    //     background-color: #f9f9fc;
+    //     border-top: 1px solid #ebebee;
+    //     border-bottom: 1px solid #ebebee;
+    //     &:hover {
+    //         background-color: #f9cb2e;
+    //         text-decoration: none;
+    //         color: #3b3b3b;
+    //     }
+    // }
 
     .header-overlay {
         position: absolute;

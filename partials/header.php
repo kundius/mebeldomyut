@@ -49,8 +49,14 @@ $categories = get_terms('product_category', array(
             </div>
             <?php endif; ?>
 
-            <a href="<?php the_permalink(140) ?>" class="header-contacts">Контакты</a>
-            <a href="<?php the_permalink(671) ?>" class="header-contacts">Контакты</a>
+            <ul class="header-menu">
+                <li>
+                    <a href="<?php the_permalink(671) ?>">О нас</a>
+                </li>
+                <li>
+                    <a href="<?php the_permalink(140) ?>">Контакты</a>
+                </li>
+            </ul>
 
             <div class="header-telephony">
                 <div class="header-phone">
