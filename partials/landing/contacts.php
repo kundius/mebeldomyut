@@ -5,7 +5,7 @@
         <div class="contacts__socials">
             <?php foreach ($socials as $item): ?>
             <a href="<?php echo $item['link'] ?>" target="_blank">
-                <img src="<?php echo $item['icon']['url'] ?>" alt="" width="16" height="16">
+                <img class="lazyload" data-src="<?php echo $item['icon']['url'] ?>" alt="" width="16" height="16">
             </a>
             <?php endforeach; ?>
         </div>

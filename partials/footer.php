@@ -28,9 +28,9 @@
                 <div class="footer__counters">
                     <?php the_field('footer_counters', 'option') ?>
                 </div>
-                <a href="http://domenart-studio.ru/" class="footer__creator" target="_blank">
-                    <img src="<?php asset('creator.png') ?>" alt="">
-                </a>
+                <span class="footer__creator" target="_blank">
+                    <img class="lazyload" data-src="<?php asset('creator.png') ?>" alt="">
+                </span>
             </div>
         </div>
     </div>

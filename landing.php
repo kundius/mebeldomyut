@@ -132,7 +132,7 @@ if ($projects) {
                 
                 <div class="manufacture">
                     <div class="manufacture__warranty">
-                        <img src="<?php asset("warranty.png") ?>" alt="">
+                        <img class="lazyload" data-src="<?php asset("warranty.png") ?>" alt="">
                     </div>
                     <div class="manufacture__content">
                         <div class="manufacture-title">
@@ -172,7 +172,7 @@ if ($projects) {
                 <div class="range-grid">
                     <div class="range-cell">
                         <div class="range-item">
-                            <img class="range-item__image" src="<?php echo get_bloginfo("template_url") . "/assets/range-1.jpg" ?>" alt="">
+                            <img class="range-item__image lazyload" data-src="<?php asset("range-1.jpg") ?>" alt="">
                             <div class="range-item__info">
                                 <div class="range-item__title">ЛДСП</div>
                                 <div class="range-item__desc">более 60 цветов и фактур</div>
@@ -181,7 +181,7 @@ if ($projects) {
                     </div>
                     <div class="range-cell">
                         <div class="range-item">
-                            <img class="range-item__image" src="<?php echo get_bloginfo("template_url") . "/assets/range-2.jpg" ?>" alt="">
+                            <img class="range-item__image lazyload" data-src="<?php asset("range-2.jpg") ?>" alt="">
                             <div class="range-item__info">
                                 <div class="range-item__title">МДФ</div>
                                 <div class="range-item__desc">высокоглянцевая</div>
@@ -190,7 +190,7 @@ if ($projects) {
                     </div>
                     <div class="range-cell">
                         <div class="range-item">
-                            <img class="range-item__image" src="<?php echo get_bloginfo("template_url") . "/assets/range-3.jpg" ?>" alt="">
+                            <img class="range-item__image lazyload" data-src="<?php asset("range-3.jpg") ?>" alt="">
                             <div class="range-item__info">
                                 <div class="range-item__title">Пластики</div>
                                 <div class="range-item__desc"><span>пр-во </span>Италия, Германия, Корея</div>
@@ -218,7 +218,7 @@ if ($projects) {
                     <?php foreach($materials as $key => $material): ?>
                     <div class="materials__cell">
                         <div class="materials-item materials-item_<?php echo $material['modifier']; ?><?php if ($key === 0): ?> js-materials-first<?php endif; ?>">
-                            <img class="materials-item__image" src="<?php echo $material['image']['url'] ?>" alt="">
+                            <img class="materials-item__image lazyload" data-src="<?php echo $material['image']['url'] ?>" alt="">
                             <div class="materials-item__title"><?php echo $material['title'] ?></div>
                             <div class="materials-item__text"><?php echo $material['desc'] ?></div>
                         </div>
@@ -239,7 +239,7 @@ if ($projects) {
                             2. Отличное решение<br>
                             для кабинета или библиотеки.
                         </div>
-                        <img src="<?php asset("leather-example.png") ?>" alt="" class="leather__example">
+                        <img data-src="<?php asset("leather-example.png") ?>" alt="" class="leather__example lazyload">
                     </div>
                 </div>
 
@@ -249,16 +249,16 @@ if ($projects) {
                         <svg class="js-svg-text"><text x="50%" y="50%">по стеклу</text></svg>
                     </div>
                     <div class="engraving__grid">
-                        <img src="<?php asset("engraving-3.jpg") ?>" alt="" class="engraving__before">
-                        <img src="<?php asset("engraving-4.jpg") ?>" alt="" class="engraving__after">
+                        <img data-src="<?php asset("engraving-3.jpg") ?>" alt="" class="engraving__before lazyload">
+                        <img data-src="<?php asset("engraving-4.jpg") ?>" alt="" class="engraving__after lazyload">
                         <div class="engraving__cell js-engraving-first">
-                            <img src="<?php asset("engraving-1.jpg") ?>" alt="" class="engraving__image">
+                            <img data-src="<?php asset("engraving-1.jpg") ?>" alt="" class="engraving__image lazyload">
                             <div class="engraving__type engraving__type_left">
                                 сложная
                             </div>
                         </div>
                         <div class="engraving__cell">
-                            <img src="<?php asset("engraving-2.jpg") ?>" alt="" class="engraving__image">
+                            <img data-src="<?php asset("engraving-2.jpg") ?>" alt="" class="engraving__image lazyload">
                             <div class="engraving__type engraving__type_right">
                                 Ромбовидная
                             </div>
@@ -346,7 +346,7 @@ if ($projects) {
                     <div class="partners__grid">
                         <?php foreach ($partners as $item): ?>
                         <div class="partners-item">
-                            <img src="<?php echo $item['image']['url'] ?>" alt="">
+                            <img class="lazyload" data-src="<?php echo $item['image']['url'] ?>" alt="">
                         </div>
                         <?php endforeach; ?>
                     </div>
