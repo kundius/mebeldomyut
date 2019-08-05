@@ -194,6 +194,7 @@
         bottom: 10.7%;
         left: calc(50% - #{$container-width/2-94});
         right: calc(50% - #{$container-width/2-2});
+        z-index: 20;
     }
     // &_first {
     //     background-image: url('../img/slideshow-1.jpg');
@@ -224,6 +225,7 @@
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 10;
 }
 
 .slideshow-slide__title {
@@ -232,6 +234,7 @@
     height: 100%;
     left: 0;
     top: 0;
+    z-index: 30;
     > div {
         color: #ffffff;
         font-size: 110px;
@@ -266,6 +269,7 @@
     left: calc(50% + 85px);
     top: 50%;
     transform: translateY(-50%);
+    z-index: 40;
 }
 
 .slideshow-smalldesc {
@@ -281,6 +285,7 @@
     left: calc(50% - #{$container-width/2 - 233});
     top: calc(50% + 130px);
     transform: translateY(-50%);
+    z-index: 50;
     span {
         margin-right: 25px;
         &:last-child {
@@ -293,6 +298,7 @@
     position: absolute;
     display: flex;
     align-items: center;
+    z-index: 60;
 }
 
 .slide-overlay__title {
@@ -365,6 +371,7 @@
 .slideshow-cost {
     position: absolute;
     overflow: hidden;
+    z-index: 70;
 }
 
 .slideshow-cost__price {
