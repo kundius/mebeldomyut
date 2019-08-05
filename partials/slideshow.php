@@ -5,14 +5,15 @@
         <div class="slideshow-slide slideshow-slide_<?php echo $key ?>" style="clip-path: url(#slideshow-path-<?php echo $key ?>)">
 
             <img
-                src="<?php echo $slide['image']['url'] ?>"
+                data-src="<?php echo $slide['image']['url'] ?>"
                 <?php
                 echo srcset($slide['image'], [
-                    'sizes'=> ['medium', 'large']
+                    'sizes'=> ['medium', 'large'],
+                    'toData' => true
                 ])
                 ?>
                 alt=""
-                class="slideshow-slide__image"
+                class="slideshow-slide__image lazyload"
             >
             
             <svg height="0" width="0">
