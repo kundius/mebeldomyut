@@ -977,6 +977,10 @@ p {
     }
 }
 
+.article-foot {
+	background: #fff;
+}
+
 .article-foot__social {
     display: flex;
     justify-content: space-between;
@@ -987,6 +991,7 @@ p {
     }
     p {
         margin-right: 22px;
+        margin-bottom: 0;
         color: #666;
         font-size: 18px;
         @media (max-width: $breakpoint-small-max) {
