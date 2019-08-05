@@ -8,8 +8,7 @@
                 src="<?php echo $slide['image']['url'] ?>"
                 <?php
                 echo srcset($slide['image'], [
-                    'sizes'=> ['medium', 'large'],
-                    'toData' => true
+                    'sizes'=> ['medium', 'large']
                 ])
                 ?>
                 alt=""
