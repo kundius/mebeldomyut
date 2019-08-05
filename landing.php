@@ -6,8 +6,8 @@ $projects = get_field('projects');
 if ($projects) {
     $projects = array_filter(array_map(function($row) {
         return [
-            'url' => wp_get_attachment_image_url($row['image']['ID'], 'full')
-            'thumbnail' => wp_get_attachment_image_url($row['image']['ID'], 'w800h800')
+            'url' => wp_get_attachment_image_url($row['image']->ID, 'full')
+            'thumbnail' => wp_get_attachment_image_url($row['image']->ID, 'w800h800')
         ];
     }, $projects), function($row) {
         return !empty($row);
