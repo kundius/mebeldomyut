@@ -1,5 +1,6 @@
 import svg4everybody from 'svg4everybody'
 import objectFitImages from 'object-fit-images'
+import LazyLoad from 'vanilla-lazyload'
 import Slideshow from './slideshow'
 import Projects from './projects'
 import { TweenLite, TimelineLite } from 'gsap'
@@ -201,6 +202,10 @@ if (lorySlideshowItems.length > 0) {
 		})
 	})
 }
+
+var lazyLoadInstance = new LazyLoad({
+  elements_selector: '.lazyload'
+})
 
 svg4everybody()
 objectFitImages()
