@@ -2,7 +2,19 @@
 <div class="slideshow">
     <div class="slideshow-slides">
         <?php foreach ($slideshow as $key => $slide): ?>        
-        <div class="slideshow-slide slideshow-slide_<?php echo $key ?>" style="clip-path: url(#slideshow-path-<?php echo $key ?>); background-image: url(<?php echo $slide['image']['url'] ?>);">
+        <div class="slideshow-slide slideshow-slide_<?php echo $key ?>" style="clip-path: url(#slideshow-path-<?php echo $key ?>)">
+
+            <img
+                src="<?php echo $slide['image']['url'] ?>"
+                <?php
+                echo srcset($slide['image'], [
+                    'sizes'=> ['medium', 'large'],
+                    'toData' => true
+                ])
+                ?>
+                alt=""
+                class="slideshow-slide__image"
+            >
             
             <svg height="0" width="0">
                 <defs>

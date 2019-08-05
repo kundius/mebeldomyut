@@ -18,7 +18,7 @@
 						<input type="radio" value="1" name="check" id="check-1" class="quiz-cards__input" />
 						<label for="check-1" class="quiz-card">
 							<div class="quiz-card__image">
-								<img src="https://mebeldomyut.ru/wp-content/uploads/2019/02/2-1-300x300.jpg" />
+								<img src="/wp-content/uploads/2019/02/2-1-300x300.jpg" />
 							</div>
 							<div class="quiz-card__foot">
 								<div class="quiz-card__check"></div>
@@ -30,7 +30,7 @@
 						<input type="radio" value="2" name="check" id="check-2" class="quiz-cards__input" />
 						<label for="check-2" class="quiz-card">
 							<div class="quiz-card__image">
-								<img src="https://mebeldomyut.ru/wp-content/uploads/2019/02/7-1-300x300.jpg" />
+								<img src="/wp-content/uploads/2019/02/7-1-300x300.jpg" />
 							</div>
 							<div class="quiz-card__foot">
 								<div class="quiz-card__check"></div>
@@ -42,7 +42,7 @@
 						<input type="radio" value="3" name="check" id="check-3" class="quiz-cards__input" />
 						<label for="check-3" class="quiz-card">
 							<div class="quiz-card__image">
-								<img src="https://mebeldomyut.ru/wp-content/uploads/2019/02/7-1-300x300.jpg" />
+								<img src="/wp-content/uploads/2019/02/7-1-300x300.jpg" />
 							</div>
 							<div class="quiz-card__foot">
 								<div class="quiz-card__check"></div>
@@ -54,7 +54,7 @@
 						<input type="radio" value="4" name="check" id="check-4" class="quiz-cards__input" />
 						<label for="check-4" class="quiz-card">
 							<div class="quiz-card__image">
-								<img src="https://mebeldomyut.ru/wp-content/uploads/2019/02/7-1-300x300.jpg" />
+								<img src="/wp-content/uploads/2019/02/7-1-300x300.jpg" />
 							</div>
 							<div class="quiz-card__foot">
 								<div class="quiz-card__check"></div>
@@ -163,7 +163,7 @@
 							</div>
 						</div>
 						<label class="quiz-form__rights">
-							<input type="checkbox" class="form-checkbox form-checkbox_light" name="rules" value="1"> Прочитал(-а) <a href="https://mebeldomyut.ru/privacy-policy" target="_blank">Пользовательское соглашение</a> и соглашаюсь с <a href="https://mebeldomyut.ru/polzovatelskoe-soglashenie" target="_blank">Политикой обработки персональных данных</a>
+							<input type="checkbox" class="form-checkbox form-checkbox_light" name="rules" value="1"> Прочитал(-а) <a href="/privacy-policy" target="_blank">Пользовательское соглашение</a> и соглашаюсь с <a href="/polzovatelskoe-soglashenie" target="_blank">Политикой обработки персональных данных</a>
 						</label>
 					</form>
 				</div>

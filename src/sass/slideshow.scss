@@ -175,9 +175,9 @@
 }
 
 .slideshow-slide {
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: 100% 50%;
+    // background-size: auto 100%;
+    // background-repeat: no-repeat;
+    // background-position: 100% 50%;
     background-color: #858681;
     position: absolute;
     left: 0;
@@ -215,6 +215,15 @@
     //     background-image: url('../img/slideshow-5.jpg');
     //     background-color: #86898e;
     // }
+}
+
+.slideshow-slide__image {
+    position: absolute;
+    height: 100%;
+    width: auto;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .slideshow-slide__title {

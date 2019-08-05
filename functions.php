@@ -14,6 +14,26 @@ add_action('wp_enqueue_scripts', function() {
 add_theme_support( 'post-thumbnails', array( 'post', 'product', 'page' ) );
 add_image_size('w800h800', 800, 800, true);
 
+function srcset($image, $options) {
+    $options = array_merge([
+        'sizes' => ['thumbnail', 'medium', 'large'],
+        'toData' => false
+    ], $options);
+
+    $prefix = $options['toData'] ? 'data-' : '';
+    $srcset = [];
+    foreach ($options['sizes'] as $size) {
+        $srcset[] = $image['sizes'][$size] . ' ' . $image['sizes'][$size . '-width'] . 'w';
+    }
+    $srcset[] = $image['url'] . ' ' . $image['width'] . 'w';
+    $sizes = [];
+    foreach ($options['sizes'] as $size) {
+        $sizes[] = '(max-width: ' . $image['sizes'][$size . '-width'] . 'px) ' . $image['sizes'][$size . '-width'] . 'px';
+    }
+    $sizes[] = $image['width'] . 'px';
+    return $prefix . 'srcset="' . implode(', ', $srcset) . '" ' . $prefix . 'sizes="' . implode(', ', $sizes) . '"';
+}
+
 function icon($name, $scale = 1) {
     $width = $scale * 20;
     $height = $scale * 20;
