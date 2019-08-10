@@ -110,7 +110,7 @@ if (wp_doing_ajax()) {
     add_action('wp_ajax_product', 'ajax_product_callback');
     add_action('wp_ajax_nopriv_product', 'ajax_product_callback');
     function ajax_product_callback() {
-        check_ajax_referer( 'myajax-nonce', 'nonce_code' );
+        // check_ajax_referer( 'myajax-nonce', 'nonce_code' );
 
         global $post;
         $id = intval($_POST['id']);
