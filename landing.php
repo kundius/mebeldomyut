@@ -31,10 +31,10 @@ if ($projects) {
                 <?php if ($projects): ?>
                 <div class="projects" id="projects" data-projects='<?php echo json_encode($projects) ?>'>
                     <div class="projects-header">
-                        <div class="projects-header__title">
-                            Мебель,
+                        <h1 class="projects-header__title">
+                            Мебель под заказ,
                             <small>которую мы уже сделали</small>
-                        </div>
+                        </h1>
                         <div class="projects-header__desc">Фото выполненных проектов:</div>
                     </div>
 
@@ -65,9 +65,9 @@ if ($projects) {
                     </div>
 
                     <div class="projects-selection">
-                        <div class="projects-selection__title">
+                        <h2 class="projects-selection__title">
                             Подберите себе мебель и узнайте её стоимость, ответив на 5 простых вопросов
-                        </div>
+                        </h2>
                         <div class="projects-selection__text">
                             По его завершению вы получите:
                             <ul>
