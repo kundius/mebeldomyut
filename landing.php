@@ -66,7 +66,7 @@ if ($projects) {
 
                     <div class="projects-selection">
                         <h2 class="projects-selection__title">
-                            Подберите себе мебель и узнайте её стоимость, ответив на 5 простых вопросов
+                            Подберите себе мебель под заказ и узнайте её стоимость, ответив на 5 простых вопросов
                         </h2>
                         <div class="projects-selection__text">
                             По его завершению вы получите:
