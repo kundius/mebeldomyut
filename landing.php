@@ -6,8 +6,8 @@ $projects = get_field('projects');
 if ($projects) {
     $projects = array_filter(array_map(function($row) {
         return [
-            'url' => str_replace('mebeldomyut.ru', 'cdn.mebeldomyut.ru', $row['image']['url']),
-            'thumbnail' => str_replace('mebeldomyut.ru', 'cdn.mebeldomyut.ru', $row['image']['sizes']['w800h800'])
+            'url' => $row['image']['url'],
+            'thumbnail' => $row['image']['sizes']['w800h800']
         ];
     }, $projects), function($row) {
         return !empty($row);
