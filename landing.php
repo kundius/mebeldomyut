@@ -73,7 +73,7 @@ if ($projects) {
                             <ul>
                                 <li>Расчёт стоимости проекта по вашим параметрам</li>
                                 <li>Каталог 2018 и 2019 годов</li>
-                                <li>30% скидку до конца марта</li>
+                                <li>30% скидку до конца месяца</li>
                             </ul>
                         </div>
                         <a href="<?php the_permalink(477) ?>" class="projects-more circle-details circle-details_small">
@@ -132,7 +132,7 @@ if ($projects) {
                         </label>
                     </form>
                 </div>
-                
+
                 <div class="manufacture">
                     <div class="manufacture__warranty">
                         <img class="lazyload" data-src="<?php asset("warranty.png") ?>" alt="">
@@ -268,7 +268,7 @@ if ($projects) {
                         </div>
                     </div>
                 </div>
-                
+
                 <?php if ($videos = get_field('videos')): ?>
                 <div class="video">
                     <div class="video__cell">
