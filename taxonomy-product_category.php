@@ -81,8 +81,10 @@ $action = array_shift($actions);
                                 <div class="products-item__button">
                                     <a href="<?php the_permalink() ?>" class="form-submit form-submit_red form-submit_small">
                                         <span class="form-submit__inner">
-                                            <span>Подробнее</span>
-                                            <span class="form-submit__arrow"></span>
+                                            <span>
+                                                <span>Подробнее</span>
+                                                <span class="form-submit__arrow"></span>
+                                            </span>
                                         </span>
                                     </a>
                                 </div>
