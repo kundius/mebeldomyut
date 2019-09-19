@@ -15,40 +15,35 @@
                 <h1><?php the_title(); ?></h1>
             </div>
 
-            <div class="section-content">
-                <div class="container container_small">
-                    <div class="product-details">
-                        <div class="product-details__image">
+            <div class="section-white">
+                <div class="container">
+                    <div class="product-single">
+                        <div class="product-single__image">
                             <?php the_post_thumbnail('full') ?>
                         </div>
-                        <div class="product-details__info">
-                            <div class="product-details__title">
+                        <div class="product-single__info">
+                            <div class="product-single__title">
                                 <?php the_title() ?>
                             </div>
-                            <div class="product-details__content">
-                                <?php echo $content ?>
+                            <?php if (has_excerpt()): ?>
+                            <div class="product-single__content">
+                                <?php the_excerpt() ?>
                             </div>
+                            <?php endif; ?>
                             <?php if ($price = get_field('price')): ?>
-                            <div class="product-details__price">
+                            <div class="product-single__price">
                                 <?php echo $price['before'] ?>
                                 <span><?php echo number_format($price['value'], 0, ',', ' ') ?></span>
                                 <?php echo $price['after'] ?>
                             </div>
                             <?php endif; ?>
                         </div>
-
-                        <div class="product-details__nav">
-                            <div class="eraser eraser_dark">
-                                <?php if ($next = get_next_post(true, '', 'product_category')): ?>
-                                <div class="eraser__left js-product-details" data-id="<?php echo $next->ID ?>"></div>
-                                <?php endif; ?>
-                                <?php if ($previous = get_previous_post(true, '', 'product_category')): ?>
-                                <div class="eraser__right js-product-details" data-id="<?php echo $previous->ID ?>"></div>
-                                <?php endif; ?>
-                                <div class="eraser__center"></div>
-                            </div>
-                        </div>
                     </div>
+                </div>
+            </div>
+
+            <div class="section-content">
+                <div class="container container_small">
                     <div class="content">
                         <?php the_content(); ?>
                     </div>
