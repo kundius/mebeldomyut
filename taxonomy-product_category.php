@@ -39,8 +39,9 @@ $action = array_shift($actions);
                                     <div class="main-action__desc"><?php echo $action['desc'] ?></div>
                                 </div>
                             </div>
-                        <?php endif; ?>
+                            <?php endif; ?>
                         </div>
+
                         <div class="category__right">
                             <div class="category__content"><?php echo $content ?></div>
                             <?php if (count($actions) > 0): ?>
@@ -65,10 +66,10 @@ $action = array_shift($actions);
                         <div class="products grid" data-match-height='<?php echo json_encode([".products-item__title", ".products-item__desc"]) ?>'>
                             <?php while (have_posts()) : the_post(); ?>
                             <div class="products-item">
-                                <div class="products-item__image zoom-container js-product-details" data-id="<?php the_ID() ?>">
+                                <a href="<?php the_permalink() ?>" class="products-item__image">
                                     <?php the_post_thumbnail('thumbnail'); ?>
-                                </div>
-                                <div class="products-item__title"><?php the_title() ?></div>
+                                </a>
+                                <a href="<?php the_permalink() ?>" class="products-item__title"><?php the_title() ?></a>
                                 <div class="products-item__desc"><?php the_excerpt() ?></div>
                                 <?php if ($price = get_field('price')): ?>
                                 <div class="products-item__price">
@@ -78,13 +79,12 @@ $action = array_shift($actions);
                                 </div>
                                 <?php endif; ?>
                                 <div class="products-item__button">
-                                    <button class="form-submit form-submit_red form-submit_small js-open-modal" data-target="#callback">
+                                    <a href="<?php the_permalink() ?>" class="form-submit form-submit_red form-submit_small">
                                         <span class="form-submit__inner">
-                                            <span>Получить</span>
+                                            <span>Подробнее</span>
                                             <span class="form-submit__arrow"></span>
-                                            <span>консультацию</span>
                                         </span>
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                             <?php endwhile; ?>
