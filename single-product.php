@@ -37,12 +37,16 @@
                                 <?php echo $price['after'] ?>
                             </div>
                             <?php endif; ?>
-                            <button class="form-submit form-submit_red form-submit_small">
-                                <span class="form-submit__inner">
-                                    <span>Рассчитать стоимость</span>
-                                </span>
-                            </button>
-                            <p>Ориентировочная стоимость мебели под заказ</p>
+                            <div class="product-single__feed">
+                                <button class="form-submit form-submit_red form-submit_small js-open-modal" data-target="#calculate">
+                                    <span class="form-submit__inner">
+                                        <span>Рассчитать стоимость</span>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="product-single__feed-desc">
+                                Ориентировочная стоимость мебели под заказ
+                            </div>
                         </div>
                     </div>
                 </div>

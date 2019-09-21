@@ -52,7 +52,7 @@
     line-height: 38px;
     letter-spacing: 0.35px;
     position: relative;
-    margin-top: 44px;
+    margin-top: 30px;
 	&::after {
 		content: '';
 		position: absolute;
@@ -68,6 +68,18 @@
 		font-weight: 700;
 		letter-spacing: 0.6px;
 	}
+}
+
+.product-single__feed {
+	margin-top: 25px;
+}
+
+.product-single__feed-desc {
+	font-size: 12px;
+	color: #585852;
+	text-align: center;
+	line-height: 1;
+	margin-top: 8px;
 }
 
 @media (max-width: $breakpoint-small-max) {
