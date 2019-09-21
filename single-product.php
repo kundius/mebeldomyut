@@ -15,7 +15,7 @@
                 <h1><?php the_title(); ?></h1>
             </div>
 
-            <div class="section-white">
+            <div class="section-content">
                 <div class="container">
                     <div class="product-single">
                         <div class="product-single__image">
@@ -42,7 +42,7 @@
                 </div>
             </div>
 
-            <div class="section-content">
+            <div class="section-white">
                 <div class="container container_small">
                     <div class="content">
                         <?php the_content(); ?>
