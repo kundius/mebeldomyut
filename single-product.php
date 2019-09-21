@@ -69,6 +69,8 @@
             </section>
             <?php endwhile; endif; ?>
 
+            <?php get_template_part('partials/departure-order'); ?>
+
             <?php
                 $also_query = null;
                 if ($related = get_field('related')) {
