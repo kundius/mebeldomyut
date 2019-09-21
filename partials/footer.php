@@ -130,7 +130,6 @@
                 <div class="calculate__cell">
                     <label class="form-input form-input_small">
                         <span class="form-input__label">Ваше имя</span>
-                        <span class="form-input__placeholder">Как вы хотите, чтоб к вам обращались</span>
                         <input type="text" class="form-input__value" name="your-name">
                     </label>
                 </div>
