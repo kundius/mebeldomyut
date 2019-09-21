@@ -69,7 +69,9 @@
             </section>
             <?php endwhile; endif; ?>
 
-            <?php get_template_part('partials/departure-order'); ?>
+            <div class="container">
+                <?php get_template_part('partials/departure-order'); ?>
+            </div>
 
             <?php
                 $also_query = null;
