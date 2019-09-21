@@ -141,14 +141,14 @@
                         <input type="text" class="form-input__value" data-imask="+{7} (000) 000-00-00" name="your-phone">
                     </label>
                 </div>
-                <div class="calculate__cell">
-                    <button class="form-submit form-submit_small">
-                        <span class="form-submit__inner">
-                            <span>Заказать<br>звонок</span>
-                            <span class="form-submit__arrow"></span>
-                        </span>
-                    </button>
-                </div>
+            </div>
+            <div class="calculate__submit">
+                <button class="form-submit form-submit_small">
+                    <span class="form-submit__inner">
+                        <span>Заказать<br>звонок</span>
+                        <span class="form-submit__arrow"></span>
+                    </span>
+                </button>
             </div>
             <label class="calculate__rights">
                 <input type="checkbox" class="form-checkbox form-checkbox_light" name="rules" value="1"> Прочитал(-а) <a href="<?php the_permalink(3) ?>" target="_blank">Пользовательское соглашение</a> и соглашаюсь с <a href="<?php the_permalink(14) ?>" target="_blank">Политикой обработки персональных данных</a>
