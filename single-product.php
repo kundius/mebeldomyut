@@ -45,14 +45,14 @@
                                 </button>
                             </div>
                             <div class="product-single__feed-desc">
-                                Ориентировочная стоимость мебели под заказ
+                                Ориентировочная стоимость мебели&nbsp;под&nbsp;заказ
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="section-white">
+            <div class="product-single-content">
                 <div class="container container_small">
                     <div class="content">
                         <?php the_content(); ?>

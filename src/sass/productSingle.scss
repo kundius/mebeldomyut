@@ -82,6 +82,13 @@
 	margin-top: 8px;
 }
 
+.product-single-content {
+	background: #fffffe;
+	color: #000;
+	padding: 50px 0;
+	position: relative;
+}
+
 @media (max-width: $breakpoint-small-max) {
 	.product-single {
 		flex-wrap: wrap;

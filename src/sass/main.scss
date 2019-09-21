@@ -169,7 +169,6 @@ hr {
 
 .section-white {
 	background: #fffffe;
-	color: #000;
 	padding: 20px 0;
 	position: relative;
 }
@@ -1039,6 +1038,9 @@ hr {
     }
     .ya-share2__container_size_m .ya-share2__item {
         margin: 0 10px 0 0;
+	    @media (max-width: $breakpoint-xsmall-max) {
+        	margin: 0 2px 0 0;
+	    }
     }
 }
 
