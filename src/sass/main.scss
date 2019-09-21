@@ -81,6 +81,9 @@ h1 {
 	.page_light & {
 		color: #363636;
 	}
+	@media (max-width: $breakpoint-small-max) {
+		font-size: 32px;
+	}
 }
 
 h2 {
