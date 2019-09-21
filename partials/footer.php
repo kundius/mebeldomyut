@@ -45,55 +45,6 @@
             <div class="callback__grid">
                 <div class="callback__cell">
                     <label class="form-input form-input_small">
-                        <span class="form-input__label">Гарнитур/шкаф</span>
-                        <input type="text" class="form-input__value" name="closet">
-                    </label>
-                </div>
-                <div class="callback__cell">
-                    <label class="form-input form-input_small">
-                        <span class="form-input__label">Высота</span>
-                        <input type="text" class="form-input__value" name="height">
-                    </label>
-                </div>
-                <div class="callback__cell">
-                    <label class="form-input form-input_small">
-                        <span class="form-input__label">Глубина</span>
-                        <input type="text" class="form-input__value" name="depth">
-                    </label>
-                </div>
-                <div class="callback__cell">
-                    <label class="form-input form-input_small">
-                        <span class="form-input__label">Метраж гарнитура/шкафа</span>
-                        <input type="text" class="form-input__value" name="footage">
-                    </label>
-                </div>
-                <div class="callback__cell">
-                    <label class="form-input form-input_small">
-                        <span class="form-input__label">Материал фасада</span>
-                        <input type="text" class="form-input__value" name="material">
-                    </label>
-                </div>
-                <div class="callback__cell">
-                    <label class="form-input form-input_small">
-                        <span class="form-input__label">Стиль</span>
-                        <input type="text" class="form-input__value" name="style">
-                    </label>
-                </div>
-                <div class="callback__cell">
-                    <label class="form-input form-input_small">
-                        <span class="form-input__label">Район доставки</span>
-                        <input type="text" class="form-input__value" name="delivery">
-                    </label>
-                </div>
-                <div class="callback__cell">
-                    <label class="form-input form-input_small">
-                        <span class="form-input__label">Ваш mail</span>
-                        <span class="form-input__mask">___________@_____</span>
-                        <input type="email" class="form-input__value" name="your-email">
-                    </label>
-                </div>
-                <div class="callback__cell">
-                    <label class="form-input form-input_small">
                         <span class="form-input__label">Ваше имя</span>
                         <span class="form-input__placeholder">Как вы хотите, чтоб к вам обращались</span>
                         <input type="text" class="form-input__value" name="your-name">
@@ -127,6 +78,55 @@
                 Рассчитать стоимость
             </div>
             <div class="calculate__grid">
+                <div class="calculate__cell">
+                    <label class="form-input form-input_small">
+                        <span class="form-input__label">Гарнитур/шкаф</span>
+                        <input type="text" class="form-input__value" name="closet">
+                    </label>
+                </div>
+                <div class="calculate__cell">
+                    <label class="form-input form-input_small">
+                        <span class="form-input__label">Высота</span>
+                        <input type="text" class="form-input__value" name="height">
+                    </label>
+                </div>
+                <div class="calculate__cell">
+                    <label class="form-input form-input_small">
+                        <span class="form-input__label">Глубина</span>
+                        <input type="text" class="form-input__value" name="depth">
+                    </label>
+                </div>
+                <div class="calculate__cell">
+                    <label class="form-input form-input_small">
+                        <span class="form-input__label">Метраж гарнитура/шкафа</span>
+                        <input type="text" class="form-input__value" name="footage">
+                    </label>
+                </div>
+                <div class="calculate__cell">
+                    <label class="form-input form-input_small">
+                        <span class="form-input__label">Материал фасада</span>
+                        <input type="text" class="form-input__value" name="material">
+                    </label>
+                </div>
+                <div class="calculate__cell">
+                    <label class="form-input form-input_small">
+                        <span class="form-input__label">Стиль</span>
+                        <input type="text" class="form-input__value" name="style">
+                    </label>
+                </div>
+                <div class="calculate__cell">
+                    <label class="form-input form-input_small">
+                        <span class="form-input__label">Район доставки</span>
+                        <input type="text" class="form-input__value" name="delivery">
+                    </label>
+                </div>
+                <div class="calculate__cell">
+                    <label class="form-input form-input_small">
+                        <span class="form-input__label">Ваш mail</span>
+                        <span class="form-input__mask">___________@_____</span>
+                        <input type="email" class="form-input__value" name="your-email">
+                    </label>
+                </div>
                 <div class="calculate__cell">
                     <label class="form-input form-input_small">
                         <span class="form-input__label">Ваше имя</span>
