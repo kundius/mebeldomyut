@@ -1,4 +1,4 @@
-<div class="departure-order js-departure-order">
+<div class="departure-order">
     <form action="/wp-json/contact-form-7/v1/contact-forms/6/feedback" class="departure-order__form js-form">
         <div class="departure-order__grid">
             <div class="departure-order__cell">

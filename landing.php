@@ -100,7 +100,9 @@ if ($projects) {
                     </div>
                 </div>
 
-                <?php get_template_part('partials/departure-order'); ?>
+                <div class="js-departure-order">
+                    <?php get_template_part('partials/departure-order'); ?>
+                </div>
 
                 <div class="manufacture">
                     <div class="manufacture__warranty">
