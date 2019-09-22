@@ -84,7 +84,7 @@
                     <div class="departure-order">
                         <form action="/wp-json/contact-form-7/v1/contact-forms/6/feedback" class="departure-order__form js-form">
                             <div class="departure-order__title">
-                                Выезд<span>*</span> <svg class="js-svg-text"><text x="50%" y="50%">дизайнера</text></svg> на&nbsp;дом
+                                Выезд<span>*</span> <svg class="js-svg-text"><text x="50%" y="50%">замерщика</text></svg> на&nbsp;дом
                             </div>
                             <div class="departure-order__grid">
                                 <div class="departure-order__cell">
@@ -106,7 +106,7 @@
                                         <span class="form-submit__inner">
                                             <span>Хочу, чтобы</span>
                                             <span class="form-submit__arrow"></span>
-                                            <span>дизайнер&nbsp;приехал<span>
+                                            <span>замерщик&nbsp;приехал<span>
                                         </span>
                                     </button>
                                 </div>
