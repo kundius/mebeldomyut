@@ -273,7 +273,7 @@ if ($projects) {
                 <div class="video">
                     <div class="video__cell">
                         <div class="video__title">
-                            Видео о технологиях изготовления
+                            Отзывы о компании "Домашний Уют"
                         </div>
                     </div>
                     <div class="video__cell">
@@ -284,11 +284,8 @@ if ($projects) {
                                 <div class="video-item js-video-first"><?php echo $review['media'] ?></div>
                                 <?php endif; ?>
                                 <?php if ($review['type'] == 'image'): ?>
-                                <div class="image-item">
-                                    <pre>
-                                    <?php print_r($review['image']) ?>
-                                    </pre>
-                                    <img src="<?php echo $review['image']['url'] ?>" alt="">
+                                <div class="image-item zoom-container">
+                                    <img src="<?php echo $review['image']['sizes']['medium'] ?>" alt="">
                                 </div>
                                 <?php endif; ?>
                             </div>
