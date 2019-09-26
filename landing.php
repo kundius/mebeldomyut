@@ -269,6 +269,35 @@ if ($projects) {
                     </div>
                 </div>
 
+                <?php if ($reviews = get_field('reviews')): ?>
+                <div class="video">
+                    <div class="video__cell">
+                        <div class="video__title">
+                            Видео о технологиях изготовления
+                        </div>
+                    </div>
+                    <div class="video__cell">
+                        <div class="video-list">
+                            <?php foreach($reviews as $review): ?>
+                            <div class="video-list__item">
+                                <?php if ($review['type'] == 'media'): ?>
+                                <div class="video-item js-video-first"><?php echo $review['media'] ?></div>
+                                <?php endif; ?>
+                                <?php if ($review['type'] == 'image'): ?>
+                                <div class="image-item">
+                                    <pre>
+                                    <?php print_r($review['image']) ?>
+                                    </pre>
+                                    <img src="<?php echo $review['image']['url'] ?>" alt="">
+                                </div>
+                                <?php endif; ?>
+                            </div>
+                            <?php endforeach; ?>
+                        </div>
+                    </div>
+                </div>
+                <?php endif; ?>
+
                 <?php if ($videos = get_field('videos')): ?>
                 <div class="video">
                     <div class="video__cell">
@@ -277,9 +306,13 @@ if ($projects) {
                         </div>
                     </div>
                     <div class="video__cell">
-                        <?php foreach($videos as $video): ?>
-                        <div class="video-item js-video-first"><?php echo $video['code'] ?></div>
-                        <?php endforeach; ?>
+                        <div class="video-list">
+                            <?php foreach($videos as $video): ?>
+                            <div class="video-list__item">
+                                <div class="video-item js-video-first"><?php echo $video['code'] ?></div>
+                            </div>
+                            <?php endforeach; ?>
+                        </div>
                     </div>
                 </div>
                 <?php endif; ?>

@@ -24,7 +24,15 @@
 	}
 }
 
+.video-list {
+	lost-utility: clearfix;
+}
+
 @media (min-width: $breakpoint-small) {
+	.video-list__item {
+		lost-column: 1/3 3 0;
+	}
+
 	.video__cell {
 		lost-column: 1/2 2 0;
 	}
