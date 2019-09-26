@@ -15,6 +15,8 @@ import './projectDetails.js'
 import './matchHeight.js'
 import './quiz.js'
 
+const lightbox = new SimpleLightbox({elements: '.js-slb-gallery a'})
+
 document.addEventListener('DOMContentLoaded', initBackgrounds)
 window.addEventListener('resize', initBackgrounds)
 

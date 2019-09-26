@@ -270,10 +270,10 @@ if ($projects) {
                 </div>
 
                 <?php if ($reviews = get_field('reviews')): ?>
-                <div class="video">
+                <div class="video js-slb-gallery">
                     <div class="video__cell">
                         <div class="video__title">
-                            Отзывы о компании "Домашний Уют"
+                            Отзывы о компании "ДОМАШНИЙ УЮТ"
                         </div>
                     </div>
                     <div class="video__cell">
@@ -284,9 +284,9 @@ if ($projects) {
                                 <div class="video-item js-video-first"><?php echo $review['media'] ?></div>
                                 <?php endif; ?>
                                 <?php if ($review['type'] == 'image'): ?>
-                                <div class="image-item zoom-container">
+                                <a href="<?php echo $review['image']['url'] ?>"" class="image-item zoom-container">
                                     <img src="<?php echo $review['image']['sizes']['medium'] ?>" alt="">
-                                </div>
+                                </a>
                                 <?php endif; ?>
                             </div>
                             <?php endforeach; ?>
