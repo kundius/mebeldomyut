@@ -19,9 +19,14 @@
 	&:first-child {
 		margin-top: 0;
 	}
+	img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
 	iframe {
 		display: block;
-		max-width: 100%;
+		width: 100%;
 		height: auto;
 	}
 }

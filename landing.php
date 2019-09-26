@@ -281,10 +281,10 @@ if ($projects) {
                             <?php foreach($reviews as $review): ?>
                             <div class="video-list__item">
                                 <?php if ($review['type'] == 'media'): ?>
-                                <div class="video-item js-video-first"><?php echo $review['media'] ?></div>
+                                <div class="video-item"><?php echo $review['media'] ?></div>
                                 <?php endif; ?>
                                 <?php if ($review['type'] == 'image'): ?>
-                                <a href="<?php echo $review['image']['sizes']['large'] ?>"" class="image-item zoom-container">
+                                <a href="<?php echo $review['image']['sizes']['large'] ?>"" class="video-item zoom-container">
                                     <img src="<?php echo $review['image']['sizes']['medium'] ?>" alt="">
                                 </a>
                                 <?php endif; ?>
