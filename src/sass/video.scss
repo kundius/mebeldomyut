@@ -15,10 +15,7 @@
 }
 
 .video-item {
-	margin-top: 50px;
-	&:first-child {
-		margin-top: 0;
-	}
+	display: block;
 	img {
 		display: block;
 		width: 100%;
@@ -59,10 +56,6 @@
 	}
 
 	.video-item {
-		margin-top: 20px;
-		&:first-child {
-			margin-top: 0;
-		}
 		iframe {
 			height: 152px;
 		}
