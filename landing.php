@@ -284,7 +284,7 @@ if ($projects) {
                                 <div class="video-item"><?php echo $review['media'] ?></div>
                                 <?php endif; ?>
                                 <?php if ($review['type'] == 'image'): ?>
-                                <a href="<?php echo $review['image']['sizes']['large'] ?>"" class="video-item zoom-container">
+                                <a href="<?php echo $review['image']['sizes']['large'] ?>"" class="video-item">
                                     <img src="<?php echo $review['image']['sizes']['medium'] ?>" alt="">
                                 </a>
                                 <?php endif; ?>
