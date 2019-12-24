@@ -14,10 +14,6 @@ module.exports = {
         PATHS.source + 'js/main.js',
         PATHS.source + 'sass/main.scss',
         PATHS.source + 'img/sprite.svg',
-      ],
-      garland: [
-        PATHS.source + 'js/garland.js',
-        PATHS.source + 'sass/garland.sass'
       ]
     },
 

@@ -1,6 +1,3 @@
-<script src="<?php echo get_template_directory_uri() . '/dist/garland.js' ?>" type="text/javascript"></script>
-<link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/dist/garland.css' ?>">
-
 <div class="b-page_newyear">
 	<div class="b-page__content">
 	<i class="b-head-decor">
@@ -126,3 +123,6 @@
 	</i>
 	</div>
 </div>
+
+<script src="<?php echo get_template_directory_uri() . '/garland/script.js' ?>" type="text/javascript"></script>
+<link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/garland/style.css' ?>">
