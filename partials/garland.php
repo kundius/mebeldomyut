@@ -1,5 +1,5 @@
 <script src="<?php echo get_template_directory_uri() . '/dist/garland.js' ?>" type="text/javascript"></script>
-<link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/dist/garland.js' ?>">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri() . '/dist/garland.css' ?>">
 
 <div class="b-page_newyear">
 	<div class="b-page__content">
