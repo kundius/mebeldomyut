@@ -3,7 +3,6 @@ $categories = get_terms('product_category', array(
     'hide_empty' => false
 ));
 ?>
-<?php get_template_part('partials/garland') ?>
 <div class="mobile-header">
     <div class="mobile-header__menu js-toggle-menu">
         <?php icon('menu', 1.2) ?>
