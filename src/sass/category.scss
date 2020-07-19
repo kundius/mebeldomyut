@@ -1,5 +1,5 @@
 .category {
-	background: linear-gradient(to bottom, #6c6c6a 0, #6c6c6a 552px, transparent 552px);
+	// background: linear-gradient(to bottom, #6c6c6a 0, #6c6c6a 552px, transparent 552px);
 	position: relative;
 	padding-top: 20px;
 	padding-bottom: 105px;
@@ -85,9 +85,9 @@
     min-height: 100%;
     opacity: .2;
     transition: opacity .3s ease;
-    .main-action:hover & {
-        opacity: 0.1;
-    }
+    // .main-action:hover & {
+    //     opacity: 0.1;
+    // }
 }
 
 .main-action__sticker {
@@ -136,9 +136,9 @@
 	text-align: center;
 	opacity: 1;
     transition: opacity .3s ease;
-    .main-action:hover & {
-        opacity: 1;
-    }
+    // .main-action:hover & {
+    //     opacity: 1;
+    // }
 }
 
 .main-action__title {
