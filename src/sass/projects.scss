@@ -80,6 +80,16 @@
     letter-spacing: 0.2px;
     max-width: 350px;
     text-transform: none;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        left: -20px;
+        top: -20px;
+        bottom: -20px;
+        right: -20px;
+        background-color: #961b11;
+    }
 }
 
 .projects-selection__text {
