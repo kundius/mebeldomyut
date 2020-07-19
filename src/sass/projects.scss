@@ -86,8 +86,6 @@
         background-color: #961b11;
         z-index: -1;
         border-radius: 100px;
-        transition: .3s ease;
-        transition-property: left, right, top, bottom;
     }
     &::after {
         content: "";
@@ -100,12 +98,6 @@
         z-index: -1;
         border-radius: 100px;
         box-shadow: 0 0 3px rgba(0,0,0,.6);
-    }
-    &:hover::before {
-        left: -29px;
-        top: -29px;
-        bottom: -29px;
-        right: -29px;
     }
 }
 
