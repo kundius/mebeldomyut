@@ -74,17 +74,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.projects-selection__title {
-    color: #000;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 1.5;
-    letter-spacing: 0.2px;
-    text-transform: none;
     position: relative;
-    margin: 0;
     &::before {
         content: "";
         position: absolute;
@@ -97,6 +87,16 @@
         border: 10px solid #961b11;
         border-radius: 80px;
     }
+}
+
+.projects-selection__title {
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    text-transform: none;
+    margin: 0;
 }
 
 .projects-selection__text {
