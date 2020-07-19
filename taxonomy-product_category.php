@@ -18,7 +18,9 @@ $action = array_shift($actions);
                 <div class="breadcrumbs breadcrumbs_offset">
                     <?php bcn_display() ?>
                 </div>
+            </div>
 
+            <div class="section-category">
                 <div class="category">
                     <h1 class="category__title"><?php single_cat_title() ?></h1>
 
@@ -63,7 +65,7 @@ $action = array_shift($actions);
             <div class="section-white">
                 <div class="container">
                     <?php if (have_posts()) : ?>
-                        <div class="products grid" data-match-height='<?php echo json_encode([".products-item__title", ".products-item__desc"]) ?>'>
+                        <div class="products grid" data-match-height='<?php echo json_encode([".products-item__title"]) ?>'>
                             <?php while (have_posts()) : the_post(); ?>
                             <div class="products-item">
                                 <a href="<?php the_permalink() ?>" class="products-item__image">

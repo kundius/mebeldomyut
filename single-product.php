@@ -150,7 +150,7 @@
             <div class="section-related">
                 <div class="container">
                     <h2 class="section-related__title">Вам может быть интересно:</h2>
-                    <div class="products grid" data-match-height='<?php echo json_encode([".products-item__title", ".products-item__desc"]) ?>'>
+                    <div class="products grid" data-match-height='<?php echo json_encode([".products-item__title"]) ?>'>
                         <?php while($also_query->have_posts()): $also_query->the_post(); ?>
                         <div class="products-item">
                             <a href="<?php the_permalink() ?>" class="products-item__image zoom-container">

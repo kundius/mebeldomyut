@@ -18,7 +18,7 @@
             <div class="section-white">
                 <div class="container">
                     <?php if (have_posts()) : ?>
-                        <div class="products grid" data-match-height='<?php echo json_encode([".products-item__title", ".products-item__desc"]) ?>'>
+                        <div class="products grid" data-match-height='<?php echo json_encode([".products-item__title"]) ?>'>
                             <?php while (have_posts()) : the_post(); ?>
                             <div class="products-item">
                                 <a href="<?php the_permalink() ?>" class="products-item__image zoom-container">
