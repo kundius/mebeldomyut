@@ -21,44 +21,46 @@ $action = array_shift($actions);
             </div>
 
             <div class="section-category">
-                <div class="category">
-                    <h1 class="category__title"><?php single_cat_title() ?></h1>
+                <div class="container">
+                    <div class="category">
+                        <h1 class="category__title"><?php single_cat_title() ?></h1>
 
-                    <?php if ($action || count($actions) > 0 || $content): ?>
-                    <div class="category__grid grid">
-                        <div class="category__left">
-                            <?php if ($action): ?>
-                            <div class="main-action">
-                                <img class="main-action__image" src="<?php echo $action['image']['url'] ?>" alt="">
-                                <div class="main-action__sticker">Акция</div>
-                                <div class="main-action__price">
-                                    <?php echo $action['price']['before'] ?>
-                                    <span><?php echo number_format($action['price']['value'], 0, ',', ' ') ?></span>
-                                    <?php echo $action['price']['after'] ?>
+                        <?php if ($action || count($actions) > 0 || $content): ?>
+                        <div class="category__grid grid">
+                            <div class="category__left">
+                                <?php if ($action): ?>
+                                <div class="main-action">
+                                    <img class="main-action__image" src="<?php echo $action['image']['url'] ?>" alt="">
+                                    <div class="main-action__sticker">Акция</div>
+                                    <div class="main-action__price">
+                                        <?php echo $action['price']['before'] ?>
+                                        <span><?php echo number_format($action['price']['value'], 0, ',', ' ') ?></span>
+                                        <?php echo $action['price']['after'] ?>
+                                    </div>
+                                    <div class="main-action__info">
+                                        <div class="main-action__title"><?php echo $action['title'] ?></div>
+                                        <div class="main-action__desc"><?php echo $action['desc'] ?></div>
+                                    </div>
                                 </div>
-                                <div class="main-action__info">
-                                    <div class="main-action__title"><?php echo $action['title'] ?></div>
-                                    <div class="main-action__desc"><?php echo $action['desc'] ?></div>
-                                </div>
+                                <?php endif; ?>
                             </div>
-                            <?php endif; ?>
-                        </div>
 
-                        <div class="category__right">
-                            <div class="category__content"><?php echo $content ?></div>
-                            <?php if (count($actions) > 0): ?>
-                            <div class="category-actions grid">
-                                <?php foreach ($actions as $action): ?>
-                                <div class="category-action">
-                                    <img class="category-action__image" src="<?php echo $action['image']['url'] ?>" alt="">
-                                    <div class="category-action__title"><?php echo $action['title'] ?></div>
+                            <div class="category__right">
+                                <div class="category__content"><?php echo $content ?></div>
+                                <?php if (count($actions) > 0): ?>
+                                <div class="category-actions grid">
+                                    <?php foreach ($actions as $action): ?>
+                                    <div class="category-action">
+                                        <img class="category-action__image" src="<?php echo $action['image']['url'] ?>" alt="">
+                                        <div class="category-action__title"><?php echo $action['title'] ?></div>
+                                    </div>
+                                    <?php endforeach; ?>
                                 </div>
-                                <?php endforeach; ?>
+                                <?php endif; ?>
                             </div>
-                            <?php endif; ?>
                         </div>
+                        <?php endif; ?>
                     </div>
-                    <?php endif; ?>
                 </div>
             </div>
 
