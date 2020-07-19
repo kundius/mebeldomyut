@@ -65,9 +65,18 @@ if ($projects) {
                     </div>
 
                     <div class="projects-selection">
-                        <h2 class="projects-selection__title">
-                            Ответьте на 5 вопросов, подобрав себе мебель, и&nbsp;получите скидку +&nbsp;бесплатный эскиз
-                        </h2>
+                        <div class="projects-selection__headline">
+                            <h2 class="projects-selection__title">
+                                Ответьте на 5 вопросов, подобрав себе мебель, и&nbsp;получите скидку +&nbsp;бесплатный эскиз
+                            </h2>
+                            <a href="<?php the_permalink(477) ?>" class="projects-more circle-details circle-details_small">
+                                <span class="circle-details__inner">
+                                    <span>Получить</span>
+                                    <span style="margin-right: -8px">скидку</span>
+                                    <span class="circle-details__arrow"></span>
+                                </span>
+                            </a>
+                        </div>
                         <div class="projects-selection__text">
                             Пройдя тест вы получите:
                             <ul>
@@ -77,13 +86,6 @@ if ($projects) {
                             </ul>
 							Подробности акции по номеру +7 (965) 631-90-50
                         </div>
-                        <a href="<?php the_permalink(477) ?>" class="projects-more circle-details circle-details_small">
-                            <span class="circle-details__inner">
-                                <span>Получить</span>
-                                <span style="margin-right: -8px">скидку</span>
-                                <span class="circle-details__arrow"></span>
-                            </span>
-                        </a>
                     </div>
                 </div>
                 <?php endif; ?>
