@@ -65,7 +65,7 @@ if ($projects) {
                     </div>
 
                     <div class="projects-selection">
-                        <a href="<?php the_permalink(477) ?>" class="projects-selection__headline">
+                        <a href="<?php the_permalink(477) ?>" class="projects-selection__headline js-open-modal" data-target="#quiz">
                             <span class="projects-selection__title">
                                 Ответьте на 5 вопросов, подобрав себе мебель, и&nbsp;получите скидку +&nbsp;бесплатный эскиз
                             </span>
@@ -86,6 +86,10 @@ if ($projects) {
                             </ul>
 							Подробности акции по номеру +7 (965) 631-90-50
                         </div>
+                    </div>
+
+                    <div style="display: none">
+                        <?php get_template_part('partials/quiz'); ?>
                     </div>
                 </div>
                 <?php endif; ?>
