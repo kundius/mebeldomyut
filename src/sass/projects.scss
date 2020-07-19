@@ -129,15 +129,15 @@
     }
 }
 
-.projects-more.circle-details {
-    &:hover {
+.projects-selection__headline {
+    &:hover .circle-details {
         color: #ffffff;
     }
-    &:hover::before {
+    &:hover .circle-details::before {
         transform: translate(-50%, -50%) scale(1.1);
         background-color: #a40606;
     }
-    &:hover .circle-details__arrow {
+    &:hover .circle-details .circle-details__arrow {
         flex-grow: 1;
     }
 }
