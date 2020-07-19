@@ -92,7 +92,7 @@ $action = array_shift($actions);
                 </div>
 				
 				<?php if (!empty($content_promotion)) : ?>
-				<div class="section-content_promotion" style="background: #e0e0e0;margin: 0 0 150px;padding: 100px 0;color: #000;">
+				<div class="section-section-promotion">
 					<div class="container container_small">
 						<?php echo $content_promotion ?>
 					</div>
