@@ -299,6 +299,8 @@ hr {
 	letter-spacing: 0.9px;
 	width: 134px;
 	height: 134px;
+	min-width: 134px;
+	min-height: 134px;
 	box-sizing: border-box;
 	transition: color .3s ease;
 	position: relative;
@@ -311,6 +313,8 @@ hr {
 	@media (max-width: $breakpoint-small-max) {
 		width: 84px;
 		height: 84px;
+		min-width: 84px;
+		min-height: 84px;
 		font-size: 11px;
 	}
 }
@@ -318,9 +322,13 @@ hr {
 .circle-details_small {
 	width: 117px;
 	height: 117px;
+	min-width: 117px;
+	min-height: 117px;
 	@media (max-width: $breakpoint-small-max) {
 		width: 84px;
 		height: 84px;
+		min-width: 84px;
+		min-height: 84px;
 		font-size: 10px;
 	}
 }
