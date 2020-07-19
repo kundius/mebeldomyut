@@ -79,10 +79,10 @@
     &::before {
         content: "";
         position: absolute;
-        left: -34px;
-        top: -34px;
-        bottom: -34px;
-        right: -34px;
+        left: -24px;
+        top: -24px;
+        bottom: -24px;
+        right: -24px;
         background-color: #961b11;
         z-index: -1;
         border-radius: 100px;
@@ -92,20 +92,20 @@
     &::after {
         content: "";
         position: absolute;
-        left: -24px;
-        top: -24px;
-        bottom: -24px;
-        right: -24px;
+        left: -14px;
+        top: -14px;
+        bottom: -14px;
+        right: -14px;
         background-color: #ecc12d;
         z-index: -1;
         border-radius: 100px;
         box-shadow: 0 0 3px rgba(0,0,0,.6);
     }
     &:hover::before {
-        left: -39px;
-        top: -39px;
-        bottom: -39px;
-        right: -39px;
+        left: -29px;
+        top: -29px;
+        bottom: -29px;
+        right: -29px;
     }
 }
 
