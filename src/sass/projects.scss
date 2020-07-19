@@ -195,11 +195,6 @@
         lost-column: 1/2 2 16px;
     }
 
-    .projects-more {
-        right: 11px;
-        top: 32px;
-    }
-
     .projects-controls {
         margin: 12px 26px 0;
     }
@@ -214,16 +209,12 @@
         float: none !important;
     }
 
+    .projects-selection__headline {
+        margin: 0 28px;
+    }
+
     .projects-selection__title {
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.26), inset 1px 1px 0 rgba(255, 255, 255, 0.39);
-        background-color: #d0d0d0;
-        color: #961b11;
-        font-size: 14px;
-        line-height: 18px;
-        letter-spacing: 0;
-        padding: 31px 115px 26px 24px;
-        text-transform: uppercase;
-        max-width: initial;
+        font-size: 12px;
     }
 
     .projects-selection__text {
@@ -233,7 +224,6 @@
         font-size: 12px;
         line-height: 1.5;
         letter-spacing: 0.6px;
-        margin-top: 0;
         ul {
             li {
                 padding-left: 25px;
