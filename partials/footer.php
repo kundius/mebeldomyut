@@ -156,4 +156,8 @@
     </div>
 </div>
 
+<div style="display: none">
+    <?php get_template_part('partials/quiz'); ?>
+</div>
+
 <?php wp_footer() ?>

@@ -110,12 +110,12 @@
 				</div>
 			</div>
 			<div class="quiz-catalog quiz-catalog-first">
-				<div class="quiz-catalog__text">Каталог мебели <span>2018</span></div>
+				<div class="quiz-catalog__text">Каталог мебели <span><?php echo (date('Y') - 1) ?></span></div>
 				<div class="quiz-catalog__image"></div>
 				<div class="quiz-catalog__lock"></div>
 			</div>
 			<div class="quiz-catalog quiz-catalog-second">
-				<div class="quiz-catalog__text">Каталог мебели <span>2019 </span></div>
+				<div class="quiz-catalog__text">Каталог мебели <span><?php echo date('Y') ?></span></div>
 				<div class="quiz-catalog__image"></div>
 				<div class="quiz-catalog__lock"></div>
 			</div>
@@ -182,12 +182,12 @@
 				</div>
 			</div>
 			<div class="quiz-catalog quiz-catalog_unlocked">
-				<div class="quiz-catalog__text">Каталог мебели <span>2018</span></div>
+				<div class="quiz-catalog__text">Каталог мебели <span><?php echo (date('Y') - 1) ?></span></div>
 				<div class="quiz-catalog__image"></div>
 				<div class="quiz-catalog__lock"></div>
 			</div>
 			<div class="quiz-catalog quiz-catalog_unlocked">
-				<div class="quiz-catalog__text">Каталог мебели <span>2019 </span></div>
+				<div class="quiz-catalog__text">Каталог мебели <span><?php echo date('Y') ?></span></div>
 				<div class="quiz-catalog__image"></div>
 				<div class="quiz-catalog__lock"></div>
 			</div>

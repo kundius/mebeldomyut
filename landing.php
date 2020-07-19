@@ -87,10 +87,6 @@ if ($projects) {
 							Подробности акции по номеру +7 (965) 631-90-50
                         </div>
                     </div>
-
-                    <div style="display: none">
-                        <?php get_template_part('partials/quiz'); ?>
-                    </div>
                 </div>
                 <?php endif; ?>
 
