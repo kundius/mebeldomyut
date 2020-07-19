@@ -66,20 +66,21 @@ if ($projects) {
 
                     <div class="projects-selection">
                         <h2 class="projects-selection__title">
-                            Подберите себе мебель под заказ и узнайте её стоимость, ответив на 5 простых вопросов
+                            Ответьте на 5 вопросов, подобрав себе мебель, и&nbsp;получите скидку +&nbsp;бесплатный эскиз
                         </h2>
                         <div class="projects-selection__text">
-                            По его завершению вы получите:
+                            Пройдя тест вы получите:
                             <ul>
                                 <li>Расчёт стоимости проекта по вашим параметрам</li>
-                                <li>Каталог 2018 и 2019 годов</li>
-                                <li>30% скидку до конца месяца</li>
+                                <li>Каталог 2019 и 2020 годов</li>
+                                <li>30% скидку и бесплатный эскиз</li>
                             </ul>
+							Подробности акции по номеру +7 (965) 631-90-50
                         </div>
                         <a href="<?php the_permalink(477) ?>" class="projects-more circle-details circle-details_small">
                             <span class="circle-details__inner">
-                                <span>Подобрать</span>
-                                <span>мебель</span>
+                                <span>Получить</span>
+                                <span style="margin-right: -8px">скидку</span>
                                 <span class="circle-details__arrow"></span>
                             </span>
                         </a>
