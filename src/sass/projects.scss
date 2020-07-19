@@ -75,6 +75,8 @@
     align-items: center;
     justify-content: space-between;
     position: relative;
+    display: block;
+    text-decoration: none;
     &::before {
         content: "";
         position: absolute;
@@ -94,9 +96,9 @@
     font-size: 22px;
     font-weight: 700;
     line-height: 1.5;
-    letter-spacing: 0.2px;
+    letter-spacing: -.4px;
     text-transform: none;
-    margin: 0;
+    margin: 0 15px;
 }
 
 .projects-selection__text {
@@ -129,6 +131,16 @@
 }
 
 .projects-more.circle-details {
+    &:hover {
+        color: #ffffff;
+    }
+    &:hover::before {
+        transform: translate(-50%, -50%) scale(1.1);
+        background-color: #a40606;
+    }
+    &:hover .circle-details__arrow {
+        flex-grow: 1;
+    }
 }
 
 .projects-controls {
