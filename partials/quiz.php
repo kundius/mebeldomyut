@@ -1,4 +1,4 @@
-<div id="quiz" class="quiz" data-element-class="slbQuiz" data-furniture='<?php echo json_encode(get_field('furniture')) ?>'>
+<div id="quiz" class="quiz" data-element-class="slbQuiz" data-furniture='<?php echo json_encode(get_field('furniture', 477)) ?>'>
 	<div class="quiz__steps">
 		<div class="quiz__left">
 			<div class="quiz__title">
