@@ -3,26 +3,26 @@
 	position: relative;
 	padding-top: 20px;
 	padding-bottom: 105px;
-	&::before {
-		content: '';
-		position: absolute;
-		top: 0;
-		right: 100%;
-		margin-right: 56px;
-		height: 552px;
-		width: 9999px;
-		background-color: #626257;
-	}
-	&::after {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 100%;
-		margin-left: 56px;
-		height: 552px;
-		width: 9999px;
-		background-color: #626257;
-	}
+	// &::before {
+	// 	content: '';
+	// 	position: absolute;
+	// 	top: 0;
+	// 	right: 100%;
+	// 	margin-right: 56px;
+	// 	height: 552px;
+	// 	width: 9999px;
+	// 	background-color: #626257;
+	// }
+	// &::after {
+	// 	content: '';
+	// 	position: absolute;
+	// 	top: 0;
+	// 	left: 100%;
+	// 	margin-left: 56px;
+	// 	height: 552px;
+	// 	width: 9999px;
+	// 	background-color: #626257;
+	// }
 }
 
 .category__title {
