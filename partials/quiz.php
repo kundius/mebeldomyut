@@ -178,7 +178,7 @@
 					Cкидка:
 				</div>
 				<div class="quiz-discount__count">
-					10%
+					20%
 				</div>
 			</div>
 			<div class="quiz-catalog quiz-catalog_unlocked">
