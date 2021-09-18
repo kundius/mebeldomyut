@@ -323,35 +323,7 @@ if ($projects) {
                         <div class="consultation__desc">
                             Получите бесплатную консультацию эксперта о правильном выборе фасада и комплектующих
                         </div>
-                        <form action="/wp-json/contact-form-7/v1/contact-forms/7/feedback" class="consultation__form">
-                            <div class="consultation__grid">
-                                <div class="consultation__cell">
-                                    <label class="form-input">
-                                        <span class="form-input__label">Ваше имя</span>
-                                        <input type="text" class="form-input__value" name="your-name">
-                                    </label>
-                                </div>
-                                <div class="consultation__cell">
-                                    <label class="form-input">
-                                        <span class="form-input__label">Ваш телефон</span>
-                                        <span class="form-input__mask">+ 7 (___) ___-__-__</span>
-                                        <input type="text" class="form-input__value" data-imask="+{7} (000) 000-00-00" name="your-phone">
-                                    </label>
-                                </div>
-                                <div class="consultation__cell">
-                                    <button class="form-submit">
-                                        <span class="form-submit__inner">
-                                            <span>Получить</span>
-                                            <span class="form-submit__arrow"></span>
-                                            <span>консультацию<span>
-                                        </span>
-                                    </button>
-                                </div>
-                            </div>
-                            <label class="consultation__rights">
-                                <input type="checkbox" class="form-checkbox form-checkbox_light" name="rules" value="1"> Прочитал(-а) <a href="<?php the_permalink(3) ?>" target="_blank">Пользовательское соглашение</a> и соглашаюсь с <a href="<?php the_permalink(14) ?>" target="_blank">Политикой обработки персональных данных</a>
-                            </label>
-                        </form>
+			<?php echo do_shortcode('[contact-form-7 id="7"]'); ?>
                     </div>
                 </div>
 
