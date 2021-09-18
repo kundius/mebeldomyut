@@ -143,7 +143,7 @@
 					или оставьте контактные данные для связи: 
 				</div>
 				<div class="quiz-finish__form">
-					<form action="/wp-json/contact-form-7/v1/contact-forms/518/feedback" class="quiz-form js-form">
+					<form action="/wp-json/contact-form-7/v1/contact-forms/518/feedback" class="quiz-form">
 						<input type="hidden" name="your-options" value="" />
 						<div class="grid">
 							<div class="quiz-form__cell">
