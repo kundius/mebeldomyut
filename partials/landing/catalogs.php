@@ -1,7 +1,7 @@
 <div class="catalogs">
     <div class="catalogs__title">Хотите посмотреть каталоги?</div>
     <div class="catalogs__desc">Введите Вашу электронную почту, и мы пришлем Вам каталоги с мебелью</div>
-    <form action="/wp-json/contact-form-7/v1/contact-forms/8/feedback" class="catalogs__form js-form">
+    <form action="/wp-json/contact-form-7/v1/contact-forms/8/feedback" class="catalogs__form">
         <div class="catalogs__grid">
             <div class="catalogs__cell">
                 <label class="form-input">
