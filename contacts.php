@@ -55,7 +55,7 @@ Template Name: Контакты
                     <div class="feedback__title">Обратная связь</div>
                     <div class="feedback__desc">Вы можете связаться с нами с помощью формы обратной связи:</div>
                     <div class="feedback__form">
-                        <?php echo do_shortcode('[contact-form-7 id="153" title="Обратная связь"]'); ?>
+                        <?php echo do_shortcode('[contact-form-7 id="153"]'); ?>
                     </div>
                 </div>
             </div>
