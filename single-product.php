@@ -82,7 +82,7 @@
             <div class="section-white">
                 <div class="container">
                     <div class="departure-order">
-                        <form action="/wp-json/contact-form-7/v1/contact-forms/6/feedback" class="departure-order__form js-form">
+                        <form action="/wp-json/contact-form-7/v1/contact-forms/6/feedback" class="departure-order__form">
                             <div class="departure-order__title">
                                 Выезд<span>*</span> <svg class="js-svg-text"><text x="50%" y="50%">замерщика</text></svg> на&nbsp;дом
                             </div>
