@@ -55,39 +55,7 @@ Template Name: Контакты
                     <div class="feedback__title">Обратная связь</div>
                     <div class="feedback__desc">Вы можете связаться с нами с помощью формы обратной связи:</div>
                     <div class="feedback__form">
-                        <form action="/wp-json/contact-form-7/v1/contact-forms/153/feedback" class="feedback-form">
-                            <div class="feedback-form__control">
-                                <label class="form-input form-input_small">
-                                    <span class="form-input__label">Ваше имя</span>
-                                    <input type="text" class="form-input__value" name="your-name">
-                                </label>
-                            </div>
-                            <div class="feedback-form__control">
-                                <label class="form-input form-input_small">
-                                    <span class="form-input__label">Ваш mail</span>
-                                    <span class="form-input__mask">___________@_____</span>
-                                    <input type="text" class="form-input__value" name="your-email">
-                                </label>
-                            </div>
-                            <div class="feedback-form__textarea">
-                                <label class="form-input">
-                                    <span class="form-input__label">Сообщение</span>
-                                    <textarea class="form-input__value" name="your-message"></textarea>
-                                </label>
-                            </div>
-                            <div class="feedback-form__submit">
-                                <label class="feedback-form__rights">
-                                    <input type="checkbox" class="form-checkbox form-checkbox_lighter" name="rules" value="1"> Прочитал(-а) <a href="<?php the_permalink(3) ?>" target="_blank">Пользовательское соглашение</a> и соглашаюсь с <a href="<?php the_permalink(14) ?>" target="_blank">Политикой обработки персональных данных</a>
-                                </label>
-
-                                <button class="form-submit form-submit_red">
-                                    <span class="form-submit__inner">
-                                        <span>Отправить</span>
-                                        <span class="form-submit__arrow"></span>
-                                    </span>
-                                </button>
-                            </div>
-                        </form>
+                        <?php do_shortcode('[contact-form-7 id="153" title="Обратная связь"]'); ?>
                     </div>
                 </div>
             </div>
