@@ -38,7 +38,7 @@
 
 <div style="display: none">
     <div id="callback" class="callback"> <!-- data-element-class="slbContentEl" -->
-        <form action="/wp-json/contact-form-7/v1/contact-forms/7/feedback" class="callback__form js-form">
+        <form action="/wp-json/contact-form-7/v1/contact-forms/7/feedback" class="callback__form">
             <div class="callback__title">
                 Заказать звонок
             </div>
