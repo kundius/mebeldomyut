@@ -143,29 +143,7 @@
 					или оставьте контактные данные для связи: 
 				</div>
 				<div class="quiz-finish__form">
-					<form action="/wp-json/contact-form-7/v1/contact-forms/518/feedback" class="quiz-form">
-						<input type="hidden" name="your-options" value="" />
-						<div class="grid">
-							<div class="quiz-form__cell">
-								<label class="form-input">
-									<span class="form-input__label">Ваш телефон</span>
-									<span class="form-input__mask">+ 7 (___) ___-__-__</span>
-									<input type="text" class="form-input__value" data-imask="+{7} (000) 000-00-00" name="your-phone">
-								</label>
-							</div>
-							<div class="quiz-form__cell">
-								<button class="form-submit form-submit_red">
-									<span class="form-submit__inner">
-										<span>получить&nbsp;расчет,<br>скидку&nbsp;и&nbsp;каталоги</span>
-										<span class="form-submit__arrow"></span>
-									</span>
-								</button>
-							</div>
-						</div>
-						<label class="quiz-form__rights">
-							<input type="checkbox" class="form-checkbox form-checkbox_light" name="rules" value="1"> Прочитал(-а) <a href="/privacy-policy" target="_blank">Пользовательское соглашение</a> и соглашаюсь с <a href="/polzovatelskoe-soglashenie" target="_blank">Политикой обработки персональных данных</a>
-						</label>
-					</form>
+					<?php echo do_shortcode('[contact-form-7 id="518"]'); ?>
 				</div>
 			</div>
 		</div>
