@@ -104,7 +104,7 @@ if ($projects) {
                 </div>
 
                 <div class="departure-order js-departure-order">
-                    <form action="/wp-json/contact-form-7/v1/contact-forms/6/feedback" class="departure-order__form js-form">
+                    <form action="/wp-json/contact-form-7/v1/contact-forms/6/feedback" class="departure-order__form">
                         <div class="departure-order__grid">
                             <div class="departure-order__cell">
                                 <label class="form-input">
@@ -323,7 +323,7 @@ if ($projects) {
                         <div class="consultation__desc">
                             Получите бесплатную консультацию эксперта о правильном выборе фасада и комплектующих
                         </div>
-                        <form action="/wp-json/contact-form-7/v1/contact-forms/7/feedback" class="consultation__form js-form">
+                        <form action="/wp-json/contact-form-7/v1/contact-forms/7/feedback" class="consultation__form">
                             <div class="consultation__grid">
                                 <div class="consultation__cell">
                                     <label class="form-input">
