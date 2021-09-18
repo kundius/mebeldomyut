@@ -55,7 +55,7 @@ Template Name: Контакты
                     <div class="feedback__title">Обратная связь</div>
                     <div class="feedback__desc">Вы можете связаться с нами с помощью формы обратной связи:</div>
                     <div class="feedback__form">
-                        <form action="/wp-json/contact-form-7/v1/contact-forms/153/feedback" class="feedback-form js-form">
+                        <form action="/wp-json/contact-form-7/v1/contact-forms/153/feedback" class="feedback-form">
                             <div class="feedback-form__control">
                                 <label class="form-input form-input_small">
                                     <span class="form-input__label">Ваше имя</span>
