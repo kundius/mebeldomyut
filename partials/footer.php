@@ -38,121 +38,12 @@
 
 <div style="display: none">
     <div id="callback" class="callback"> <!-- data-element-class="slbContentEl" -->
-        <form action="/wp-json/contact-form-7/v1/contact-forms/7/feedback" class="callback__form">
-            <div class="callback__title">
-                Заказать звонок
-            </div>
-            <div class="callback__grid">
-                <div class="callback__cell">
-                    <label class="form-input form-input_small">
-                        <span class="form-input__label">Ваше имя</span>
-                        <span class="form-input__placeholder">Как вы хотите, чтоб к вам обращались</span>
-                        <input type="text" class="form-input__value" name="your-name">
-                    </label>
-                </div>
-                <div class="callback__cell">
-                    <label class="form-input form-input_small">
-                        <span class="form-input__label">Ваш телефон</span>
-                        <span class="form-input__mask">+ 7 (___) ___-__-__</span>
-                        <input type="text" class="form-input__value" data-imask="+{7} (000) 000-00-00" name="your-phone">
-                    </label>
-                </div>
-                <div class="callback__cell">
-                    <button class="form-submit form-submit_small">
-                        <span class="form-submit__inner">
-                            <span>Заказать<br>звонок</span>
-                            <span class="form-submit__arrow"></span>
-                        </span>
-                    </button>
-                </div>
-            </div>
-            <label class="callback__rights">
-                <input type="checkbox" class="form-checkbox form-checkbox_light" name="rules" value="1"> Прочитал(-а) <a href="<?php the_permalink(3) ?>" target="_blank">Пользовательское соглашение</a> и соглашаюсь с <a href="<?php the_permalink(14) ?>" target="_blank">Политикой обработки персональных данных</a>
-            </label>
-        </form>
+        <?php echo do_shortcode('[contact-form-7 id="7"]') ?>
     </div>
 
     <div id="calculate" class="calculate"> <!-- data-element-class="slbContentEl" -->
-        <form action="/wp-json/contact-form-7/v1/contact-forms/1122/feedback" class="callback__form js-form">
-            <div class="calculate__title">
-                Рассчитать стоимость
-            </div>
-            <div class="calculate__grid">
-                <div class="calculate__cell">
-                    <label class="form-input form-input_small">
-                        <span class="form-input__label">Гарнитур/шкаф</span>
-                        <input type="text" class="form-input__value" name="closet">
-                    </label>
-                </div>
-                <div class="calculate__cell">
-                    <label class="form-input form-input_small">
-                        <span class="form-input__label">Высота</span>
-                        <input type="text" class="form-input__value" name="height">
-                    </label>
-                </div>
-                <div class="calculate__cell">
-                    <label class="form-input form-input_small">
-                        <span class="form-input__label">Глубина</span>
-                        <input type="text" class="form-input__value" name="depth">
-                    </label>
-                </div>
-                <div class="calculate__cell">
-                    <label class="form-input form-input_small">
-                        <span class="form-input__label">Метраж гарнитура/шкафа</span>
-                        <input type="text" class="form-input__value" name="footage">
-                    </label>
-                </div>
-                <div class="calculate__cell">
-                    <label class="form-input form-input_small">
-                        <span class="form-input__label">Материал фасада</span>
-                        <input type="text" class="form-input__value" name="material">
-                    </label>
-                </div>
-                <div class="calculate__cell">
-                    <label class="form-input form-input_small">
-                        <span class="form-input__label">Стиль</span>
-                        <input type="text" class="form-input__value" name="style">
-                    </label>
-                </div>
-                <div class="calculate__cell">
-                    <label class="form-input form-input_small">
-                        <span class="form-input__label">Район доставки</span>
-                        <input type="text" class="form-input__value" name="delivery">
-                    </label>
-                </div>
-                <div class="calculate__cell">
-                    <label class="form-input form-input_small">
-                        <span class="form-input__label">Ваш mail</span>
-                        <span class="form-input__mask">___________@_____</span>
-                        <input type="email" class="form-input__value" name="your-email">
-                    </label>
-                </div>
-                <div class="calculate__cell">
-                    <label class="form-input form-input_small">
-                        <span class="form-input__label">Ваше имя</span>
-                        <input type="text" class="form-input__value" name="your-name">
-                    </label>
-                </div>
-                <div class="calculate__cell">
-                    <label class="form-input form-input_small">
-                        <span class="form-input__label">Ваш телефон</span>
-                        <span class="form-input__mask">+ 7 (___) ___-__-__</span>
-                        <input type="text" class="form-input__value" data-imask="+{7} (000) 000-00-00" name="your-phone">
-                    </label>
-                </div>
-            </div>
-            <div class="calculate__submit">
-                <button class="form-submit form-submit_small">
-                    <span class="form-submit__inner">
-                        <span>Заказать<br>звонок</span>
-                        <span class="form-submit__arrow"></span>
-                    </span>
-                </button>
-            </div>
-            <label class="calculate__rights">
-                <input type="checkbox" class="form-checkbox form-checkbox_light" name="rules" value="1"> Прочитал(-а) <a href="<?php the_permalink(3) ?>" target="_blank">Пользовательское соглашение</a> и соглашаюсь с <a href="<?php the_permalink(14) ?>" target="_blank">Политикой обработки персональных данных</a>
-            </label>
-        </form>
+        <?php echo do_shortcode('[contact-form-7 id="1122"]') ?>
+
     </div>
 </div>
 
