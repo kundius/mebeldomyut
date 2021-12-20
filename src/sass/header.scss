@@ -798,22 +798,13 @@
         position: absolute;
         right: auto;
         left: -172px;
-        top: -163px;
+        top: -263px;
         width: 297px;
         height: 600px;
         z-index: 10;
         pointer-events: none;
         background: url('../img/ng-left-top-2-red.png') no-repeat 50% 50%;
         background-size: contain;
-        // .header_fixed & {
-        //     top: -95px;
-        // }
-        // .page_slideshow & {
-        //   top: -210px;
-        // }
-        // .page_slideshow .header_fixed & {
-        //     top: -95px;
-        // }
     }
     
     .mobile-header__new_year_right_top_1 {
@@ -827,14 +818,5 @@
       pointer-events: none;
       background: url('../img/ng-right-top-2-red.png') no-repeat 50% 50%;
       background-size: contain;
-    //   .header_fixed & {
-    //       top: -95px;
-    //   }
-    //   .page_slideshow & {
-    //     top: -210px;
-    //   }
-    //   .page_slideshow .header_fixed & {
-    //       top: -95px;
-    //   }
     }
 }
