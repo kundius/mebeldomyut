@@ -19,7 +19,18 @@ $categories = get_terms('product_category', array(
 <div class="header-placeholder"></div>
 
 <div class="header">
+    <?php if (is_new_year()): ?>
+        <div class="header_new_year_left_top_1"></div>
+        <div class="header_new_year_right_top_1"></div>
+    <?php endif; ?>
+
     <div class="container container_wide">
+        <?php if (is_new_year()): ?>
+        <div class="header_new_year_left_top_2"></div>
+        <div class="header_new_year_right_top_2"></div>
+        <div class="header_new_year_middle_top_1"></div>
+        <?php endif; ?>
+
         <div class="header-wrapper">
             <a href="/" class="header-logo">
                 <span class="header-logo__name">Домашний уют</span>

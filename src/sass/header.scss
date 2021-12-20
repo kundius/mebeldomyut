@@ -654,3 +654,80 @@
         background: linear-gradient(to right, rgba(0,0,0,.5) 0, rgba(0,0,0,0) 100%);
     }
 }
+
+.header_new_year_left_top_1 {
+    position: absolute;
+    left: 0;
+    top: -95px;
+    width: 297px;
+    height: 600px;
+    z-index: 10;
+    pointer-events: none;
+    background: url('../img/ng-left-top-2-orange.png') no-repeat 50% 50%;
+    background-size: contain;
+    @media (max-width: 1576px) {
+      left: auto;
+      right: calc(50vw + 474px);
+    }
+    @media (max-width: $breakpoint-medium-max) {
+      right: auto;
+      left: -156px;
+    }
+    @media (max-width: $breakpoint-small-max) {
+      top: -99px;
+      left: -195px;
+    }
+}
+
+.header_new_year_right_top_1 {
+  position: absolute;
+  right: -88px;
+  top: -95px;
+  width: 529px;
+  height: 600px;
+  z-index: 10;
+  pointer-events: none;
+  background: url('../img/ng-right-top-2-orange.png') no-repeat 50% 50%;
+  background-size: contain;
+  @media (max-width: 2000px) {
+    right: auto;
+    left: calc(50vw + 550px);
+  }
+  @media (max-width: $breakpoint-medium-max) {
+    left: auto;
+    right: -444px;
+  }
+  @media (max-width: $breakpoint-small-max) {
+    top: -99px;
+    right: -495px;
+  }
+}
+
+.header_new_year_left_top_2 {
+  background: url('../img/ng-left-top-1-orange.png') no-repeat 50% 50%;
+  width: 428px;
+  height: 518px;
+  position: absolute;
+  top: 0px;
+  left: -410px;
+}
+
+.header_new_year_right_top_2 {
+  background: url('../img/ng-right-top-1.png') no-repeat;
+  width: 398px;
+  height: 126px;
+  position: absolute;
+  top: 0;
+  right: -390px;
+}
+
+.header_new_year_middle_top_1 {
+  background: url('../img/ng-middle-top-1.png') no-repeat;
+  height: 42px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 133px;
+  transform: translateX(-50%);
+}
+
