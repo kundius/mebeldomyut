@@ -663,7 +663,7 @@
 .header_new_year_left_top_1 {
     position: absolute;
     left: 0;
-    top: -210px;
+    top: -11px;
     width: 297px;
     height: 600px;
     z-index: 10;
@@ -672,6 +672,12 @@
     background-size: contain;
     .header_fixed & {
         top: -95px;
+    }
+    .page_slideshow & {
+      top: -210px;
+      .header_fixed & {
+          top: -95px;
+      }
     }
     @media (max-width: 1576px) {
       left: auto;
@@ -690,7 +696,7 @@
 .header_new_year_right_top_1 {
   position: absolute;
   right: -88px;
-  top: -210px;
+  top: -11px;
   width: 529px;
   height: 600px;
   z-index: 10;
@@ -699,6 +705,12 @@
   background-size: contain;
   .header_fixed & {
       top: -95px;
+  }
+  .page_slideshow & {
+    top: -210px;
+    .header_fixed & {
+        top: -95px;
+    }
   }
   @media (max-width: 2000px) {
     right: auto;
@@ -719,10 +731,16 @@
   width: 428px;
   height: 518px;
   position: absolute;
-  top: -57px;
+  top: -10px;
   left: -410px;
   .header_fixed & {
       top: -10px;
+  }
+  .page_slideshow & {
+    top: -57px;
+    .header_fixed & {
+        top: -10px;
+    }
   }
 }
 
@@ -731,10 +749,16 @@
   width: 398px;
   height: 126px;
   position: absolute;
-  top: -57px;
+  top: -10px;
   right: -390px;
   .header_fixed & {
       top: -10px;
+  }
+  .page_slideshow & {
+    top: -57px;
+    .header_fixed & {
+        top: -10px;
+    }
   }
 }
 
@@ -743,11 +767,17 @@
   height: 42px;
   position: absolute;
   left: 50%;
-  top: -57px;
+  top: -10px;
   width: 133px;
   transform: translateX(-50%);
   .header_fixed & {
       top: -10px;
+  }
+  .page_slideshow & {
+    top: -57px;
+    .header_fixed & {
+        top: -10px;
+    }
   }
 }
 
