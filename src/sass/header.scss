@@ -712,8 +712,11 @@
   width: 428px;
   height: 518px;
   position: absolute;
-  top: -10px;
+  top: -57px;
   left: -410px;
+  .header_fixed & {
+      top: -10px;
+  }
 }
 
 .header_new_year_right_top_2 {
@@ -721,8 +724,11 @@
   width: 398px;
   height: 126px;
   position: absolute;
-  top: -10px;
+  top: -57px;
   right: -390px;
+  .header_fixed & {
+      top: -10px;
+  }
 }
 
 .header_new_year_middle_top_1 {
@@ -730,8 +736,11 @@
   height: 42px;
   position: absolute;
   left: 50%;
-  top: -10px;
+  top: -57px;
   width: 133px;
   transform: translateX(-50%);
+  .header_fixed & {
+      top: -10px;
+  }
 }
 
