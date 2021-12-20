@@ -4,6 +4,11 @@ $categories = get_terms('product_category', array(
 ));
 ?>
 <div class="mobile-header">
+    <?php if (is_new_year()): ?>
+        <div class="header_new_year_left_top_1"></div>
+        <div class="header_new_year_right_top_1"></div>
+    <?php endif; ?>
+
     <div class="mobile-header__menu js-toggle-menu">
         <?php icon('menu', 1.2) ?>
     </div>
