@@ -25,6 +25,7 @@
 
     .header .container {
         position: relative;
+        z-index: 20;
     }
 
     .mobile-header {
@@ -662,13 +663,16 @@
 .header_new_year_left_top_1 {
     position: absolute;
     left: 0;
-    top: -95px;
+    top: -210px;
     width: 297px;
     height: 600px;
     z-index: 10;
     pointer-events: none;
     background: url('../img/ng-left-top-2-red.png') no-repeat 50% 50%;
     background-size: contain;
+    .header_fixed & {
+        top: -95px;
+    }
     @media (max-width: 1576px) {
       left: auto;
       right: calc(50vw + 474px);
@@ -686,13 +690,16 @@
 .header_new_year_right_top_1 {
   position: absolute;
   right: -88px;
-  top: -95px;
+  top: -210px;
   width: 529px;
   height: 600px;
   z-index: 10;
   pointer-events: none;
   background: url('../img/ng-right-top-2-red.png') no-repeat 50% 50%;
   background-size: contain;
+  .header_fixed & {
+      top: -95px;
+  }
   @media (max-width: 2000px) {
     right: auto;
     left: calc(50vw + 550px);
