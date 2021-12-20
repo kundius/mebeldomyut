@@ -23,6 +23,10 @@
         z-index: 1000;
     }
 
+    .header .container {
+        position: relative;
+    }
+
     .mobile-header {
         display: none;
     }
@@ -708,7 +712,7 @@
   width: 428px;
   height: 518px;
   position: absolute;
-  top: 0px;
+  top: -10px;
   left: -410px;
 }
 
@@ -717,7 +721,7 @@
   width: 398px;
   height: 126px;
   position: absolute;
-  top: 0;
+  top: -10px;
   right: -390px;
 }
 
@@ -726,7 +730,7 @@
   height: 42px;
   position: absolute;
   left: 50%;
-  top: 0;
+  top: -10px;
   width: 133px;
   transform: translateX(-50%);
 }
