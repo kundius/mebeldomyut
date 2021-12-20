@@ -797,7 +797,7 @@
     .mobile-header__new_year_left_top_1 {
         position: absolute;
         right: auto;
-        left: -156px;
+        left: -172px;
         top: -163px;
         width: 297px;
         height: 600px;
@@ -805,21 +805,21 @@
         pointer-events: none;
         background: url('../img/ng-left-top-2-red.png') no-repeat 50% 50%;
         background-size: contain;
-        .header_fixed & {
-            top: -95px;
-        }
-        .page_slideshow & {
-          top: -210px;
-        }
-        .page_slideshow .header_fixed & {
-            top: -95px;
-        }
+        // .header_fixed & {
+        //     top: -95px;
+        // }
+        // .page_slideshow & {
+        //   top: -210px;
+        // }
+        // .page_slideshow .header_fixed & {
+        //     top: -95px;
+        // }
     }
     
     .mobile-header__new_year_right_top_1 {
       position: absolute;
       left: auto;
-      right: -444px;
+      right: -422px;
       top: -163px;
       width: 529px;
       height: 600px;
@@ -827,14 +827,14 @@
       pointer-events: none;
       background: url('../img/ng-right-top-2-red.png') no-repeat 50% 50%;
       background-size: contain;
-      .header_fixed & {
-          top: -95px;
-      }
-      .page_slideshow & {
-        top: -210px;
-      }
-      .page_slideshow .header_fixed & {
-          top: -95px;
-      }
+    //   .header_fixed & {
+    //       top: -95px;
+    //   }
+    //   .page_slideshow & {
+    //     top: -210px;
+    //   }
+    //   .page_slideshow .header_fixed & {
+    //       top: -95px;
+    //   }
     }
 }
