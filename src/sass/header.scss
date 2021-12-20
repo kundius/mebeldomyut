@@ -686,9 +686,14 @@
     @media (max-width: $breakpoint-medium-max) {
       right: auto;
       left: -156px;
+      .header_fixed & {
+          top: -108px;
+      }
+      .page_slideshow .header_fixed & {
+          top: -108px;
+      }
     }
     @media (max-width: $breakpoint-small-max) {
-      top: -99px;
       left: -195px;
     }
 }
@@ -719,9 +724,14 @@
   @media (max-width: $breakpoint-medium-max) {
     left: auto;
     right: -444px;
+    .header_fixed & {
+        top: -108px;
+    }
+    .page_slideshow .header_fixed & {
+        top: -108px;
+    }
   }
   @media (max-width: $breakpoint-small-max) {
-    top: -99px;
     right: -495px;
   }
 }
