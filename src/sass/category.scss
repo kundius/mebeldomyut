@@ -91,38 +91,27 @@
 }
 
 .main-action__sticker {
-	width: 258px;
-	height: 257px;
-	background: url('../img/action-sticker.png') no-repeat 50% 50%;
-	background-size: cover;
-	position: absolute;
-	color: #ecc12d;
-	font-size: 36px;
-	font-weight: 800;
-	line-height: 1;
-	text-transform: uppercase;
-    top: -58px;
-    right: 5px;
-    padding: 141px 55px 0 0px;
-    box-sizing: border-box;
-    text-align: center;
+		font-size: 36px;
+		color: rgb(255, 255, 255);
+		font-weight: bold;
+		text-transform: uppercase;
+		line-height: 1;	
+		position: absolute;
+		top: -26px;
+		right: 16px;
+		width: 190px;
+		height: 190px;
+		border-radius: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: #e84011;
 }
 
-.main-action__price {
+.main-action__bonus {
 	position: absolute;
-	color: #ffffff;
-	font-size: 14px;
-	line-height: 1;
-	letter-spacing: 0.35px;
-	position: absolute;
-	right: 5%;
-	bottom: 6%;
-	span {
-		font-size: 24px;
-		font-weight: 700;
-		letter-spacing: 0.6px;
-    	margin: 0 4px;
-	}
+	color: #000;
+    background-color: rgb(236, 193, 45);      
 }
 
 .main-action__info {
@@ -340,23 +329,6 @@
 
 	.category-action__title {
 		margin-top: 10px;
-	}
-
-	.main-action__sticker {
-	    width: 100px;
-	    height: 100px;
-	    padding: 54px 20px 0 0;
-	    font-size: 16px;
-	    top: -23px;
-	}
-
-	.main-action__title {
-		font-size: 14px;
-	}
-
-	.main-action__desc {
-		font-size: 12px;
-		margin-top: 20px;
 	}
 
 	.products-item__title {

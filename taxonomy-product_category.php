@@ -32,11 +32,7 @@ $action = array_shift($actions);
                                 <div class="main-action">
                                     <img class="main-action__image" src="<?php echo $action['image']['url'] ?>" alt="">
                                     <div class="main-action__sticker">Акция</div>
-                                    <div class="main-action__price">
-                                        <?php echo $action['price']['before'] ?>
-                                        <span><?php echo number_format($action['price']['value'], 0, ',', ' ') ?></span>
-                                        <?php echo $action['price']['after'] ?>
-                                    </div>
+                                    <div class="main-action__bonus">Приятный бонус!</div>
                                     <div class="main-action__info">
                                         <div class="main-action__title"><?php echo $action['title'] ?></div>
                                         <div class="main-action__desc"><?php echo $action['desc'] ?></div>
