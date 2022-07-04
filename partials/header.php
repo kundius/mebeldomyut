@@ -3,6 +3,45 @@ $categories = get_terms('product_category', array(
     'hide_empty' => false
 ));
 ?>
+
+<div class="header-drawer">
+    <div class="header-drawer__overlay js-toggle-menu"></div>
+    <button class="header-drawer__close js-toggle-menu"></button>
+    <div class="header-drawer__body">
+        <a href="/" class="header-drawer__logo">
+            <span class="header-drawer__logo-name">Домашний уют</span>
+            <span class="header-drawer__logo-desc">Магазин корпусной мебели</span>
+        </a>
+
+        <ul class="header-drawer__menu">
+            <?php foreach ($categories as $category): ?>
+            <li>
+                <a href="<?php echo get_term_link($category->term_id) ?>">
+                    <?php echo $category->name ?>
+                </a>
+            </li>
+            <?php endforeach; ?>
+            <li>
+                <a href="<?php the_permalink(671) ?>">О нас</a>
+            </li>
+            <li>
+                <a href="<?php the_permalink(140) ?>">Контакты</a>
+            </li>
+        </ul>
+
+        <div class="header-drawer__contacts">
+            <div class="header-drawer__phone">
+                <div class="header-drawer__phone-number"><?php the_field('phone', 'option') ?></div>
+                <div class="header-drawer__phone-time"><a href="mailto:<?php the_field('email', 'option') ?>"><?php the_field('email', 'option') ?></a></div>
+            </div>
+
+            <button class="header-drawer__callback js-open-modal" data-target="#callback">
+                Заказать звонок
+            </button>
+        </div>
+    </div>
+</div>
+
 <div class="mobile-header">
     <?php if (is_new_year()): ?>
         <div class="mobile-header__new_year_left_top_1"></div>
@@ -90,9 +129,6 @@ $categories = get_terms('product_category', array(
                 </button>
             </div>
         </div>
-
-        <div class="header-overlay js-toggle-menu"></div>
-        <button class="header-close js-toggle-menu"></button>
     </div>
 </div>
 
