@@ -109,6 +109,8 @@
 }
 
 .main-action__bonus {
+    width: 245px;
+    height: 77px;
 	position: absolute;
 	color: #000;
     background-color: rgb(236, 193, 45);
@@ -121,6 +123,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 100px/50px;
+    
 }
 
 .main-action__info {
