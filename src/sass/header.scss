@@ -312,6 +312,10 @@
         margin-left: 12px;
         border: none;
         white-space: nowrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 48px;
         &:hover {
             background-color: #44443f;
         }
