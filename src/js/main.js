@@ -123,11 +123,11 @@ forEach(document.querySelectorAll('.js-svg-text'), function(el) {
 forEach(document.querySelectorAll('.js-toggle-menu'), el => {
   el.addEventListener('click', e => {
     e.preventDefault()
-    const elHeader = document.querySelector('.header')
-    if (elHeader.classList.contains('header_opened')) {
-      elHeader.classList.remove('header_opened')
+    const elHeader = document.querySelector('.header-drawer')
+    if (elHeader.classList.contains('header-drawer_opened')) {
+      elHeader.classList.remove('header-drawer_opened')
     } else {
-      elHeader.classList.add('header_opened')
+      elHeader.classList.add('header-drawer_opened')
     }
   })
 })
