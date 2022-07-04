@@ -315,6 +315,23 @@
         &:hover {
             background-color: #44443f;
         }
+        @media (max-width: $breakpoint-large-max) {
+            width: 48px;
+        }
+    }
+
+    .header-callback__text {
+        display: block;
+        @media (max-width: $breakpoint-large-max) {
+            display: none;
+        }
+    }
+
+    .header-callback__icon {
+        display: none;
+        @media (max-width: $breakpoint-large-max) {
+            display: block;
+        }
     }
 
     .header_new_year_left_top_1 {

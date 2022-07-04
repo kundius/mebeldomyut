@@ -80,7 +80,10 @@ $categories = get_terms('product_category', array(
                     <div class="header-phone__time"><a href="mailto:<?php the_field('email', 'option') ?>"><?php the_field('email', 'option') ?></a></div>
                 </div>
 
-                <button class="header-callback js-open-modal" data-target="#callback">Заказать звонок</button>
+                <button class="header-callback js-open-modal" data-target="#callback">
+                    <span class="header-callback__text">Заказать звонок</span>
+                    <span class="header-callback__icon"><?php icon('phone', .9) ?></span>
+                </button>
             </div>
         </div>
 
