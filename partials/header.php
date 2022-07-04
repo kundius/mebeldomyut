@@ -42,6 +42,10 @@ $categories = get_terms('product_category', array(
                 <span class="header-logo__desc">Магазин корпусной мебели</span>
             </a>
 
+            <button class="header-toggle js-toggle-menu">
+                <?php icon('menu', 1.2) ?>
+            </button>
+
             <ul class="header-menu">
                 <?php foreach ($categories as $category): ?>
                 <li>

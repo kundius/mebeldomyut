@@ -107,6 +107,13 @@
 		}
     }
 
+    .header-toggle {
+        display: none;
+        @media (max-width: $breakpoint-medium-max) {
+            display: block;
+        }
+    }
+
     .header-menu {
         display: flex;
         padding: 0;
@@ -130,6 +137,9 @@
 					color: #4d4d4d;
 				}
             }
+        }
+        @media (max-width: $breakpoint-medium-max) {
+            display: none;
         }
     }
 
