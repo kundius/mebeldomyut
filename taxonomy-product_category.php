@@ -58,6 +58,116 @@ $action = array_shift($actions);
                         <?php endif; ?>
                     </div>
 
+                    <div class="category-moments">
+                        <div class="category-moments__title">Выбор шкафа на заказ: основные моменты</div>
+                        <div class="moments-group">
+                            <div class="moments-group__title">Материал</div>
+                            <div class="moments-group__grid">
+                                <div class="moments-group__grid-cell">
+                                    <div class="moments-card-primary">
+                                        <div class="moments-card-primary__image">
+                                            <img src="/wp-content/uploads/2022/07/moment-1.jpg" alt="" />
+                                        </div>
+                                        <div class="moments-card-primary__content">
+                                            <p><strong>ЛДСП</strong> - экономный вариант</p>
+                                            <p><strong>Плюсы:</strong> большой выбор цветов и фактур, имитация натурального дерева. Устойчивость к механическим повреждениям и термическому воздействию.</p>
+                                            <p><strong>Минусы:</strong> Износостойкость ниже, чем у МДФ-плит. Твердость материала, не допускающая возможность тонкой обработки.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="moments-group__grid-cell">
+                                    <div class="moments-card-primary">
+                                        <div class="moments-card-primary__image">
+                                            <img src="/wp-content/uploads/2022/07/moment-2.jpg" alt="" />
+                                        </div>
+                                        <div class="moments-card-primary__content">
+                                            <p><strong>МДФ</strong> - лучшее соотношение “цена / качество”</p>
+                                            <p><strong>Плюсы:</strong> Экологичность. Значительно дешевле массива дерева, имея при этом большой срок эксплуатации. Легко поддается любой обработке.</p>
+                                            <p><strong>Минусы:</strong> относительно высокая стоимость по сравнению с ЛДСП.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="moments-group__grid-cell">
+                                    <div class="moments-card-primary">
+                                        <div class="moments-card-primary__image">
+                                            <img src="/wp-content/uploads/2022/07/moment-3.jpg" alt="" />
+                                        </div>
+                                        <div class="moments-card-primary__content">
+                                            <p><strong>Зеркала и стекло</strong> - выбор для отражения Вашей индивидуальности</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="moments-group">
+                            <div class="moments-group__title">Оформление фасадов</div>
+                            <div class="moments-group__grid">
+                                <div class="moments-group__grid-cell">
+                                    <div class="moments-card-secondary">
+                                        <div class="moments-card-secondary__image">
+                                            <img src="/wp-content/uploads/2022/07/moment-4.jpg" alt="" />
+                                        </div>
+                                        <div class="moments-card-secondary__content">
+                                            <div class="moments-card-secondary__content-title">ЛДСП и МДФ</div>
+                                            <div class="moments-card-secondary__content-desc">Более 60 цветов</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="moments-group__grid-cell">
+                                    <div class="moments-card-secondary">
+                                        <div class="moments-card-secondary__image">
+                                            <img src="/wp-content/uploads/2022/07/moment-5.jpg" alt="" />
+                                        </div>
+                                        <div class="moments-card-secondary__content">
+                                            <div class="moments-card-secondary__content-title">Пленки</div>
+                                            <div class="moments-card-secondary__content-desc">В каталоге 1320 цветов и фактур</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="moments-group__grid-cell">
+                                    <div class="moments-card-secondary">
+                                        <div class="moments-card-secondary__image">
+                                            <img src="/wp-content/uploads/2022/07/moment-6.jpg" alt="" />
+                                        </div>
+                                        <div class="moments-card-secondary__content">
+                                            <div class="moments-card-secondary__content-title">Нанесение</div>
+                                            <div class="moments-card-secondary__content-desc">Фотопечать, пескоструйный рисунок, гравировка, витражи</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="moments-group">
+                            <div class="moments-group__title">Фурнитура</div>
+                            <div class="moments-group__grid">
+                                <div class="moments-group__grid-cell">
+                                    <div class="moments-card-tertiary">
+                                        <div class="moments-card-tertiary__image">
+                                            <img src="/wp-content/uploads/2022/07/moment-7.jpg" alt="" />
+                                        </div>
+                                        <div class="moments-card-tertiary__title">Экономные, рекомендуемые по качеству<br /> крепежи и фурнитура</div>
+                                    </div>
+                                </div>
+                                <div class="moments-group__grid-cell">
+                                    <div class="moments-card-tertiary">
+                                        <div class="moments-card-tertiary__image">
+                                            <img src="/wp-content/uploads/2022/07/moment-8.jpg" alt="" />
+                                        </div>
+                                        <div class="moments-card-tertiary__title">Фурнитура и крепежи<br /> премиум класса</div>
+                                    </div>
+                                </div>
+                                <div class="moments-group__grid-cell">
+                                    <div class="moments-card-tertiary">
+                                        <div class="moments-card-tertiary__image">
+                                            <img src="/wp-content/uploads/2022/07/moment-9.jpg" alt="" />
+                                        </div>
+                                        <div class="moments-card-tertiary__title">По индивидуальным<br /> пожеланиям</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="category-consultation">
                         <div class="category-consultation__text">
                             <div class="consultation-text">

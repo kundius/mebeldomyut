@@ -503,3 +503,79 @@
         margin-right: 12px;
 	}
 }
+
+.category-moments {
+
+}
+
+.category-moments__title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.moments-group {
+
+}
+
+.moments-group__title {
+    text-align: center;
+    font-weight: bold;
+}
+
+.moments-group__grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    margin-top: -20px;
+}
+
+.moments-group__grid-cell {
+    width: calc(100% / 3);
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.moments-card-primary {
+
+}
+
+.moments-card-primary__image {
+
+}
+
+.moments-card-primary__content {
+
+}
+
+.moments-card-secondary {
+
+}
+
+.moments-card-secondary__image {
+
+}
+
+.moments-card-secondary__content {
+
+}
+
+.moments-card-secondary__content-title {
+
+}
+
+.moments-card-secondary__content-desc {
+
+}
+
+.moments-card-tertiary {
+
+}
+
+.moments-card-tertiary__image {
+
+}
+
+.moments-card-tertiary__title {
+
+}
+
