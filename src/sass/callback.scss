@@ -29,10 +29,9 @@
 	display: block;
 	cursor: pointer;
 	font-size: 12px;
-    line-height: 1.25;
+	line-height: 1.25;
 	margin-top: 27px;
-    position: relative;
-    padding-left: 40px;
+	position: relative;
 	a {
 		color: #767676;
 		text-decoration: underline;
@@ -40,10 +39,9 @@
 			color: #000;
 		}
 	}
-	.form-checkbox {
-		position: absolute;
-		left: 0;
-		top: -3px;
+	.wpcf7-acceptance {
+		float: left;
+		margin-right: 12px;
 	}
 }
 
