@@ -706,14 +706,20 @@ hr {
 .form-input_white {
 	border: 2px solid #dbdbd5;
 	background-color: #ffffff;
+	&.form-input_small {
+		min-height: 56px;
+	}
+	.form-input__label {
+		color: rgba(0, 0, 0, 0.68);
+	}
 	.form-input__placeholder {
-		color: #000;
+		color: rgba(0, 0, 0, 0.68);
 	}
 	.form-input__mask {
-		color: #000;
+		color: rgba(0, 0, 0, 0.68);
 	}
 	.form-input__value {
-		color: #000;
+		color: rgba(0, 0, 0, 0.68);
 	}
 }
 
