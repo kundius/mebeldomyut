@@ -703,6 +703,20 @@ hr {
 	}
 }
 
+.form-input_white {
+	border: 2px solid #dbdbd5;
+	background-color: #ffffff;
+	.form-input__placeholder {
+		color: #000;
+	}
+	.form-input__mask {
+		color: #000;
+	}
+	.form-input__value {
+		color: #000;
+	}
+}
+
 .form-submit {
 	color: #b6b6b6;
 	font-size: 12px;
