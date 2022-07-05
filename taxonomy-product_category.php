@@ -60,45 +60,50 @@ $action = array_shift($actions);
                 </div>
             </div>
 
-            <div class="section-white">
+            <?php if (have_posts()) : ?>
+            <div class="section-products">
                 <div class="container">
-                    <?php if (have_posts()) : ?>
-                        <div class="products grid" data-match-height='<?php echo json_encode([".products-item__title"]) ?>'>
-                            <?php while (have_posts()) : the_post(); ?>
-                            <div class="products-item">
-                                <a href="<?php the_permalink() ?>" class="products-item__image">
-                                    <?php the_post_thumbnail('thumbnail'); ?>
-                                </a>
-                                <a href="<?php the_permalink() ?>" class="products-item__title"><?php the_title() ?></a>
-                                <div class="products-item__desc"><?php the_excerpt() ?></div>
-                                <?php if ($price = get_field('price')): ?>
-                                <div class="products-item__price">
-                                    <?php echo $price['before'] ?>
-                                    <span><?php echo number_format($price['value'], 0, ',', ' ') ?></span>
-                                    <?php echo $price['after'] ?>
-                                </div>
-                                <?php endif; ?>
-                                <div class="products-item__button">
-                                    <a href="<?php the_permalink() ?>" class="form-submit form-submit_red form-submit_small">
-                                        <span class="form-submit__inner">
-                                            <span>Подробнее</span>
-                                        </span>
-                                    </a>
-                                </div>
+                    <div class="section-products__title">
+                        <span>Готовые решения из нашего каталога</span>
+                    </div>
+                    <div class="products grid" data-match-height='<?php echo json_encode([".products-item__title"]) ?>'>
+                        <?php while (have_posts()) : the_post(); ?>
+                        <div class="products-item">
+                            <a href="<?php the_permalink() ?>" class="products-item__image">
+                                <?php the_post_thumbnail('thumbnail'); ?>
+                            </a>
+                            <a href="<?php the_permalink() ?>" class="products-item__title"><?php the_title() ?></a>
+                            <div class="products-item__desc"><?php the_excerpt() ?></div>
+                            <?php if ($price = get_field('price')): ?>
+                            <div class="products-item__price">
+                                <?php echo $price['before'] ?>
+                                <span><?php echo number_format($price['value'], 0, ',', ' ') ?></span>
+                                <?php echo $price['after'] ?>
                             </div>
-                            <?php endwhile; ?>
+                            <?php endif; ?>
+                            <div class="products-item__button">
+                                <a href="<?php the_permalink() ?>" class="form-submit form-submit_red form-submit_small">
+                                    <span class="form-submit__inner">
+                                        <span>Подробнее</span>
+                                    </span>
+                                </a>
+                            </div>
                         </div>
-                    <?php endif; ?>
+                        <?php endwhile; ?>
+                    </div>
                 </div>
-				
-				<?php if (!empty($content_promotion)) : ?>
-				<div class="section-promotion">
-					<div class="container container_small">
-						<?php echo $content_promotion ?>
-					</div>
-				</div>
-				<?php endif; ?>
+            </div>
+            <?php endif; ?>
 
+            <?php if (!empty($content_promotion)) : ?>
+            <div class="section-promotion">
+                <div class="container container_small">
+                    <?php echo $content_promotion ?>
+                </div>
+            </div>
+            <?php endif; ?>
+
+            <div class="section-white">
                 <?php get_template_part('partials/landing/special'); ?>
                     
                 <?php get_template_part('partials/landing/contacts'); ?>

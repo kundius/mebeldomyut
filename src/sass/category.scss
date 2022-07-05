@@ -186,6 +186,41 @@
 	margin-top: 23px;
 }
 
+.section-products {
+    background: #fffffe;
+    padding: 68px 0;
+    position: relative;
+}
+
+.section-products__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 68px;
+    span {
+        padding: 0 20px;
+    }
+    &::before {
+        content: '';
+        height: 1px;
+        width: 110px;
+        background: #a3a3a3;
+        display: block;
+    }
+    &::after {
+        content: '';
+        height: 1px;
+        width: 110px;
+        background: #a3a3a3;
+        display: block;
+    }
+}
+
 .products {
 	padding: 40px 0 150px;
 	margin: 0 -25px;
