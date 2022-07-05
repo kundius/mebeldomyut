@@ -457,19 +457,22 @@
 
 .consultation-form__grid {
     display: flex;
-    gap: 10px;
+    margin-left: -10px;
 }
 
 .consultation-form__cell:nth-child(1) {
     width: 35%;
+    padding-left: 10px;
 }
 
 .consultation-form__cell:nth-child(2) {
     width: 35%;
+    padding-left: 10px;
 }
 
 .consultation-form__cell:nth-child(3) {
     width: 30%;
+    padding-left: 10px;
 }
 
 .consultation-form__rights {
