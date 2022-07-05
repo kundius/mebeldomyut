@@ -399,10 +399,17 @@
 .category-consultation {
     display: flex;
     align-items: center;
+    margin-left: -40px;
 }
 
 .category-consultation__text {
     width: 50%;
+    padding-left: 40px;
+}
+
+.category-consultation__form {
+    width: 50%;
+    padding-left: 40px;
 }
 
 .consultation-text {
@@ -418,16 +425,13 @@
 .consultation-text__content {
     font-size: 16px;
     line-height: 1.5;
+    max-width: 580px;
     p {
         margin: 0;
     }
     * + p {
         margin-top: 24px;
     }
-}
-
-.category-consultation__form {
-    width: 50%;
 }
 
 .consultation-form {
