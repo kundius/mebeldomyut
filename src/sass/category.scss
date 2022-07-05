@@ -417,14 +417,15 @@
 }
 
 .consultation-text__title {
-    line-height: 1;
-    font-size: 24px;
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: bold;
     margin-bottom: 24px;
 }
 
 .consultation-text__content {
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 24px;
     max-width: 580px;
     p {
         margin: 0;
