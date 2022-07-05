@@ -492,8 +492,13 @@
 			color: #fff;
 		}
 	}
+    .form-checkbox {
+        width: 28px;
+        height: 28px;
+    }
 	.wpcf7-acceptance {
         float: left;
+        margin-top: 2px;
         margin-right: 12px;
 	}
 }
