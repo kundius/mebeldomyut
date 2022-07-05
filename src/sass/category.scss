@@ -451,11 +451,11 @@
 }
 
 .consultation-form__grid {
-
+    display: flex;
 }
 
 .consultation-form__cell {
-	margin-bottom: 20px;
+    width: 100%;
 }
 
 .consultation-form__rights {
