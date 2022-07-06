@@ -510,7 +510,20 @@
 
 .category-moments__title {
     text-align: center;
-    font-weight: bold;
+    font-weight: 800;
+    line-height: 1;
+    font-size: 32px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.category-moments__title::after {
+    content: '';
+    height: 9px;
+    width: 60px;
+    background: #ecc12d;
+    display: block;
+    margin: 50px auto 0;
 }
 
 .moments-group {
@@ -519,20 +532,25 @@
 
 .moments-group__title {
     text-align: center;
-    font-weight: bold;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 1;
+    color: #343435;
+    text-transform: uppercase;
 }
 
 .moments-group__grid {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -20px;
-    margin-top: -20px;
+    margin-left: -32px;
+    margin-top: -32px;
 }
 
 .moments-group__grid-cell {
     width: calc(100% / 3);
-    padding-left: 20px;
-    padding-top: 20px;
+    padding-left: 32px;
+    padding-top: 32px;
+    box-sizing: border-box;
 }
 
 .moments-card-primary {
