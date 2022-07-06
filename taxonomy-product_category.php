@@ -169,19 +169,21 @@ $action = array_shift($actions);
                     </div>
 
                     <div class="category-consultation">
-                        <div class="category-consultation__text">
-                            <div class="consultation-text">
-                                <div class="consultation-text__title">
-                                    Затрудняетесь с выбором фасада, варианта оформления или подбором комплектующих?
-                                </div>
-                                <div class="consultation-text__content">
-                                    <p>Наши специалисты дадут подробную консультуцию<br /> и посоветуют оптимальное решение именно для Вашего случая.</p>
-                                    <p>Звоните по телефону <strong>+7 (965) 631-90-50</strong><br /> или отправьте заявку на консультацию</p>
+                        <div class="category-consultation__grid">
+                            <div class="category-consultation__grid-cell">
+                                <div class="consultation-text">
+                                    <div class="consultation-text__title">
+                                        Затрудняетесь с выбором фасада, варианта оформления или подбором комплектующих?
+                                    </div>
+                                    <div class="consultation-text__content">
+                                        <p>Наши специалисты дадут подробную консультуцию<br /> и посоветуют оптимальное решение именно для Вашего случая.</p>
+                                        <p>Звоните по телефону <strong>+7 (965) 631-90-50</strong><br /> или отправьте заявку на консультацию</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="category-consultation__form">
-                            <?php echo do_shortcode('[contact-form-7 id="2095" title="Консультация в категории"]'); ?>
+                            <div class="category-consultation__grid-cell">
+                                <?php echo do_shortcode('[contact-form-7 id="2095" title="Консультация в категории"]'); ?>
+                            </div>
                         </div>
                     </div>
                 </div>

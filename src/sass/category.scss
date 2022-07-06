@@ -397,21 +397,23 @@
 }
 
 .category-consultation {
+    margin-top: 112px;
+}
+
+.category-consultation__grid {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     margin-left: -40px;
+    margin-top: -40px;
 }
 
-.category-consultation__text {
+.category-consultation__grid-cell {
     width: 50%;
     padding-left: 40px;
+    padding-top: 40px;
+    box-sizing: border-box;
 }
-
-.category-consultation__form {
-    width: 50%;
-    padding-left: 40px;
-}
-
 .consultation-text {
 
 }
@@ -515,6 +517,7 @@
     font-size: 32px;
     color: #000;
     text-transform: uppercase;
+    margin-bottom: 47px;
 }
 
 .category-moments__title::after {
@@ -523,11 +526,15 @@
     width: 60px;
     background: #ecc12d;
     display: block;
-    margin: 50px auto 0;
+    margin: 44px auto 0;
 }
 
 .moments-group {
 
+}
+
+.moments-group + .moments-group {
+    margin-top: 22px;
 }
 
 .moments-group__title {
@@ -537,6 +544,7 @@
     line-height: 1;
     color: #343435;
     text-transform: uppercase;
+    margin-bottom: 34px;
 }
 
 .moments-group__grid {
