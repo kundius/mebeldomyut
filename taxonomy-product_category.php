@@ -69,7 +69,7 @@ $action = array_shift($actions);
                                             <img src="/wp-content/uploads/2022/07/moment-1.jpg" alt="" />
                                         </div>
                                         <div class="moments-card-primary__content">
-                                            <p><strong>ЛДСП</strong> - экономный вариант</p>
+                                            <p><strong class="moments-card-primary__title">ЛДСП</strong> - экономный вариант</p>
                                             <p><strong>Плюсы:</strong> большой выбор цветов и фактур, имитация натурального дерева. Устойчивость к механическим повреждениям и термическому воздействию.</p>
                                             <p><strong>Минусы:</strong> Износостойкость ниже, чем у МДФ-плит. Твердость материала, не допускающая возможность тонкой обработки.</p>
                                         </div>
@@ -81,7 +81,7 @@ $action = array_shift($actions);
                                             <img src="/wp-content/uploads/2022/07/moment-2.jpg" alt="" />
                                         </div>
                                         <div class="moments-card-primary__content">
-                                            <p><strong>МДФ</strong> - лучшее соотношение “цена / качество”</p>
+                                            <p><strong class="moments-card-primary__title">МДФ</strong> - лучшее соотношение “цена / качество”</p>
                                             <p><strong>Плюсы:</strong> Экологичность. Значительно дешевле массива дерева, имея при этом большой срок эксплуатации. Легко поддается любой обработке.</p>
                                             <p><strong>Минусы:</strong> относительно высокая стоимость по сравнению с ЛДСП.</p>
                                         </div>
@@ -93,7 +93,7 @@ $action = array_shift($actions);
                                             <img src="/wp-content/uploads/2022/07/moment-3.jpg" alt="" />
                                         </div>
                                         <div class="moments-card-primary__content">
-                                            <p><strong>Зеркала и стекло</strong> - выбор для отражения Вашей индивидуальности</p>
+                                            <p><strong class="moments-card-primary__title">Зеркала и стекло</strong> - выбор для отражения Вашей индивидуальности</p>
                                         </div>
                                     </div>
                                 </div>

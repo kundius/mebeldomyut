@@ -507,7 +507,7 @@
 }
 
 .category-moments {
-
+    margin-top: 62px;
 }
 
 .category-moments__title {
@@ -566,11 +566,25 @@
 }
 
 .moments-card-primary__image {
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
 
+.moments-card-primary__title {
+    font-size: 24px;
 }
 
 .moments-card-primary__content {
-
+    font-size: 18px;
+    p {
+        margin: 0;
+    }
+    * + p {
+        margin-top: 16px;
+    }
 }
 
 .moments-card-secondary {
