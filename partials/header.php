@@ -55,7 +55,7 @@ $categories = get_terms('product_category', array(
 
     <a href="/" class="mobile-header-logo">
         <span class="mobile-header-logo__name">Домашний уют</span>
-        <span class="mobile-header-logo__desc">Магазин корпусной мебели</span>
+        <span class="mobile-header-logo__desc">Изготовление мебели на заказ</span>
     </a>
 
     <button class="mobile-header__callback js-open-modal" data-target="#callback"><?php icon('phone', .9) ?></button>
