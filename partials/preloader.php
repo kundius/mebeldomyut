@@ -108,7 +108,7 @@
 <div class="preloader" style="clip-path: url(#preloader-path)">
     <div class="preloader-logo">
         <div class="preloader-logo__name">Домашний уют</div>
-        <div class="preloader-logo__desc">Магазин корпусной мебели</div>
+        <div class="preloader-logo__desc">Изготовление мебели на заказ</div>
     </div>
     <div class="preloader-line"></div>
     <svg height="0" width="0">

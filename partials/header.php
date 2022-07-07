@@ -79,7 +79,7 @@ $categories = get_terms('product_category', array(
         <div class="header-wrapper">
             <a href="/" class="header-logo">
                 <span class="header-logo__name">Домашний уют</span>
-                <span class="header-logo__desc">Магазин корпусной мебели</span>
+                <span class="header-logo__desc">Изготовление мебели на заказ</span>
             </a>
 
             <button class="header-toggle js-toggle-menu">
