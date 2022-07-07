@@ -44,13 +44,17 @@ $action = array_shift($actions);
                             <div class="category__grid-cell">
                                 <div class="category__content"><?php echo $content ?></div>
                                 <?php if (count($actions) > 0): ?>
-                                <div class="category-actions grid">
-                                    <?php foreach ($actions as $action): ?>
-                                    <div class="category-action">
-                                        <img class="category-action__image" src="<?php echo $action['image']['url'] ?>" alt="">
-                                        <div class="category-action__title"><?php echo $action['title'] ?></div>
+                                <div class="category-actions">
+                                    <div class="category-actions__grid">
+                                        <?php foreach ($actions as $action): ?>
+                                        <div class="category-actions__grid-cell">
+                                            <div class="category-action">
+                                                <img class="category-action__image" src="<?php echo $action['image']['url'] ?>" alt="">
+                                                <div class="category-action__title"><?php echo $action['title'] ?></div>
+                                            </div>
+                                        </div>
+                                        <?php endforeach; ?>
                                     </div>
-                                    <?php endforeach; ?>
                                 </div>
                                 <?php endif; ?>
                             </div>
