@@ -594,18 +594,21 @@
 
 .moments-card-secondary__content {
 	position: absolute;
-	left: 20px;
-	bottom: 20px;
+	left: 29px;
+	bottom: 17px;
 }
 
 .moments-card-secondary__content-title {
-	font-weight: bold;
-	font-size: 20px;
+	font-weight: 700;
+	font-size: 24px;
+	margin-bottom: 5px;
+	line-height: 1;
 }
 
 .moments-card-secondary__content-desc {
 	font-size: 16px;
 	min-height: 2em;
+	line-height: 1.25;
 }
 
 .moments-card-tertiary {
@@ -620,8 +623,9 @@
 
 .moments-card-tertiary__title {
 	position: absolute;
-	left: 20px;
-	bottom: 20px;
-	font-weight: bold;
-	font-size: 16px;
+	left: 38px;
+	bottom: 28px;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.25;
 }
