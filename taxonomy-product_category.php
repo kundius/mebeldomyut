@@ -26,8 +26,8 @@ $action = array_shift($actions);
                         <h1 class="category__title"><?php single_cat_title() ?></h1>
 
                         <?php if ($action || count($actions) > 0 || $content): ?>
-                        <div class="category__grid grid">
-                            <div class="category__left">
+                        <div class="category__grid">
+                            <div class="category__grid-cell">
                                 <?php if ($action): ?>
                                 <div class="main-action">
                                     <img class="main-action__image" src="<?php echo $action['image']['url'] ?>" alt="">
@@ -41,7 +41,7 @@ $action = array_shift($actions);
                                 <?php endif; ?>
                             </div>
 
-                            <div class="category__right">
+                            <div class="category__grid-cell">
                                 <div class="category__content"><?php echo $content ?></div>
                                 <?php if (count($actions) > 0): ?>
                                 <div class="category-actions grid">
@@ -195,30 +195,34 @@ $action = array_shift($actions);
                     <div class="section-products__title">
                         <span>Готовые решения из нашего каталога</span>
                     </div>
-                    <div class="products grid" data-match-height='<?php echo json_encode([".products-item__title"]) ?>'>
-                        <?php while (have_posts()) : the_post(); ?>
-                        <div class="products-item">
-                            <a href="<?php the_permalink() ?>" class="products-item__image">
-                                <?php the_post_thumbnail('thumbnail'); ?>
-                            </a>
-                            <a href="<?php the_permalink() ?>" class="products-item__title"><?php the_title() ?></a>
-                            <div class="products-item__desc"><?php the_excerpt() ?></div>
-                            <?php if ($price = get_field('price')): ?>
-                            <div class="products-item__price">
-                                <?php echo $price['before'] ?>
-                                <span><?php echo number_format($price['value'], 0, ',', ' ') ?></span>
-                                <?php echo $price['after'] ?>
+                    <div class="products" data-match-height='<?php echo json_encode([".products-item__title"]) ?>'>
+                        <div class="products__grid">
+                            <?php while (have_posts()) : the_post(); ?>
+                            <div class="products__grid-cell">
+                                <div class="products-item">
+                                    <a href="<?php the_permalink() ?>" class="products-item__image">
+                                        <?php the_post_thumbnail('thumbnail'); ?>
+                                    </a>
+                                    <a href="<?php the_permalink() ?>" class="products-item__title"><?php the_title() ?></a>
+                                    <div class="products-item__desc"><?php the_excerpt() ?></div>
+                                    <?php if ($price = get_field('price')): ?>
+                                    <div class="products-item__price">
+                                        <?php echo $price['before'] ?>
+                                        <span><?php echo number_format($price['value'], 0, ',', ' ') ?></span>
+                                        <?php echo $price['after'] ?>
+                                    </div>
+                                    <?php endif; ?>
+                                    <div class="products-item__button">
+                                        <a href="<?php the_permalink() ?>" class="form-submit form-submit_red form-submit_small">
+                                            <span class="form-submit__inner">
+                                                <span>Подробнее</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                            <?php endif; ?>
-                            <div class="products-item__button">
-                                <a href="<?php the_permalink() ?>" class="form-submit form-submit_red form-submit_small">
-                                    <span class="form-submit__inner">
-                                        <span>Подробнее</span>
-                                    </span>
-                                </a>
-                            </div>
+                            <?php endwhile; ?>
                         </div>
-                        <?php endwhile; ?>
                     </div>
                 </div>
             </div>
