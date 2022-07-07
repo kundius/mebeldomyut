@@ -337,7 +337,7 @@
 .header-callback__icon {
   display: none;
   @media (max-width: $breakpoint-large-max) {
-    display: block;
+    display: flex;
   }
 }
 
