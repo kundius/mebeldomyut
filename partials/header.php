@@ -6,8 +6,9 @@ $categories = get_terms('product_category', array(
 
 <div class="header-drawer">
     <div class="header-drawer__overlay js-toggle-menu"></div>
-    <button class="header-drawer__close js-toggle-menu"></button>
     <div class="header-drawer__body">
+        <button class="header-drawer__close js-toggle-menu"></button>
+
         <a href="/" class="header-drawer__logo">
             <span class="header-drawer__logo-name">Домашний уют</span>
             <span class="header-drawer__logo-desc">Магазин корпусной мебели</span>

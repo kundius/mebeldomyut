@@ -120,6 +120,11 @@
 		width: 120px;
 		height: 120px;
 	}
+	@media (max-width: $breakpoint-xsmall-max) {
+    font-size: 16px;
+    width: 80px;
+    height: 80px;
+	}
 }
 
 .main-action__bonus {
@@ -140,6 +145,12 @@
   padding-bottom: 18px;
   box-sizing: border-box;
   clip-path: polygon(0 0, 100% 0, 100% 78px, 0 78px);
+	@media (max-width: $breakpoint-xsmall-max) {
+    width: 208px;
+    height: 96px;
+    font-size: 14px;
+		clip-path: polygon(0 0,100% 0,100% 58px,0 58px);
+	}
 }
 
 .main-action__info {
@@ -160,6 +171,9 @@
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1.1;
+	@media (max-width: $breakpoint-xsmall-max) {
+		font-size: 16px;
+	}
 }
 
 .main-action__desc {
@@ -167,6 +181,11 @@
   font-weight: 500;
   line-height: 1.8;
   margin-top: 30px;
+	@media (max-width: $breakpoint-xsmall-max) {
+    font-size: 14px;
+    line-height: 1.25;
+    margin-top: 16px;
+	}
 }
 
 .category-actions {
@@ -422,6 +441,10 @@
 		margin-left: -25px;
 		margin-right: -25px;
 	}
+	@media (max-width: $breakpoint-xsmall-max) {
+		margin-left: -12px;
+		margin-right: -12px;
+	}
 }
 
 .consultation-form__title {
@@ -441,21 +464,37 @@
 .consultation-form__grid {
   display: flex;
   margin-left: -10px;
+	margin-top: -10px;
+	@media (max-width: $breakpoint-small-max) {
+		flex-wrap: wrap;
+	}
 }
 
 .consultation-form__cell:nth-child(1) {
   width: 40%;
   padding-left: 10px;
+	padding-top: 10px;
+	@media (max-width: $breakpoint-small-max) {
+		width: 100%;
+	}
 }
 
 .consultation-form__cell:nth-child(2) {
   width: 40%;
   padding-left: 10px;
+	padding-top: 10px;
+	@media (max-width: $breakpoint-small-max) {
+		width: 100%;
+	}
 }
 
 .consultation-form__cell:nth-child(3) {
   width: 30%;
   padding-left: 10px;
+	padding-top: 10px;
+	@media (max-width: $breakpoint-small-max) {
+		width: 100%;
+	}
 }
 
 .consultation-form__rights {
@@ -483,10 +522,16 @@
     margin-top: 2px;
     margin-right: 12px;
   }
+	@media (max-width: $breakpoint-small-max) {
+		margin: 12px 0 0;
+	}
 }
 
 .category-moments {
   margin-top: 165px;
+	@media (max-width: $breakpoint-xsmall-max) {
+		margin-top: 120px;
+	}
 }
 
 .category-moments__title {
