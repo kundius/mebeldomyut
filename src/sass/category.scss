@@ -33,7 +33,10 @@
   letter-spacing: 0.32px;
   margin-bottom: 49px;
 	@media (min-width: $breakpoint-medium) {
-		margin-left: 50%;
+		margin-left: calc(50% + 50px);
+	}
+	@media (max-width: $breakpoint-large-max) {
+		margin-left: calc(50% + 25px);
 	}
 }
 
@@ -124,6 +127,11 @@
   justify-content: center;
   align-items: center;
   background: #e84011;
+	@media (max-width: $breakpoint-large-max) {
+		font-size: 24px;
+		width: 120px;
+		height: 120px;
+	}
 }
 
 .main-action__bonus {
@@ -257,6 +265,9 @@
 	@media (max-width: $breakpoint-large-max) {
 		padding-left: 20px;
 		padding-top: 20px;
+	}
+	@media (max-width: $breakpoint-medium-max) {
+		width: calc(100% / 3);
 	}
 }
 
@@ -392,7 +403,11 @@
   padding-left: 40px;
   padding-top: 40px;
   box-sizing: border-box;
+	@media (max-width: $breakpoint-large-max) {
+		width: 100%;
+	}
 }
+
 .consultation-text {
 }
 
@@ -525,6 +540,7 @@
 .moments-group__grid {
   display: flex;
   flex-wrap: wrap;
+	justify-content: center;
   margin-left: -32px;
   margin-top: -32px;
 }
@@ -534,6 +550,9 @@
   padding-left: 32px;
   padding-top: 32px;
   box-sizing: border-box;
+	@media (max-width: $breakpoint-large-max) {
+		width: calc(100% / 2);
+	}
 }
 
 .moments-card-primary {
