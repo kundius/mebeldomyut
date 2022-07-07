@@ -456,6 +456,9 @@
   color: #fefefd;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+	@media (max-width: $breakpoint-xsmall-max) {
+		font-size: 18px;
+	}
 }
 
 .consultation-form__form {
