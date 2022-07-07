@@ -1,28 +1,5 @@
 .category {
-  // background: linear-gradient(to bottom, #6c6c6a 0, #6c6c6a 552px, transparent 552px);
   position: relative;
-  padding-top: 20px;
-  padding-bottom: 105px;
-  // &::before {
-  // 	content: '';
-  // 	position: absolute;
-  // 	top: 0;
-  // 	right: 100%;
-  // 	margin-right: 56px;
-  // 	height: 552px;
-  // 	width: 9999px;
-  // 	background-color: #626257;
-  // }
-  // &::after {
-  // 	content: '';
-  // 	position: absolute;
-  // 	top: 0;
-  // 	left: 100%;
-  // 	margin-left: 56px;
-  // 	height: 552px;
-  // 	width: 9999px;
-  // 	background-color: #626257;
-  // }
 }
 
 .category__title {
@@ -40,6 +17,7 @@
 	}
 	@media (max-width: $breakpoint-small-max) {
 		margin-left: 0;
+		margin-bottom: 20px;
 	}
 }
 
@@ -207,6 +185,9 @@
 	padding-left: 32px;
 	padding-top: 32px;
 	box-sizing: border-box;
+	@media (max-width: $breakpoint-xsmall-max) {
+		width: 100%;
+	}
 }
 
 .category-action__image {
@@ -238,7 +219,8 @@
   font-weight: bold;
   text-transform: uppercase;
   color: #000;
-  margin-bottom: 26px;
+  margin-bottom: 36px;
+	text-align: center;
   span {
     padding: 0 20px;
   }
@@ -282,10 +264,12 @@
 	@media (max-width: $breakpoint-small-max) {
 		width: calc(100% / 2);
 	}
+	@media (max-width: $breakpoint-xsmall-max) {
+		width: 100%;
+	}
 }
 
 .products {
-  padding: 40px 0 150px;
 }
 
 .products-item {
@@ -359,19 +343,6 @@
 }
 
 @media (max-width: $breakpoint-small-max) {
-  .category {
-    padding-left: 25px;
-    padding-right: 35px;
-    margin-left: -25px;
-    margin-right: -25px;
-    &::before {
-      margin-right: 16px;
-    }
-    &::after {
-      margin-left: 16px;
-    }
-  }
-
   .category__title {
     font-size: 36px;
   }
@@ -447,6 +418,10 @@
   background: url("../img/consultation-form.jpg") no-repeat 50% 50%;
   background-size: cover;
   padding: 55px 30px 10px;
+	@media (max-width: $breakpoint-small-max) {
+		margin-left: -25px;
+		margin-right: -25px;
+	}
 }
 
 .consultation-form__title {
@@ -511,7 +486,7 @@
 }
 
 .category-moments {
-  margin-top: 62px;
+  margin-top: 165px;
 }
 
 .category-moments__title {
@@ -522,6 +497,9 @@
   color: #000;
   text-transform: uppercase;
   margin-bottom: 47px;
+	@media (max-width: $breakpoint-xsmall-max) {
+		font-size: 24px;
+	}
 }
 
 .category-moments__title::after {
@@ -565,6 +543,9 @@
   box-sizing: border-box;
 	@media (max-width: $breakpoint-large-max) {
 		width: calc(100% / 2);
+	}
+	@media (max-width: $breakpoint-xsmall-max) {
+		width: 100%;
 	}
 }
 
