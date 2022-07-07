@@ -583,18 +583,29 @@
 }
 
 .moments-card-secondary {
+	position: relative;
 }
 
 .moments-card-secondary__image {
+	img {
+		display: block;
+	}
 }
 
 .moments-card-secondary__content {
+	position: absolute;
+	left: 20px;
+	bottom: 20px;
 }
 
 .moments-card-secondary__content-title {
+	font-weight: bold;
+	font-size: 20px;
 }
 
 .moments-card-secondary__content-desc {
+	font-size: 16px;
+	min-height: 2em;
 }
 
 .moments-card-tertiary {
