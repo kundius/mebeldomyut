@@ -45,13 +45,11 @@
 	margin-top: 21px;
 	cursor: pointer;
 	margin-left: 32px;
-	padding-left: 46px;
-    margin-right: 30px;
+	margin-right: 30px;
 	position: relative;
-	.form-checkbox {
-		position: absolute;
-		left: 0;
-		top: 0;
+	.wpcf7-acceptance {
+		float: left;
+		margin-right: 12px;
 	}
 	a {
 		text-decoration: underline;
