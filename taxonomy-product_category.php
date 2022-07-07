@@ -63,7 +63,7 @@ $action = array_shift($actions);
                     </div>
 
                     <div class="category-moments">
-                        <div class="category-moments__title">Выбор шкафа на заказ: основные моменты</div>
+                        <div class="category-moments__title">Выбор мебели на заказ: основные моменты</div>
                         <div class="moments-group">
                             <div class="moments-group__title">Материал</div>
                             <div class="moments-group__grid">
