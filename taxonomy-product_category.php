@@ -113,7 +113,7 @@ $action = array_shift($actions);
                                         </div>
                                         <div class="moments-card-secondary__content">
                                             <div class="moments-card-secondary__content-title">ЛДСП и МДФ</div>
-                                            <div class="moments-card-secondary__content-desc">Более 60 цветов</div>
+                                            <div class="moments-card-secondary__content-desc">Более 300 цветов</div>
                                         </div>
                                     </div>
                                 </div>
@@ -123,7 +123,7 @@ $action = array_shift($actions);
                                             <img src="/wp-content/uploads/2022/07/moment-5.jpg" alt="" />
                                         </div>
                                         <div class="moments-card-secondary__content">
-                                            <div class="moments-card-secondary__content-title">Пленки</div>
+                                            <div class="moments-card-secondary__content-title">Пленки ПВХ, эмаль, массив</div>
                                             <div class="moments-card-secondary__content-desc">В каталоге 1320 цветов и фактур</div>
                                         </div>
                                     </div>
