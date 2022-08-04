@@ -1231,3 +1231,33 @@ span.wpcf7-list-item {
 	display: inline-block;
 	margin: initial;
 }
+
+div.wpcf7-response-output {
+    margin: 0;
+    border: 2px solid #ff9c9c;
+    color: #000;
+    background: #ffc7c7;
+    font-size: 16px;
+    padding: 12px;
+}
+
+div.wpcf7-mail-sent-ok {
+	border: 2px solid #398f14;
+    background: #aae491;
+}
+
+div.wpcf7-mail-sent-ng,
+div.wpcf7-aborted {
+	border: 2px solid #ff9c9c;
+    background: #ffc7c7;
+}
+
+div.wpcf7-spam-blocked {
+	border: 2px solid #ffa500;
+    background: #ffe1aa;
+}
+
+div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
+    border: 2px solid #f7e700;
+    background: #fffab1;
+}
