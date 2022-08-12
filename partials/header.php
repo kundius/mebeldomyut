@@ -15,6 +15,10 @@ $phone_href = 'tel:+' . preg_replace('/[^0-9]/', '', get_field('phone', 'option'
             <span class="header-drawer__logo-desc">Изготовление мебели на заказ</span>
         </a>
 
+        <a href="<?php echo $phone_href ?>" class="header-drawer__phone js-callback-modal">
+            <?php the_field('phone', 'option') ?>
+        </a>
+
         <ul class="header-drawer__menu">
             <?php foreach ($categories as $category): ?>
             <li>
@@ -32,10 +36,7 @@ $phone_href = 'tel:+' . preg_replace('/[^0-9]/', '', get_field('phone', 'option'
         </ul>
 
         <div class="header-drawer__contacts">
-            <div class="header-drawer__phone">
-                <div class="header-drawer__phone-number"><?php the_field('phone', 'option') ?></div>
-                <div class="header-drawer__phone-time"><a href="mailto:<?php the_field('email', 'option') ?>"><?php the_field('email', 'option') ?></a></div>
-            </div>
+            <div class="header-drawer__email"><a href="mailto:<?php the_field('email', 'option') ?>"><?php the_field('email', 'option') ?></a></div>
 
             <a href="<?php echo $phone_href ?>" class="header-drawer__callback js-callback-modal">
                 Заказать звонок
