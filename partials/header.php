@@ -36,9 +36,9 @@ $categories = get_terms('product_category', array(
                 <div class="header-drawer__phone-time"><a href="mailto:<?php the_field('email', 'option') ?>"><?php the_field('email', 'option') ?></a></div>
             </div>
 
-            <button class="header-drawer__callback js-open-modal" data-target="#callback">
+            <a href="+<?php echo preg_replace('/[^0-9]/', '', get_field('phone', 'option')) ?>" class="header-drawer__callback js-callback-modal">
                 Заказать звонок
-            </button>
+            </a>
         </div>
     </div>
 </div>
@@ -58,7 +58,7 @@ $categories = get_terms('product_category', array(
         <span class="mobile-header-logo__desc">Изготовление мебели на заказ</span>
     </a>
 
-    <button class="mobile-header__callback js-open-modal" data-target="#callback"><?php icon('phone', .9) ?></button>
+    <a href="+<?php echo preg_replace('/[^0-9]/', '', get_field('phone', 'option')) ?>" class="mobile-header__callback js-callback-modal"><?php icon('phone', .9) ?></a>
 </div>
 
 <div class="header-placeholder"></div>
@@ -124,10 +124,10 @@ $categories = get_terms('product_category', array(
                     <div class="header-phone__time"><a href="mailto:<?php the_field('email', 'option') ?>"><?php the_field('email', 'option') ?></a></div>
                 </div>
 
-                <button class="header-callback js-open-modal" data-target="#callback">
+                <a href="+<?php echo preg_replace('/[^0-9]/', '', get_field('phone', 'option')) ?>" class="header-callback js-callback-modal">
                     <span class="header-callback__text">Заказать звонок</span>
                     <span class="header-callback__icon"><?php icon('phone', .9) ?></span>
-                </button>
+                </a>
             </div>
         </div>
     </div>
