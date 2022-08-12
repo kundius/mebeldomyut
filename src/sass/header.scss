@@ -773,7 +773,8 @@
 .header-drawer__phone {
   text-decoration: none;
   display: inline-block;
-  margin-top: 4px;
+  margin-top: 6px;
+  margin-bottom: 6px;
   color: #fff;
   font-size: 12px;
   font-weight: 700;
@@ -783,6 +784,7 @@
   background: #585852;
   padding: 6px 8px;
   border-radius: 12px;
+  align-self: flex-start;
 }
 
 .header-drawer__email {
