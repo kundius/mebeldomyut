@@ -30,10 +30,6 @@
   z-index: 20;
 }
 
-// .mobile-header {
-//   display: none;
-// }
-
 .header-close {
   display: none;
 }
@@ -477,7 +473,7 @@
   display: block;
   // align-items: center;
   // justify-content: space-between;
-  padding: 8px 64px;
+  padding: 4px 64px;
   // background-color: #858582;
   position: absolute;
   top: 0;
@@ -539,14 +535,16 @@
 
 .mobile-header__phone {
   text-decoration: none;
-  display: block;
+  display: inline-block;
   margin-top: 8px;
-  color: #ffcd57;
+  color: #fff;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: .7px;
   line-height: 1;
+  background: #4e4e4f;
+  padding: 2px 4px;
 }
 
 .mobile-header-logo {
