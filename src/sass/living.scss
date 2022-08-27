@@ -1,112 +1,121 @@
-@import 'variables.scss';
+@import "variables.scss";
 
 .living {
-    margin-top: 18.4%;
+  margin-top: 18.4%;
 }
 
 .living__title {
-	color: #fefefd;
-	font-size: 88px;
-	font-weight: 900;
-	text-transform: uppercase;
-	line-height: 1;
-	letter-spacing: 4.8px;
-	position: relative;
-	z-index: 2;
-	svg {
-		display: block;
-		margin: 10px 0 0;
-	}
-    text {
-        color: #ffffff;
-        font-size: 78px;
-        font-weight: 900;
-        text-transform: uppercase;
-        letter-spacing: 0;
-        font-family: 'Montserrat', sans-serif;
-        fill: none;
-        stroke: rgba(254, 254, 253, 0.54);
-        stroke-width: 2px;
-        line-height: 1;
-        text-anchor: middle;
-        dominant-baseline: central;
-    }
+  color: #fefefd;
+  font-size: 88px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: 4.8px;
+  position: relative;
+  z-index: 2;
+  svg {
+    display: block;
+    margin: 10px 0 0;
+  }
+  text {
+    color: #ffffff;
+    font-size: 78px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    font-family: "Montserrat", sans-serif;
+    fill: none;
+    stroke: rgba(254, 254, 253, 0.54);
+    stroke-width: 2px;
+    line-height: 1;
+    text-anchor: middle;
+    dominant-baseline: central;
+  }
 }
 
 .living__body {
-	background: url('../img/leather-pattern.jpg') repeat 50% 50%;
-	position: relative;
-	z-index: 1;
-	margin-top: 198px;
-	height: 314px;
+  background: url("../img/leather-pattern.jpg") repeat 50% 50%;
+  position: relative;
+  z-index: 1;
+  margin-top: 198px;
+  height: 314px;
 }
 
 .living__body::before {
-	content: '';
-	position: absolute;
-	right: 100%;
-	top: 0;
-	height: 100%;
-	width: 9999px;
-	background-color: #81817e;
-	margin-right: 56px;
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: 0;
+  height: 100%;
+  width: 9999px;
+  background-color: #81817e;
+  margin-right: 56px;
 }
 
 .living__body::after {
-	content: '';
-	position: absolute;
-	left: 100%;
-	top: 0;
-	height: 100%;
-	width: 9999px;
-	background-color: #81817e;
-	margin-left: 56px;
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 0;
+  height: 100%;
+  width: 9999px;
+  background-color: #81817e;
+  margin-left: 56px;
 }
 
 .living__example {
-	position: absolute;
-	z-index: 10;
-	left: 50%;
-	top: 50%;
-	width: 1280px;
-	transform: translate(-50%, -50%);
-	margin-left: 23%;
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  top: 50%;
+  width: 1280px;
+  transform: translate(-50%, -50%);
+  margin-left: 23%;
 }
 
 @media (max-width: $breakpoint-medium-max) {
 }
 
 @media (max-width: $breakpoint-small-max) {
-	.living {
-	    margin-top: 13%;
-	}
+  .living {
+    margin-top: 13%;
+  }
 
-	.living__title {
-		font-size: 36px;
-	    letter-spacing: 1.8px;
-		svg {
-			margin: -10px 0 0;
-		}
-		text {
-		    font-size: 32px;
-		    stroke-width: 1px;
-		}
-	}
+  .living__title {
+    font-size: 36px;
+    letter-spacing: 1.8px;
+    svg {
+      margin: -10px 0 0;
+    }
+    text {
+      font-size: 32px;
+      stroke-width: 1px;
+    }
+  }
 
-	.living__body {
-		margin-top: 55px;
-		height: 214px;
-	}
+  .living__body {
+    margin-top: 60px;
+    height: 180px;
+  }
 
-	.living__body::before {
-		margin-right: 16px;
-	}
+  .living__body::before {
+    margin-right: 16px;
+  }
 
-	.living__body::after {
-		margin-left: 16px;
-	}
+  .living__body::after {
+    margin-left: 16px;
+  }
 
-	.living__example {
-	    width: 700px;
-	}
+  .living__example {
+    width: 700px;
+  }
+}
+
+@media (max-width: $breakpoint-xsmall-max) {
+  .living__body {
+    margin-top: 0;
+  }
+  .living__example {
+		margin-left: 0;
+  }
 }
