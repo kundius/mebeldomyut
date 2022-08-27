@@ -204,7 +204,7 @@ if ($projects) {
                 </div>
                 <?php endif; ?>
 
-                <div class="leather">
+                <!-- <div class="leather">
                     <div class="leather__title">
                         <div>эко-кожа</div>
                         <svg class="js-svg-text"><text x="50%" y="50%">для фасадов</text></svg>
@@ -218,7 +218,7 @@ if ($projects) {
                         </div>
                         <img data-src="<?php asset("leather-example.png") ?>" alt="" class="leather__example lazyload">
                     </div>
-                </div>
+                </div> -->
 
                 <div class="living">
                     <div class="living__title">
