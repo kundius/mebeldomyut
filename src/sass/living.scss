@@ -65,11 +65,14 @@
 }
 
 .living__example {
-    position: absolute;
-    z-index: 10;
-    right: 1.076%;
-    top: -64.65%;
-    width: 45.1%;
+	position: absolute;
+	z-index: 10;
+	left: 50%;
+	top: 50%;
+	width: 1280px;
+	height: 862px;
+	transform: translate(-50%, -50%);
+	margin-left: 23%;
 }
 
 @media (max-width: $breakpoint-medium-max) {
