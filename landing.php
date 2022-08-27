@@ -220,6 +220,16 @@ if ($projects) {
                     </div>
                 </div>
 
+                <div class="living">
+                    <div class="living__title">
+                        <div>Стильная мебель</div>
+                        <svg class="js-svg-text"><text x="50%" y="50%">для гостиной</text></svg>
+                    </div>
+                    <div class="living__body">
+                        <img data-src="<?php asset("living-example.png") ?>" alt="" class="living__example lazyload">
+                    </div>
+                </div>
+
                 <div class="engraving">
                     <div class="engraving__title">
                         <div>Гравировка</div>
