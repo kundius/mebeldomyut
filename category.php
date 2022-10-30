@@ -19,23 +19,27 @@
                 <div class="container">
                     <?php if (have_posts()) : ?>
                         <div class="products grid" data-match-height='<?php echo json_encode([".products-item__title"]) ?>'>
-                            <?php while (have_posts()) : the_post(); ?>
-                            <div class="products-item">
-                                <a href="<?php the_permalink() ?>" class="products-item__image zoom-container">
-                                    <?php the_post_thumbnail('thumbnail'); ?>
-                                </a>
-                                <a href="<?php the_permalink() ?>" class="products-item__title"><?php the_title() ?></a>
-                                <div class="products-item__desc"><?php the_excerpt() ?></div>
-                                <div class="products-item__button">
-                                    <a href="<?php the_permalink() ?>" class="form-submit form-submit_red form-submit_small">
-                                        <span class="form-submit__inner">
-                                            <span>Читать</span>
-                                            <span class="form-submit__arrow"></span>
-                                        </span>
-                                    </a>
+                            <div class="products__grid">
+                                <?php while (have_posts()) : the_post(); ?>
+                                <div class="products__grid-cell">
+                                    <div class="products-item">
+                                        <a href="<?php the_permalink() ?>" class="products-item__image zoom-container">
+                                            <?php the_post_thumbnail('thumbnail'); ?>
+                                        </a>
+                                        <a href="<?php the_permalink() ?>" class="products-item__title"><?php the_title() ?></a>
+                                        <div class="products-item__desc"><?php the_excerpt() ?></div>
+                                        <div class="products-item__button">
+                                            <a href="<?php the_permalink() ?>" class="form-submit form-submit_red form-submit_small">
+                                                <span class="form-submit__inner">
+                                                    <span>Читать</span>
+                                                    <span class="form-submit__arrow"></span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
+                                <?php endwhile; ?>
                             </div>
-                            <?php endwhile; ?>
                         </div>
                     <?php endif; ?>
                 </div>
