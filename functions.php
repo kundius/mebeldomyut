@@ -1,4 +1,6 @@
 <?php
+define( 'DISALLOW_FILE_EDIT', true );
+
 wp_enqueue_script('main', get_template_directory_uri() . '/dist/main.js', array(), false, true);
 
 add_action('wp_enqueue_scripts', function() {
