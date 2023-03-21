@@ -130,7 +130,7 @@ $phone_href = 'tel:+' . preg_replace('/[^0-9]/', '', get_field('phone', 'option'
                     <div class="header-phone__time"><a href="mailto:<?php the_field('email', 'option') ?>"><?php the_field('email', 'option') ?></a></div>
                 </div>
 
-                <a href="<?php echo $phone_href ?>" class="header-callback js-open-modal" data-target="#callback">
+                <a href="<?php echo $phone_href ?>" class="header-callback js-open-modal" data-target="#callback" onclick="ym(52070034, 'reachGoal', 'click_zvonok'); alert('test'); return true;">
                     <span class="header-callback__text">Заказать звонок</span>
                     <span class="header-callback__icon"><?php icon('phone', .9) ?></span>
                 </a>
