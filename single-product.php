@@ -38,7 +38,7 @@
                             </div>
                             <?php endif; ?>
                             <div class="product-single__feed">
-                                <button class="form-submit form-submit_red form-submit_small js-open-modal" data-target="#calculate">
+                                <button class="form-submit form-submit_red form-submit_small js-open-modal" data-target="#calculate" onclick="ym(52070034,'reachGoal','click_catalog'); return true;">
                                     <span class="form-submit__inner">
                                         <span>Рассчитать стоимость</span>
                                     </span>
@@ -78,7 +78,7 @@
                 </div>
             </section>
             <?php endwhile; endif; ?>
-            
+
             <div class="section-white">
                 <div class="container">
                     <div class="departure-order">
@@ -91,11 +91,11 @@
                 $also_query = null;
                 if ($related = get_field('related')) {
                     $also_query = new wp_query([
-                        'orderby'=> 'rand',                
-                        'caller_get_posts'=> 1,            
+                        'orderby'=> 'rand',
+                        'caller_get_posts'=> 1,
                         'post__in' => $related,
                         'post__not_in' => [$post->ID],
-                        'showposts'=> 5   
+                        'showposts'=> 5
                     ]);
                 } else {
                     $tags = wp_get_post_tags($post->ID);
@@ -103,11 +103,11 @@
                         $tag_ids = [];
                         foreach($tags as $individual_tag) $tag_ids[] = $individual_tag->term_id;
                         $also_query = new wp_query([
-                            'tag__in' => $tag_ids,       
-                            'orderby'=> 'rand',                
-                            'caller_get_posts'=> 1,            
+                            'tag__in' => $tag_ids,
+                            'orderby'=> 'rand',
+                            'caller_get_posts'=> 1,
                             'post__not_in' => [$post->ID],
-                            'showposts'=> 5   
+                            'showposts'=> 5
                         ]);
                     }
                 }

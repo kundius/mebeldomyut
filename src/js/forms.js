@@ -56,3 +56,12 @@ forEach(document.querySelectorAll('.js-form'), function(form) {
     request.send(new FormData(form))
   })
 })
+
+document.addEventListener('wpcf7mailsent', function(event) {
+  console.log(event.detail.contactFormId);
+  if ( '123' == event.detail.contactFormId ) {
+    alert( "The contact form ID is 123." );
+  // do something productive
+  }
+  // ym(52070034, 'reachGoal', 'otpravil_zvonok');
+}, false);
