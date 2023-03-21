@@ -58,10 +58,25 @@ forEach(document.querySelectorAll('.js-form'), function(form) {
 })
 
 document.addEventListener('wpcf7mailsent', function(event) {
-  console.log(event.detail.contactFormId);
-  if ( '123' == event.detail.contactFormId ) {
-    alert( "The contact form ID is 123." );
-  // do something productive
+  if ('7' == event.detail.contactFormId) {
+    ym(52070034, 'reachGoal', 'otpravil_zvonok');
   }
-  // ym(52070034, 'reachGoal', 'otpravil_zvonok');
+  if ('2095' == event.detail.contactFormId) {
+    ym(52070034, 'reachGoal', 'otpravil_consult');
+  }
+  if ('518' == event.detail.contactFormId) {
+    ym(52070034, 'reachGoal', 'qviz_rasshet');
+  }
+  if ('6' == event.detail.contactFormId) {
+    ym(52070034, 'reachGoal', 'vyzov_dizainera');
+  }
+  if ('8' == event.detail.contactFormId) {
+    ym(52070034, 'reachGoal', 'otpravka_catalog');
+  }
+  if ('1122' == event.detail.contactFormId) {
+    ym(52070034, 'reachGoal', 'otpravka_stoimost');
+  }
+  if ('153' == event.detail.contactFormId) {
+    ym(52070034, 'reachGoal', 'obrsvyz_otpravka');
+  }
 }, false);
