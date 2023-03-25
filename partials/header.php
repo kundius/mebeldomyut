@@ -100,6 +100,24 @@ $phone_href = 'tel:+' . preg_replace('/[^0-9]/', '', get_field('phone', 'option'
                     </a>
                 </li>
                 <?php endforeach; ?>
+
+                <li>
+                    <a href="<?php the_permalink(671) ?>">О нас</a>
+                    <ul>
+                        <li>
+                            <a href="<?php the_permalink(140) ?>">Контакты</a>
+                        </li>
+                        <li>
+                            <a href="<?php the_permalink(140) ?>">Акции</a>
+                        </li>
+                        <li>
+                            <a href="<?php the_permalink(140) ?>">Оплата и доставка</a>
+                        </li>
+                        <li>
+                            <a href="<?php the_permalink(140) ?>">Рассрочка</a>
+                        </li>
+                    </ul>
+                </li>
             </ul>
 
             <?php if ($slideshow = get_field('slideshow')): ?>
@@ -114,15 +132,6 @@ $phone_href = 'tel:+' . preg_replace('/[^0-9]/', '', get_field('phone', 'option'
                 </ul>
             </div>
             <?php endif; ?>
-
-            <ul class="header-menu">
-                <li>
-                    <a href="<?php the_permalink(671) ?>">О нас</a>
-                </li>
-                <li>
-                    <a href="<?php the_permalink(140) ?>">Контакты</a>
-                </li>
-            </ul>
 
             <div class="header-telephony">
                 <div class="header-phone">

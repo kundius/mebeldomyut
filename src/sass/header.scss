@@ -137,9 +137,10 @@
   padding: 0;
   margin: 0;
   list-style: none;
-  li {
+  > li {
     margin-right: 20px;
-    a {
+    position: relative;
+    > a {
       color: #d4d4d3;
       font-size: 14px;
       font-weight: 500;
@@ -159,6 +160,18 @@
   @media (max-width: $breakpoint-medium-max) {
     display: none;
   }
+}
+
+.header-menu > li > ul {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+}
+
+.header-menu > li:hover > ul {
+  display: block;
 }
 
 .header-menu-slideshow {
