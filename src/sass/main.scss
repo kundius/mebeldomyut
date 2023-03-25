@@ -952,7 +952,7 @@ hr {
 		}
 		@media (min-width: $breakpoint-large) {
 			lost-offset: 1/2 row 100px;
-		}	
+		}
 	}
 }
 
@@ -1261,4 +1261,8 @@ div.wpcf7-spam-blocked {
 div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
     border: 2px solid #f7e700;
     background: #fffab1;
+}
+
+span.wpcf7-list-item {
+	margin: 0;
 }

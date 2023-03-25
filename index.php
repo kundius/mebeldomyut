@@ -24,6 +24,10 @@
             </div>
             <?php endwhile; endif; ?>
 
+            <?php get_template_part('partials/landing/contacts'); ?>
+
+            <?php get_template_part('partials/landing/catalogs'); ?>
+
             <?php get_template_part('partials/footer'); ?>
         </div>
     </body>

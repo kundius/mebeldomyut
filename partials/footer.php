@@ -18,8 +18,8 @@
                 <ul class="footer__links">
                     <li><a href="/category/stati">Статьи</a></li>
                     <li><a href="<?php the_permalink(9) ?>">Карта сайта</a></li>
-                    <li><a href="<?php the_permalink(3) ?>">Пользовательское соглашение</a></li>
-                    <li><a href="<?php the_permalink(14) ?>">Политика конфиденциальности и обработки персональных даных</a></li>
+                    <li><a href="<?php the_permalink(14) ?>">Пользовательское соглашение</a></li>
+                    <li><a href="<?php the_permalink(3) ?>">Политика конфиденциальности и обработки персональных даных</a></li>
                 </ul>
             </div>
             <div class="footer__cell">
