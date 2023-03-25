@@ -17,11 +17,13 @@
 
 .contacts__left {
 	text-align: right;
-	flex: 1 1;
+	padding-right: 25px;
+	width: 50%;
 
-	@media (max-width: $breakpoint-small-max) {
+	@media (max-width: $breakpoint-xsmall-max) {
 		width: 100%;
-		margin-bottom: 20px;
+		padding-right: 0;
+		margin-bottom: 25px;
 	}
 }
 
@@ -34,7 +36,8 @@
 }
 
 .contacts__right {
-	flex: 1 1;
+	padding-left: 25px;
+	width: 50%;
 	color: #6c6c6a;
 	font-size: 18px;
 	font-weight: 400;
@@ -58,6 +61,8 @@
 
 	@media (max-width: $breakpoint-small-max) {
 		width: 100%;
+		padding-left: 0;
+		padding-top: 25px;
 	}
 }
 
