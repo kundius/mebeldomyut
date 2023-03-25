@@ -169,9 +169,9 @@
   top: 100%;
   transform: translateX(-50%);
   background: #fff;
-  border-radius: 12px;
-  padding: 12px 0;
-  margin: 12px 0 0;
+  border-radius: 8px;
+  padding: 8px 0;
+  margin: 8px 0 0;
   list-style: none;
   width: 180px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
@@ -182,8 +182,8 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  top: -12px;
-  border-width: 0 12px 12px;
+  top: -8px;
+  border-width: 0 8px 8px;
   border-style: solid;
   border-color: transparent transparent #fff;
 }
@@ -191,10 +191,10 @@
 .header-menu > li > ul::after {
   content: '';
   position: absolute;
-  height: 12px;
+  height: 8px;
   left: 0;
   width: 100%;
-  top: -12px;
+  top: -8px;
 }
 
 .header-menu > li:hover > ul {
