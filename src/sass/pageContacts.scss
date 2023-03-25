@@ -52,7 +52,7 @@
 }
 
 .page-contacts__content {
-    color: #d4d4d3;
+  color: #d4d4d3;
 	font-size: 18px;
 	line-height: 1.667;
 	letter-spacing: 0.45px;
@@ -73,31 +73,6 @@
 	}
 }
 
-.page-contacts__socials {
-    margin-top: 61px;
-}
-
-.page-contacts-socials {
-
-}
-
-.page-contacts-socials__title {
-	color: #d4d4d3;
-	font-size: 14px;
-	font-weight: 700;
-	line-height: 30px;
-	letter-spacing: 0.35px;
-}
-
-.page-contacts-socials__items {
-    margin-top: 2px;
-    a {
-	    display: inline-block;
-	    text-decoration: none;
-	    margin-right: 22px;
-    }
-}
-
 @media (min-width: $breakpoint-medium) {
 	.page-contacts__left,
 	.page-contacts__right {
@@ -108,10 +83,6 @@
 
 	.page-contacts__title {
 	    lost-offset: 1/2 row 100px;
-	}
-
-	.page-contacts__content {
-	    lost-column: 1/2 2 20px;
 	}
 
 	.page-contacts__socials {

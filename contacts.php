@@ -30,20 +30,6 @@ Template Name: Контакты
                             <div class="page-contacts__content">
                                 <?php the_content(); ?>
                             </div>
-                            <?php if ($socials = get_field('socials')): ?>
-                            <div class="page-contacts__socials">
-                                <div class="page-contacts-socials">
-                                    <div class="page-contacts-socials__title">Мы в соцсетях:</div>
-                                    <div class="page-contacts-socials__items">
-                                        <?php foreach ($socials as $item): ?>
-                                        <a href="<?php echo $item['link'] ?>" target="_blank">
-                                            <img src="<?php echo $item['icon']['url'] ?>" alt="">
-                                        </a>
-                                        <?php endforeach; ?>
-                                    </div>
-                                </div>
-                            </div>
-                            <?php endif; ?>
                         </div>
                     </div>
                 </div>
@@ -52,8 +38,8 @@ Template Name: Контакты
                 <?php endif; ?>
 
                 <div class="feedback">
-                    <div class="feedback__title">Обратная связь</div>
-                    <div class="feedback__desc">Вы можете связаться с нами с помощью формы обратной связи:</div>
+                    <div class="feedback__title">Записаться на замер</div>
+                    <div class="feedback__desc">Бесплатный выезд и замер специалиста:</div>
                     <div class="feedback__form">
                         <?php echo do_shortcode('[contact-form-7 id="153"]'); ?>
                     </div>
