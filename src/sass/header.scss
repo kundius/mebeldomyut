@@ -375,6 +375,7 @@
   }
   @media (max-width: $breakpoint-large-max) {
     width: 48px;
+    padding: 0;
   }
   @media (max-width: $breakpoint-medium-max) {
     display: none;
