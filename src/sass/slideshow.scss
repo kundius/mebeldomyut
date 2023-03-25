@@ -243,9 +243,11 @@
     z-index: 30;
     > div {
         color: #ffffff;
-        font-size: 110px;
+        // font-size: 110px;
+        font-size: 80px;
         font-weight: 900;
-        line-height: 0.9;
+        // line-height: 0.9;
+        line-height: 1;
         text-transform: uppercase;
         letter-spacing: -0.37px;
         position: absolute;
