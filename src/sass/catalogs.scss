@@ -85,7 +85,7 @@
 
 @media (max-width: $breakpoint-small-max) {
 	.catalogs {
-	    margin: 10.6% 25px 6.3%;
+	    margin: 10.6% auto 6.3%;
 		&::after {
 			width: 188px;
 			height: 132px;
