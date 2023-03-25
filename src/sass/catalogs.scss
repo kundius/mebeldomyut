@@ -6,7 +6,7 @@
 
 .catalogs {
 	max-width: 778px;
-	margin: 3.6% auto .95%;
+	padding: 3.6% auto .95%;
 	position: relative;
 	&::after {
 		content: '';
@@ -89,7 +89,7 @@
 
 @media (max-width: $breakpoint-small-max) {
 	.catalogs {
-	    margin: 10.6% auto 6.3%;
+	    padding: 10.6% auto 6.3%;
 		&::after {
 			width: 188px;
 			height: 132px;
