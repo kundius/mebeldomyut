@@ -108,13 +108,13 @@ $phone_href = 'tel:+' . preg_replace('/[^0-9]/', '', get_field('phone', 'option'
                             <a href="<?php the_permalink(140) ?>">Контакты</a>
                         </li>
                         <li>
-                            <a href="<?php the_permalink(140) ?>">Акции</a>
+                            <a href="<?php the_permalink(2147) ?>">Акции</a>
                         </li>
                         <li>
-                            <a href="<?php the_permalink(140) ?>">Оплата и доставка</a>
+                            <a href="<?php the_permalink(2149) ?>">Оплата и доставка</a>
                         </li>
                         <li>
-                            <a href="<?php the_permalink(140) ?>">Рассрочка</a>
+                            <a href="<?php the_permalink(2151) ?>">Рассрочка</a>
                         </li>
                     </ul>
                 </li>
