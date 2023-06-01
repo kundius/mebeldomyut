@@ -572,6 +572,138 @@ hr {
 	transition-property: right, color, border-color;
 }
 
+.ui-rules {
+  font-size: 12px;
+  line-height: 18px;
+  color: currentColor;
+  position: relative;
+  padding-left: 26px;
+  display: block;
+}
+
+.ui-rules input {
+  display: none;
+}
+
+.ui-rules span {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  border-radius: 2px;
+  box-sizing: border-box;
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: #ffffff;
+  border: 2px solid #9d9d9d;
+  cursor: pointer;
+}
+
+.ui-rules span::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  width: 12px;
+  height: 8px;
+  border-left: 3px solid #9d9d9d;
+  border-bottom: 3px solid #9d9d9d;
+  margin-top: -2px;
+  display: none;
+}
+
+.ui-rules input:checked + span::before {
+  display: block;
+}
+
+.ui-rules a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.wpcf7-form-control-wrap {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.wpcf7-form-acceptance-wrap {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.ui-form-error {
+  border-radius: 2px;
+  padding: 16px;
+  background-color: rgb(247, 217, 217);
+  font-size: 14px;
+  border: 1px solid rgb(204, 0, 0);
+  line-height: 18px;
+  color: #ff0000;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 10px);
+  width: 240px;
+  z-index: 120;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  &::before {
+    content: '';
+    right: 9px;
+    top: -11px;
+    position: absolute;
+    border-top: 0;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 11px solid #c00;
+  }
+  &::after {
+    content: '';
+    right: 10px;
+    top: -10px;
+    position: absolute;
+    border-top: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid rgba(255, 255, 255, 0.851);
+  }
+}
+
+.ui-form-error__close {
+  color: #ff0000;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  &::before {
+    content: '';
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  &::after {
+    content: '';
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  &:hover {
+    background-color: rgba(0,0,0,.2);
+  }
+}
+
 .form-message {
 	padding: 15px;
 	font-size: 16px;
