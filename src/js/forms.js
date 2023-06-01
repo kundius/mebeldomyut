@@ -4,8 +4,12 @@ import findIndex from "lodash/findIndex";
 document.querySelectorAll(".js-form").forEach(function (form) {
   const controlWrapElements =
     form.querySelectorAll(".wpcf7-form-control-wrap") || [];
+  const resultElements =
+    form.querySelectorAll(".wpcf7-form-result") || [];
   const statusResetElements =
-    form.querySelectorAll(".wpcf7-form-status-reset") || [];
+    form.querySelectorAll(".wpcf7-form-result-reset") || [];
+  const statusMessageElements =
+    form.querySelectorAll(".wpcf7-form-result-message") || [];
   let messages = [];
 
   const removeErrors = () => {
@@ -99,10 +103,14 @@ document.querySelectorAll(".js-form").forEach(function (form) {
               renderMessage(field.into, field.message);
             });
           }
+
+          statusMessageElements.forEach((el) => {
+            el.innerHTML = response.message;
+          });
         });
 
         const formData = new FormData(form);
-        formData.append("_wpcf7_recaptcha_response", token);
+        formData.append("g-recaptcha-response", token);
         request.send(formData);
       });
   });
@@ -167,6 +175,7 @@ document.querySelectorAll(".js-form").forEach(function (form) {
 document.addEventListener(
   "wpcf7mailsent",
   function (event) {
+    console.log(event)
     if ("7" == event.detail.contactFormId) {
       ym(52070034, "reachGoal", "otpravil_zvonok");
     }

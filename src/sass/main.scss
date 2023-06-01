@@ -572,6 +572,42 @@ hr {
 	transition-property: right, color, border-color;
 }
 
+.modal-form {
+	position: relative;
+}
+
+.modal-form .form-result {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(255, 255, 255, .6);
+	backdrop-filter: blur(10px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.modal-form .form-result__message {
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 24px;
+}
+
+.modal-form .form-result__reset {
+	font-size: 14px;
+	font-family: inherit;
+	color: #000;
+	padding: 4px 12px;
+	line-height: 1;
+	display: block;
+	border-radius: 16px;
+	background: transparent;
+	border: 1px solid #000;
+}
+
 .ui-rules {
   font-size: 12px;
   line-height: 1;
