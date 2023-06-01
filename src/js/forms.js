@@ -1,6 +1,3 @@
-import forEach from "lodash/forEach";
-import findIndex from "lodash/findIndex";
-
 document.querySelectorAll(".js-form").forEach(function (form) {
   const controlWrapElements = form.querySelectorAll(".wpcf7-form-control-wrap") || [];
 
