@@ -21,7 +21,10 @@
 }
 
 .callback__cell {
-	margin-bottom: 20px;
+}
+
+.callback__cell + .callback__cell {
+	margin-top: 20px;
 }
 
 .callback__rights {
