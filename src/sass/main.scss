@@ -576,36 +576,45 @@ hr {
 	position: relative;
 }
 
-.modal-form .form-result {
+.modal-form-result {
 	position: absolute;
-	left: 0;
-	top: 0;
-	right: 0;
-	bottom: 0;
+	left: -24px;
+	top: -24px;
+	right: -24px;
+	bottom: -24px;
+	padding: 24px;
 	background: rgba(255, 255, 255, .6);
 	backdrop-filter: blur(10px);
-	display: flex;
+	display: none;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	._mail-sent & {
+		display: flex;
+	}
+	._mail-failed & {
+		display: flex;
+	}
 }
 
-.modal-form .form-result__message {
-	font-size: 18px;
+.modal-form-result__message {
+	font-size: 20px;
 	text-align: center;
-	margin-bottom: 24px;
+	margin-bottom: 32px;
+	color: #000;
+	line-height: 1.25;
 }
 
-.modal-form .form-result__reset {
-	font-size: 14px;
+.modal-form-result__reset {
+	font-size: 16px;
 	font-family: inherit;
 	color: #000;
-	padding: 4px 12px;
+	padding: 10px 24px;
 	line-height: 1;
 	display: block;
-	border-radius: 16px;
+	border-radius: 20px;
 	background: transparent;
-	border: 1px solid #000;
+	border: 2px solid #000;
 }
 
 .ui-rules {

@@ -78,9 +78,7 @@
                     </div>
                 </div>
                 <div class="modal-form-result wpcf7-form-result">
-                    <div class="modal-form-result__message wpcf7-form-result-message">
-                        При отправке сообщения произошла ошибка. Пожалуйста, попробуйте ещё раз позже
-                    </div>
+                    <div class="modal-form-result__message wpcf7-form-result-message"></div>
                     <button type="button" class="modal-form-result__reset wpcf7-form-result-reset">Закрыть</button>
                 </div>
             </form>

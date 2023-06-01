@@ -2,14 +2,11 @@ import forEach from "lodash/forEach";
 import findIndex from "lodash/findIndex";
 
 document.querySelectorAll(".js-form").forEach(function (form) {
-  const controlWrapElements =
-    form.querySelectorAll(".wpcf7-form-control-wrap") || [];
-  const resultElements =
-    form.querySelectorAll(".wpcf7-form-result") || [];
-  const statusResetElements =
-    form.querySelectorAll(".wpcf7-form-result-reset") || [];
-  const statusMessageElements =
-    form.querySelectorAll(".wpcf7-form-result-message") || [];
+  const controlWrapElements = form.querySelectorAll(".wpcf7-form-control-wrap") || [];
+
+  const resultReset = form.querySelector(".wpcf7-form-result-reset");
+  const resultMessage = form.querySelector(".wpcf7-form-result-message");
+
   let messages = [];
 
   const removeErrors = () => {
@@ -41,12 +38,12 @@ document.querySelectorAll(".js-form").forEach(function (form) {
     });
   };
 
-  statusResetElements.forEach((el) => {
-    el.addEventListener("click", () => {
+  if (resultReset) {
+    resultReset.addEventListener("click", () => {
       form.classList.remove("_mail-sent");
       form.classList.remove("_mail-failed");
     });
-  });
+  }
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
@@ -104,9 +101,9 @@ document.querySelectorAll(".js-form").forEach(function (form) {
             });
           }
 
-          statusMessageElements.forEach((el) => {
-            el.innerHTML = response.message;
-          });
+          if (resultMessage) {
+            resultMessage.innerHTML = response.message;
+          }
         });
 
         const formData = new FormData(form);
