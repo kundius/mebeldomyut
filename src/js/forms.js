@@ -50,7 +50,7 @@ document.querySelectorAll(".js-form").forEach(function (form) {
     form.classList.add("_mail-sending");
 
     grecaptcha
-      .execute(wpcf7_recaptcha.sitekey, { action: "submit" })
+      .execute(myajax.wpcf7_recaptcha_sitekey, { action: "submit" })
       .then(function (token) {
         removeErrors();
         removeMessages();

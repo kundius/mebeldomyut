@@ -6,7 +6,8 @@ wp_enqueue_script('main', get_template_directory_uri() . '/dist/main.js', array(
 add_action('wp_enqueue_scripts', function() {
     wp_localize_script('main', 'myajax', array(
         'url' => admin_url('admin-ajax.php'),
-        'nonce' => wp_create_nonce('myajax-nonce')
+        'nonce' => wp_create_nonce('myajax-nonce'),
+        'wpcf7_recaptcha_sitekey' => WPCF7_RECAPTCHA::get_instance()->get_sitekey(),
     ));  
 }, 99);
 
