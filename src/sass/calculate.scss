@@ -1,4 +1,6 @@
-.calculate {}
+.calculate {
+	max-width: 360px;
+}
 
 .calculate__title {
 	text-transform: uppercase;
@@ -6,6 +8,8 @@
 	font-size: 14px;
 	text-align: center;
 	line-height: 1;
+	font-weight: bold;
+	margin-bottom: 15px;
 }
 
 .calculate-info {}
@@ -14,6 +18,7 @@
 	color: #000000;
 	font-size: 14px;
 	line-height: 1;
+	margin-bottom: 8px;
 }
 
 .calculate-info__desc {
@@ -22,18 +27,23 @@
 	line-height: 14px;
 }
 
-.calculate-main {}
+.calculate-main {
+	margin-top: 25px;
+}
 
 .calculate-main__row + .calculate-main__row {
 	margin-top: 30px;
 }
 
-.calculate-result {}
+.calculate-result {
+	margin-top: 35px;
+}
 
 .calculate-result__cost {
 	color: #2d910f;
 	font-size: 11px;
 	line-height: 14px;
+	margin-bottom: 12px;
 }
 
 .calculate-result__cost__price {
@@ -47,18 +57,23 @@
 	line-height: 14px;
 }
 
-.calculate-contacts {}
+.calculate-contacts {
+	margin-top: 15px;
+}
 
 .calculate-contacts__row + .calculate-contacts__row {
 	margin-top: 30px;
 }
 
-.calculate-end {}
+.calculate-end {
+	margin-top: 25px;
+}
 
 .calculate-end__title {
 	color: #aa6b09;
 	font-size: 11px;
 	line-height: 14px;
+	margin-bottom: 12px;
 }
 
 .calculate-end__desc {
@@ -67,7 +82,9 @@
 	line-height: 14px;
 }
 
-.calculate-submit {}
+.calculate-submit {
+	margin-top: 12px;
+}
 
 .calculate-submit__button {
 	display: block;
@@ -77,7 +94,6 @@
 	font-size: 14px;
 	text-transform: uppercase;
 	text-align: center;
-	line-height: 32px;
 	padding: 0;
 	height: 32px;
 	border-radius: 6px;
@@ -168,4 +184,6 @@
 	background-color: #f8f7f6;
 	padding: 0 14px;
 	font-size: 14px;
+	width: 100%;
+	box-sizing: border-box;
 }
