@@ -71,6 +71,7 @@
                         <span class="wpcf7-form-acceptance-wrap">
                             <label class="ui-rules">
                                 <input type="checkbox" name="rules" value="1" aria-invalid="false" checked="checked" class="form-checkbox form-checkbox_light" />
+                                <span></span>
                                 Прочитал(-а) <a href="/polzovatelskoe-soglashenie" target="_blank">Пользовательское соглашение</a> и соглашаюсь с <a href="/privacy-policy" target="_blank">Политикой обработки персональных данных</a>
                             </label>
                         </span>
