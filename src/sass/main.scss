@@ -578,6 +578,7 @@ hr {
 
 .modal-form-result {
 	position: absolute;
+	z-index: 20;
 	left: -24px;
 	top: -24px;
 	right: -24px;
@@ -615,6 +616,12 @@ hr {
 	border-radius: 20px;
 	background: transparent;
 	border: 2px solid #000;
+	cursor: pointer;
+}
+
+.modal-form-result__reset:hover {
+	background: #000;
+	color: #fff;
 }
 
 .ui-rules {
@@ -681,7 +688,7 @@ hr {
 }
 
 .ui-form-error {
-  border-radius: 2px;
+  border-radius: 12px;
   padding: 16px;
   background-color: rgb(247, 217, 217);
   font-size: 14px;
@@ -693,10 +700,10 @@ hr {
   top: calc(100% + 10px);
   width: 240px;
   z-index: 120;
-  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 3px 12px 0px rgba(0, 0, 0, 0.25);
   &::before {
     content: '';
-    right: 9px;
+    right: 11px;
     top: -11px;
     position: absolute;
     border-top: 0;
@@ -706,7 +713,7 @@ hr {
   }
   &::after {
     content: '';
-    right: 10px;
+    right: 12px;
     top: -10px;
     position: absolute;
     border-top: 0;
