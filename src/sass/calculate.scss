@@ -5,11 +5,11 @@
 .calculate__title {
 	text-transform: uppercase;
 	color: #4b1e03;
-	font-size: 14px;
+	font-size: 16px;
 	text-align: center;
 	line-height: 1;
 	font-weight: bold;
-	margin-bottom: 15px;
+	margin-bottom: 24px;
 }
 
 .calculate-info {}
@@ -28,7 +28,7 @@
 }
 
 .calculate-main {
-	margin-top: 25px;
+	margin-top: 24px;
 }
 
 .calculate-main__row + .calculate-main__row {
@@ -36,14 +36,14 @@
 }
 
 .calculate-result {
-	margin-top: 35px;
+	margin-top: 36px;
 }
 
 .calculate-result__cost {
 	color: #2d910f;
 	font-size: 11px;
 	line-height: 14px;
-	margin-bottom: 12px;
+	margin-bottom: 8px;
 }
 
 .calculate-result__cost__price {
@@ -58,7 +58,7 @@
 }
 
 .calculate-contacts {
-	margin-top: 15px;
+	margin-top: 24px;
 }
 
 .calculate-contacts__row + .calculate-contacts__row {
@@ -66,14 +66,14 @@
 }
 
 .calculate-end {
-	margin-top: 25px;
+	margin-top: 24px;
 }
 
 .calculate-end__title {
 	color: #aa6b09;
 	font-size: 11px;
 	line-height: 14px;
-	margin-bottom: 12px;
+	margin-bottom: 8px;
 }
 
 .calculate-end__desc {
@@ -83,7 +83,7 @@
 }
 
 .calculate-submit {
-	margin-top: 12px;
+	margin-top: 24px;
 }
 
 .calculate-submit__button {
@@ -95,8 +95,9 @@
 	text-transform: uppercase;
 	text-align: center;
 	padding: 0;
-	height: 32px;
+	height: 40px;
 	border-radius: 6px;
+	cursor: pointer;
 	border: 2px solid #593a03;
 	background-color: #3e1d05;
 }
