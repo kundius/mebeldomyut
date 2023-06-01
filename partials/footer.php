@@ -77,7 +77,6 @@
                         </span>
                     </div>
                 </div>
-                
                 <div class="modal-form-result wpcf7-form-result">
                     <div class="modal-form-result__message wpcf7-form-result-message">
                         При отправке сообщения произошла ошибка. Пожалуйста, попробуйте ещё раз позже
