@@ -51,13 +51,13 @@
                         </label>
                     </div>
                     <div class="callback__cell">
-                        <div class="wpcf7-form-control-wrap">
+                        <span class="wpcf7-form-control-wrap your-phone">
                             <label class="form-input form-input_small">
                                 <span class="form-input__label">Ваш телефон</span>
                                 <span class="form-input__mask">+ 7 (___) ___-__-__</span>
                                 <input type="text" name="your-phone" value="" size="40" class="form-input__value" aria-required="true" aria-invalid="false" />
                             </label>
-                        </div>
+                        </span>
                     </div>
                     <div class="callback__cell">
                         <button class="form-submit form-submit_small">
@@ -68,10 +68,12 @@
                         </button>
                     </div>
                 </div>
-                <label class="callback__rights">
-                    <input type="checkbox" name="rules" value="1" aria-invalid="false" checked="checked" class="form-checkbox form-checkbox_light" />
-                    Прочитал(-а) <a href="/polzovatelskoe-soglashenie" target="_blank">Пользовательское соглашение</a> и соглашаюсь с <a href="/privacy-policy" target="_blank">Политикой обработки персональных данных</a>
-                </label>
+                <span class="wpcf7-form-control-wrap rules">
+                    <label class="callback__rights">
+                        <input type="checkbox" name="rules" value="1" aria-invalid="false" checked="checked" class="form-checkbox form-checkbox_light" />
+                        Прочитал(-а) <a href="/polzovatelskoe-soglashenie" target="_blank">Пользовательское соглашение</a> и соглашаюсь с <a href="/privacy-policy" target="_blank">Политикой обработки персональных данных</a>
+                    </label>
+                </span>
             </form>
         </div>
     </div>

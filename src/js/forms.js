@@ -95,7 +95,7 @@ document.querySelectorAll(".js-form").forEach(function (form) {
           if (response.status == "validation_failed") {
             form.dispatchEvent(new Event("wpcf7invalid"));
 
-            response.invalid_fields.forEach((field) => {
+            response.invalidFields.forEach((field) => {
               renderMessage(`.${field.field}`, field.message);
             });
           }
