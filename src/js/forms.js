@@ -1,5 +1,5 @@
-import forEach from 'lodash/forEach'
-import findIndex from 'lodash/findIndex'
+import forEach from "lodash/forEach";
+import findIndex from "lodash/findIndex";
 
 document.querySelectorAll(".js-form").forEach(function (form) {
   const controlWrapElements =
@@ -96,7 +96,7 @@ document.querySelectorAll(".js-form").forEach(function (form) {
             form.dispatchEvent(new Event("wpcf7invalid"));
 
             response.invalidFields.forEach((field) => {
-              renderMessage(`.${field.field}`, field.message);
+              renderMessage(field.into, field.message);
             });
           }
         });
@@ -164,26 +164,30 @@ document.querySelectorAll(".js-form").forEach(function (form) {
 //   })
 // })
 
-document.addEventListener('wpcf7mailsent', function(event) {
-  if ('7' == event.detail.contactFormId) {
-    ym(52070034, 'reachGoal', 'otpravil_zvonok');
-  }
-  if ('2095' == event.detail.contactFormId) {
-    ym(52070034, 'reachGoal', 'otpravil_consult');
-  }
-  if ('518' == event.detail.contactFormId) {
-    ym(52070034, 'reachGoal', 'qviz_rasshet');
-  }
-  if ('6' == event.detail.contactFormId) {
-    ym(52070034, 'reachGoal', 'vyzov_dizainera');
-  }
-  if ('8' == event.detail.contactFormId) {
-    ym(52070034, 'reachGoal', 'otpravka_catalog');
-  }
-  if ('1122' == event.detail.contactFormId) {
-    ym(52070034, 'reachGoal', 'otpravka_stoimost');
-  }
-  if ('153' == event.detail.contactFormId) {
-    ym(52070034, 'reachGoal', 'obrsvyz_otpravka');
-  }
-}, false);
+document.addEventListener(
+  "wpcf7mailsent",
+  function (event) {
+    if ("7" == event.detail.contactFormId) {
+      ym(52070034, "reachGoal", "otpravil_zvonok");
+    }
+    if ("2095" == event.detail.contactFormId) {
+      ym(52070034, "reachGoal", "otpravil_consult");
+    }
+    if ("518" == event.detail.contactFormId) {
+      ym(52070034, "reachGoal", "qviz_rasshet");
+    }
+    if ("6" == event.detail.contactFormId) {
+      ym(52070034, "reachGoal", "vyzov_dizainera");
+    }
+    if ("8" == event.detail.contactFormId) {
+      ym(52070034, "reachGoal", "otpravka_catalog");
+    }
+    if ("1122" == event.detail.contactFormId) {
+      ym(52070034, "reachGoal", "otpravka_stoimost");
+    }
+    if ("153" == event.detail.contactFormId) {
+      ym(52070034, "reachGoal", "obrsvyz_otpravka");
+    }
+  },
+  false
+);

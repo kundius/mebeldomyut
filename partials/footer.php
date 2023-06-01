@@ -68,7 +68,7 @@
                         </button>
                     </div>
                 </div>
-                <span class="wpcf7-form-control-wrap rules">
+                <span class="wpcf7-form-acceptance-wrap">
                     <label class="callback__rights">
                         <input type="checkbox" name="rules" value="1" aria-invalid="false" checked="checked" class="form-checkbox form-checkbox_light" />
                         Прочитал(-а) <a href="/polzovatelskoe-soglashenie" target="_blank">Пользовательское соглашение</a> и соглашаюсь с <a href="/privacy-policy" target="_blank">Политикой обработки персональных данных</a>
