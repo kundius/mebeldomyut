@@ -41,7 +41,7 @@
     <div id="callback" class="callback"> <!-- data-element-class="slbContentEl" -->
         <div class="callback__form">
             <div class="callback__title">Заказать звонок</div>
-            <form action="/wp-json/contact-form-7/v1/contact-forms/7/feedback" method="post" class="modal-form js-form">
+            <form action="/wp-json/contact-form-7/v1/contact-forms/7/feedback" data-reach-goal="otpravil_zvonok" method="post" class="modal-form js-form">
                 <div class="callback__grid">
                     <div class="callback__cell">
                         <label class="form-input form-input_small">

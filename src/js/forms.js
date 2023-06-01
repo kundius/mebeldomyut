@@ -63,39 +63,30 @@ document.querySelectorAll(".js-form").forEach(function (form) {
 
           form.classList.remove("_mail-sending");
 
-          document.dispatchEvent(new Event("wpcf7submit"));
-
           const response = JSON.parse(request.response);
 
           if (response.status == "mail_sent") {
-            document.dispatchEvent(new Event("wpcf7mailsent"));
-
             form.reset();
-
             form.classList.add("_mail-sent");
+
+            if (form.dataset.reachGoal) {
+              ym(52070034, "reachGoal", form.dataset.reachGoal);
+            }
           }
 
           if (response.status == "acceptance_missing") {
-            document.dispatchEvent(new Event("wpcf7invalid"));
-
             renderMessage(".wpcf7-form-acceptance-wrap", response.message);
           }
 
           if (response.status == "mail_failed") {
-            document.dispatchEvent(new Event("wpcf7mailfailed"));
-
             form.classList.add("_mail-failed");
           }
 
           if (response.status == "spam") {
-            document.dispatchEvent(new Event("wpcf7spam"));
-
             form.classList.add("_mail-failed");
           }
 
           if (response.status == "validation_failed") {
-            document.dispatchEvent(new Event("wpcf7invalid"));
-
             response.invalidFields.forEach((field) => {
               renderMessage(field.into, field.message);
             });
@@ -172,7 +163,6 @@ document.querySelectorAll(".js-form").forEach(function (form) {
 document.addEventListener(
   "wpcf7mailsent",
   function (event) {
-    console.log(event)
     if ("7" == event.detail.contactFormId) {
       ym(52070034, "reachGoal", "otpravil_zvonok");
     }
