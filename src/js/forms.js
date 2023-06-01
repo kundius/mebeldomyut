@@ -63,12 +63,12 @@ document.querySelectorAll(".js-form").forEach(function (form) {
 
           form.classList.remove("_mail-sending");
 
-          form.dispatchEvent(new Event("wpcf7submit"));
+          document.dispatchEvent(new Event("wpcf7submit"));
 
           const response = JSON.parse(request.response);
 
           if (response.status == "mail_sent") {
-            form.dispatchEvent(new Event("wpcf7mailsent"));
+            document.dispatchEvent(new Event("wpcf7mailsent"));
 
             form.reset();
 
@@ -76,25 +76,25 @@ document.querySelectorAll(".js-form").forEach(function (form) {
           }
 
           if (response.status == "acceptance_missing") {
-            form.dispatchEvent(new Event("wpcf7invalid"));
+            document.dispatchEvent(new Event("wpcf7invalid"));
 
             renderMessage(".wpcf7-form-acceptance-wrap", response.message);
           }
 
           if (response.status == "mail_failed") {
-            form.dispatchEvent(new Event("wpcf7mailfailed"));
+            document.dispatchEvent(new Event("wpcf7mailfailed"));
 
             form.classList.add("_mail-failed");
           }
 
           if (response.status == "spam") {
-            form.dispatchEvent(new Event("wpcf7spam"));
+            document.dispatchEvent(new Event("wpcf7spam"));
 
             form.classList.add("_mail-failed");
           }
 
           if (response.status == "validation_failed") {
-            form.dispatchEvent(new Event("wpcf7invalid"));
+            document.dispatchEvent(new Event("wpcf7invalid"));
 
             response.invalidFields.forEach((field) => {
               renderMessage(field.into, field.message);
