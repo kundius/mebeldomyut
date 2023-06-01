@@ -39,7 +39,41 @@
 
 <div style="display: none">
     <div id="callback" class="callback"> <!-- data-element-class="slbContentEl" -->
-        <?php echo do_shortcode('[contact-form-7 id="7"]') ?>
+        <div class="callback__form">
+            <div class="callback__title">Заказать звонок</div>
+            <form action="/wp-json/contact-form-7/v1/contact-forms/7/feedback" method="post" class="js-form">
+                <div class="callback__grid">
+                    <div class="callback__cell">
+                        <label class="form-input form-input_small">
+                            <span class="form-input__label">Ваше имя</span>
+                            <span class="form-input__placeholder">Как вы хотите, чтоб к вам обращались</span>
+                            <input type="text" name="your-name" value="" size="40" class="form-input__value" aria-invalid="false" />
+                        </label>
+                    </div>
+                    <div class="callback__cell">
+                        <div class="wpcf7-form-control-wrap">
+                            <label class="form-input form-input_small">
+                                <span class="form-input__label">Ваш телефон</span>
+                                <span class="form-input__mask">+ 7 (___) ___-__-__</span>
+                                <input type="text" name="your-phone" value="" size="40" class="form-input__value" aria-required="true" aria-invalid="false" />
+                            </label>
+                        </div>
+                    </div>
+                    <div class="callback__cell">
+                        <button class="form-submit form-submit_small">
+                            <span class="form-submit__inner">
+                                <span>Заказать<br>звонок</span>
+                                <span class="form-submit__arrow"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <label class="callback__rights">
+                    <input type="checkbox" name="rules" value="1" aria-invalid="false" checked="checked" class="form-checkbox form-checkbox_light" />
+                    Прочитал(-а) <a href="/polzovatelskoe-soglashenie" target="_blank">Пользовательское соглашение</a> и соглашаюсь с <a href="/privacy-policy" target="_blank">Политикой обработки персональных данных</a>
+                </label>
+            </form>
+        </div>
     </div>
 
     <div id="calculate" class="calculate"> <!-- data-element-class="slbContentEl" -->
