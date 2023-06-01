@@ -67,7 +67,7 @@
                             </span>
                         </button>
                     </div>
-                    <div class="callback__cell">
+                    <div class="callback__rights">
                         <span class="wpcf7-form-acceptance-wrap">
                             <label class="ui-rules">
                                 <input type="checkbox" name="rules" value="1" aria-invalid="false" checked="checked" class="form-checkbox form-checkbox_light" />
