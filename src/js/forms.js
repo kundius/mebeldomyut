@@ -201,9 +201,9 @@ document.addEventListener(
     if (material) {
       key.push(material.value);
     }
-    let price = prices[key.join(' | ')]
-    if (price && footage) {
-      price.innerHTML = parseInt(footage.value) * prices[key.join(' | ')];
+    let priceVal = prices[key.join(' | ')]
+    if (priceVal && footage) {
+      price.innerHTML = parseInt(footage.value) * priceVal;
       console.log(price);
     }
   };
