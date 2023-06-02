@@ -191,5 +191,5 @@ document.addEventListener(
   const footage = form.querySelector('.js-calc-form-footage');
   const price = form.querySelector('.js-calc-form-price');
 
-  console.log(form.dataset);
+  console.log(form.dataset.prices, JSON.parse(form.dataset.prices));
 });
