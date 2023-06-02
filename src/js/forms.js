@@ -1,5 +1,6 @@
 document.querySelectorAll(".js-form").forEach(function (form) {
-  const controlWrapElements = form.querySelectorAll(".wpcf7-form-control-wrap") || [];
+  const controlWrapElements =
+    form.querySelectorAll(".wpcf7-form-control-wrap") || [];
 
   const resultReset = form.querySelector(".wpcf7-form-result-reset");
   const resultMessage = form.querySelector(".wpcf7-form-result-message");
@@ -185,11 +186,22 @@ document.addEventListener(
   false
 );
 
-(document.querySelectorAll('.js-calc-form') || []).forEach((form) => {
-  const view = form.querySelector('.js-calc-form-view');
-  const material = form.querySelector('.js-calc-form-material');
-  const footage = form.querySelector('.js-calc-form-footage');
-  const price = form.querySelector('.js-calc-form-price');
+(document.querySelectorAll(".js-calc-form") || []).forEach((form) => {
+  const view = form.querySelector(".js-calc-form-view");
+  const material = form.querySelector(".js-calc-form-material");
+  const footage = form.querySelector(".js-calc-form-footage");
+  const price = form.querySelector(".js-calc-form-price");
+  const prices = JSON.parse(form.dataset.prices);
 
-  console.log(form.dataset.prices, JSON.parse(form.dataset.prices));
+  const handleChange = () => {
+    console.log(view);
+    console.log(view.value);
+  };
+
+  view.addEventListener("change", handleChange);
+  material.addEventListener("change", handleChange);
+  footage.addEventListener("change", handleChange);
+
+  handleChange();
+  // console.log(form.dataset.prices, JSON.parse(form.dataset.prices));
 });
