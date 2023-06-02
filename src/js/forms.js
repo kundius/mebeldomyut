@@ -205,7 +205,9 @@ document.addEventListener(
     if (footage) {
       priceVal = parseInt(footage.value) * priceVal;
     }
-    price.innerHTML = new Intl.NumberFormat('ru-RU').format(priceVal);
+    if (price) {
+      price.innerHTML = new Intl.NumberFormat('ru-RU').format(priceVal);
+    }
   };
 
   view && view.addEventListener("change", handleChange);
