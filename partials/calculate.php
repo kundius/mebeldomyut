@@ -1,5 +1,5 @@
 <?php
-// print_r()
+print_r(wp_get_post_categories(get_the_ID(), ['fields' => 'ids']));
 $isWardrobe = in_array(3, wp_get_post_categories(get_the_ID(), ['fields' => 'ids']));
 $isKitchen = in_array(2, wp_get_post_categories(get_the_ID(), ['fields' => 'ids']));
 
