@@ -194,8 +194,18 @@ document.addEventListener(
   const prices = JSON.parse(form.dataset.prices);
 
   const handleChange = () => {
-    console.log(view);
-    console.log(view.value);
+    let key = [];
+    if (view) {
+      key.push(view.value);
+    }
+    if (material) {
+      key.push(material.value);
+    }
+    let price = prices[key.join(' | ')]
+    if (price && footage) {
+      price.innerHTML = parseInt(footage.value) * prices[key.join(' | ')];
+      console.log(price);
+    }
   };
 
   view.addEventListener("change", handleChange);
