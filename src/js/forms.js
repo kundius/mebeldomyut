@@ -208,10 +208,9 @@ document.addEventListener(
     price.innerHTML = new Intl.NumberFormat('ru-RU').format(priceVal);
   };
 
-  view.addEventListener("change", handleChange);
-  material.addEventListener("change", handleChange);
-  footage.addEventListener("change", handleChange);
+  view && view.addEventListener("change", handleChange);
+  material && material.addEventListener("change", handleChange);
+  footage && footage.addEventListener("change", handleChange);
 
   handleChange();
-  // console.log(form.dataset.prices, JSON.parse(form.dataset.prices));
 });
