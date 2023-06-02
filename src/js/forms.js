@@ -201,11 +201,11 @@ document.addEventListener(
     if (material) {
       key.push(material.value);
     }
-    let priceVal = prices[key.join(' | ')]
-    if (priceVal && footage) {
-      price.innerHTML = parseInt(footage.value) * priceVal;
-      console.log(price);
+    let priceVal = prices[key.join(' | ')] || 0
+    if (footage) {
+      priceVal = parseInt(footage.value) * priceVal;
     }
+    price.innerHTML = parseInt(footage.value) * priceVal;
   };
 
   view.addEventListener("change", handleChange);
