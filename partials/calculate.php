@@ -17,7 +17,7 @@ $prices = [
 ];
 ?>
 
-<div id="calculate" class="calculate js-calc-form" data-prices="<?php echo json_encode($prices) ?>"> <!-- data-element-class="slbContentEl" -->
+<div id="calculate" class="calculate js-calc-form" data-prices='<?php echo json_encode($prices) ?>'> <!-- data-element-class="slbContentEl" -->
   <div class="calculate__title">
     <?php if ($isWardrobe) : ?>
       Стоимость изготовления шкафа
