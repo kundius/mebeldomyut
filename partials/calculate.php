@@ -1,7 +1,7 @@
 <?php
-print_r(wp_get_post_categories(get_the_ID(), ['fields' => 'ids']));
-$isWardrobe = in_array(3, wp_get_post_categories(get_the_ID(), ['fields' => 'ids']));
-$isKitchen = in_array(2, wp_get_post_categories(get_the_ID(), ['fields' => 'ids']));
+print_r(wp_get_post_terms(get_the_ID(), 'product_category', ['fields' => 'ids']));
+$isWardrobe = in_array(3, wp_get_post_terms(get_the_ID(), 'product_category', ['fields' => 'ids']));
+$isKitchen = in_array(2, wp_get_post_terms(get_the_ID(), 'product_category', ['fields' => 'ids']));
 
 // $isWardrobe = 
 // kitchen
