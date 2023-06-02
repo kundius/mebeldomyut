@@ -124,6 +124,7 @@ $prices = [
             Стоимость Вашей кухни от:
           <?php endif; ?>
           <span class="calculate-result__cost__price js-calc-form-price"></span> руб.
+          <input type="hidden" name="price" value="" />
         </div>
         <div class="calculate-result__desc">
           <?php if ($isWardrobe) : ?>

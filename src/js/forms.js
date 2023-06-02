@@ -191,6 +191,7 @@ document.addEventListener(
   const material = form.querySelector(".js-calc-form-material");
   const footage = form.querySelector(".js-calc-form-footage");
   const price = form.querySelector(".js-calc-form-price");
+  const priceInput = form.querySelector('[name="price"]');
   const prices = JSON.parse(form.dataset.prices);
 
   const handleChange = () => {
@@ -207,6 +208,7 @@ document.addEventListener(
     }
     if (price) {
       price.innerHTML = new Intl.NumberFormat('ru-RU').format(priceVal);
+      priceInput.value = priceVal;
     }
   };
 
