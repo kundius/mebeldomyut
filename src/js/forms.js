@@ -208,6 +208,8 @@ document.addEventListener(
     }
     if (price) {
       price.innerHTML = new Intl.NumberFormat('ru-RU').format(priceVal);
+    }
+    if (priceInput) {
       priceInput.value = priceVal;
     }
   };
