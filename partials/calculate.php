@@ -2,16 +2,22 @@
 $isWardrobe = in_array(3, wp_get_post_terms(get_the_ID(), 'product_category', ['fields' => 'ids']));
 $isKitchen = in_array(2, wp_get_post_terms(get_the_ID(), 'product_category', ['fields' => 'ids']));
 
-// $isWardrobe = 
-// kitchen
-// $views = [];
-// $materials = [];
-// $title = "Заявка на расчет стоимости";
-// $title = "Заявка на расчет стоимости";
+$prices = [
+  'Шкаф-купе | Зеркальный' => 26600,
+  'Шкаф-купе | С пленкой Oracal' => 31400,
+  'Шкаф-купе | МДФ в пленке ПВХ' => 51200,
 
+  'Шкаф на петлях | Зеркальный' => 27600,
+  'Шкаф на петлях | С пленкой Oracal' => 32400,
+  'Шкаф на петлях | МДФ в пленке ПВХ' => 52200,
+
+  'МДФ в пленке ПВХ' => 44400,
+  'В пластике ALVIC' => 49600,
+  'Эмаль' => 63800,
+];
 ?>
 
-<div id="calculate" class="calculate"> <!-- data-element-class="slbContentEl" -->
+<div id="calculate" class="calculate js-calc-form" data-prices="<?php echo json_encode($prices) ?>"> <!-- data-element-class="slbContentEl" -->
   <div class="calculate__title">
     <?php if ($isWardrobe) : ?>
       Стоимость изготовления шкафа
@@ -47,7 +53,7 @@ $isKitchen = in_array(2, wp_get_post_terms(get_the_ID(), 'product_category', ['f
                 Вид шкафа
               </div>
               <div class="calculate-field__control">
-                <select name="view" class="calculate-select">
+                <select name="view" class="calculate-select js-calc-form-view">
                   <option value="Шкаф-купе">Шкаф-купе</option>
                   <option value="Шкаф на петлях">Шкаф на петлях</option>
                 </select>
@@ -63,7 +69,7 @@ $isKitchen = in_array(2, wp_get_post_terms(get_the_ID(), 'product_category', ['f
                 Материал фасада
               </div>
               <div class="calculate-field__control">
-                <select name="material" class="calculate-select">
+                <select name="material" class="calculate-select js-calc-form-material">
                   <option value="Зеркальный">Зеркальный</option>
                   <option value="С пленкой Oracal">С пленкой Oracal</option>
                   <option value="МДФ в пленке ПВХ">МДФ в пленке ПВХ</option>
@@ -80,7 +86,7 @@ $isKitchen = in_array(2, wp_get_post_terms(get_the_ID(), 'product_category', ['f
                 Материал фасада
               </div>
               <div class="calculate-field__control">
-                <select name="material" class="calculate-select">
+                <select name="material" class="calculate-select js-calc-form-material">
                   <option value="МДФ в пленке ПВХ">МДФ в пленке ПВХ</option>
                   <option value="В пластике ALVIC">В пластике ALVIC</option>
                   <option value="Эмаль">Эмаль</option>
@@ -96,7 +102,7 @@ $isKitchen = in_array(2, wp_get_post_terms(get_the_ID(), 'product_category', ['f
               Метраж мебели
             </div>
             <div class="calculate-field__control">
-              <select name="footage" class="calculate-select">
+              <select name="footage" class="calculate-select js-calc-form-footage">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -117,7 +123,7 @@ $isKitchen = in_array(2, wp_get_post_terms(get_the_ID(), 'product_category', ['f
           <?php if ($isKitchen) : ?>
             Стоимость Вашей кухни от:
           <?php endif; ?>
-          <span class="calculate-result__cost__price">36 900</span> руб.
+          <span class="calculate-result__cost__price js-calc-form-price"></span> руб.
         </div>
         <div class="calculate-result__desc">
           <?php if ($isWardrobe) : ?>

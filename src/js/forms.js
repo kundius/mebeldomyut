@@ -184,3 +184,12 @@ document.addEventListener(
   },
   false
 );
+
+(document.querySelectorAll('.js-calc-form') || []).forEach((form) => {
+  const view = form.querySelector('.js-calc-form-view');
+  const material = form.querySelector('.js-calc-form-material');
+  const footage = form.querySelector('.js-calc-form-footage');
+  const price = form.querySelector('.js-calc-form-price');
+
+  console.log(prices.dataset, JSON.parse(prices.dataset));
+});
