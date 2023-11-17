@@ -1146,8 +1146,8 @@ hr {
 
 .sctolltop {
 	position: fixed;
-	right: 20px;
-	bottom: 100px;
+	right: 41px;
+    bottom: 200px;
 	width: 68px;
 	height: 68px;
 	opacity: 0;
@@ -1177,10 +1177,7 @@ hr {
 		opacity: 1;
 	}
 	@media (max-width: $breakpoint-small-max) {
-		width: 48px;
-		height: 48px;
-		right: 0;
-		bottom: 0;
+		display: none;
 	}
 }
 
