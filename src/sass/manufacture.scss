@@ -99,11 +99,13 @@
         margin-right: 0;
         margin-left: 0;
     }
+
     @media (max-width: $breakpoint-small-max) {
         flex-direction: column;
         align-items: flex-start;
         margin-top: 80px;
     }
+
     @media (max-width: $breakpoint-xsmall-max) {
         margin-top: 40px;
     }
@@ -122,10 +124,12 @@
         margin-right: 50px;
         font-size: 48px;
     }
+
     @media (max-width: $breakpoint-small-max) {
         margin-right: 0;
         margin-bottom: 32px;
     }
+
     @media (max-width: $breakpoint-xsmall-max) {
         font-size: 32px;
         margin-bottom: 24px;
@@ -184,10 +188,17 @@
 
     @media (max-width: $breakpoint-xsmall-max) {
         font-size: 16px;
+
         ul {
             margin: 20px 0 0;
+
             li {
                 padding-left: 20px;
+
+                &::before {
+                    top: 10px;
+                    left: 0;
+                }
             }
         }
     }
