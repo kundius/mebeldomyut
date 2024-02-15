@@ -134,7 +134,8 @@ if ($projects) {
 
                 <div class="range-info">
                     <div class="range-info__title">
-                        Большой <svg class="js-svg-text"><text x="50%" y="50%">ассортимент</text></svg>
+                        Большой<br />
+                        ассортимент
                     </div>
                     <div class="range-info__text">
                         <p>Материалы фасадов представлены каталогом из:</p>
