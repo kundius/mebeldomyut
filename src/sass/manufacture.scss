@@ -189,6 +189,10 @@
     @media (max-width: $breakpoint-xsmall-max) {
         font-size: 16px;
 
+        p {
+            margin: 0 0 20px;
+        }
+
         ul {
             margin: 20px 0 0;
 
