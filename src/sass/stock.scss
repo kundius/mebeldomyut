@@ -1,0 +1,118 @@
+.stock-page {
+
+}
+
+.stock-page-top {
+    background: url('../img/stock-1.jpg') no-repeat 50% 50%;
+    height: 260px;
+    width: 100%;
+}
+
+.stock-page-benefints {
+    padding-bottom: 80px;
+    padding-top: 20px;
+    background: url('../img/stock-2.jpg') no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.stock-page-benefints__text-1 {
+    color: #68030a;
+    text-transform: uppercase;
+    line-height: 36px;
+    font-size: 32px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.stock-page-benefints__text-2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 385px;
+    height: 112px;
+    background: url('../img/stock-4.png') no-repeat 50% 50%;
+}
+
+.stock-page-benefints__text-3 {
+    color: #68030a;
+    text-transform: uppercase;
+    line-height: 30px;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.stock-page-benefints__text-4 {
+    line-height: 30px;
+    color: #000000;
+    font-size: 18px;
+}
+
+.stock-page-offer {
+    padding-bottom: 60px;
+    padding-top: 74px;
+    background: url('../img/stock-3.jpg') no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.stock-page-offer__text-1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 361px;
+    height: 55px;
+    background: url('../img/stock-5.png') no-repeat 50% 50%;
+}
+
+.stock-page-offer__text-2 {
+    color: #cd0108;
+    text-transform: uppercase;
+    line-height: 30px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.stock-page-offer__text-3 {
+    color: #000;
+    text-transform: uppercase;
+    line-height: 30px;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.stock-page-offer__list {
+    margin-top: 92px;
+}
+
+.stock-page-offer__grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -32px;
+    margin-top: -32px;
+}
+
+.stock-page-offer__cell {
+    width: 25%;
+    padding-left: 32px;
+    padding-top: 32px;
+}
+
+.stock-page-offer-item {
+
+}
+
+.stock-page-offer-item__image {
+    display: flex;
+    justify-content: center;
+}
+
+.stock-page-offer-item__title {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 600;
+    text-align: center;
+    color: #68030a;
+    margin-top: 20px;
+}

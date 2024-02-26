@@ -125,6 +125,9 @@ $phone_href = 'tel:+' . preg_replace('/[^0-9]/', '', get_field('phone', 'option'
                         <li>
                             <a href="<?php the_permalink(2151) ?>">Рассрочка</a>
                         </li>
+                        <li>
+                            <a href="/category/stati">Статьи</a>
+                        </li>
                     </ul>
                 </li>
             </ul>
