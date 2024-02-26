@@ -62,6 +62,8 @@ Template Name: Акции
                                             цены и качества
                                         </div>
                                     </div>
+                                </div>
+                                <div class="stock-page-offer__cell">
                                     <div class="stock-page-offer-item">
                                         <div class="stock-page-offer-item__image">
                                             <img src="<?php asset("stock-7.png") ?>" alt="">
@@ -71,6 +73,8 @@ Template Name: Акции
                                             сложных задач
                                         </div>
                                     </div>
+                                </div>
+                                <div class="stock-page-offer__cell">
                                     <div class="stock-page-offer-item">
                                         <div class="stock-page-offer-item__image">
                                             <img src="<?php asset("stock-8.png") ?>" alt="">
@@ -80,6 +84,8 @@ Template Name: Акции
                                             опыт изготовления
                                         </div>
                                     </div>
+                                </div>
+                                <div class="stock-page-offer__cell">
                                     <div class="stock-page-offer-item">
                                         <div class="stock-page-offer-item__image">
                                             <img src="<?php asset("stock-9.png") ?>" alt="">
