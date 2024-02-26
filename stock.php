@@ -104,6 +104,7 @@ Template Name: Акции
                     <div class="stock-page-form__inner">
                         <?php echo do_shortcode('[contact-form-7 id="2251" title="Страница акции"]'); ?>
                     </div>
+                    <div class="stock-page-form__text">Консультации по акции +7 (965) 631-90-50</div>
                 </div>
             </div>
 
