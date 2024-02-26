@@ -3,7 +3,7 @@
 }
 
 .stock-page-top {
-    background: url('../img/stock-1.jpg') no-repeat 50% 50%;
+    background: #fff url('../img/stock-1.jpg') no-repeat 50% 50%;
     height: 260px;
     width: 100%;
 }
@@ -115,4 +115,17 @@
     text-align: center;
     color: #68030a;
     margin-top: 20px;
+}
+
+.stock-page-form {
+    background: #fff;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.stock-page-form__inner {
+    width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
 }
