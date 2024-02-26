@@ -15,7 +15,7 @@ Template Name: Акции
             <div class="stock-page">
                 <div class="stock-page-top"></div>
                 <div class="stock-page-benefints">
-                    <div class="container">
+                    <div class="container container_stock">
                         <div class="stock-page-benefints__text-1">
                             До конца месяца получите скидку 15%<br />
                             на изготовление мебели в Москве и области
@@ -39,7 +39,7 @@ Template Name: Акции
                     </div>
                 </div>
                 <div class="stock-page-offer">
-                    <div class="container">
+                    <div class="container container_stock">
                         <div class="stock-page-offer__text-1">
                             
                         </div>

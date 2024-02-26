@@ -1,3 +1,7 @@
+.container_stock {
+    width: 900px;
+}
+
 .stock-page {
 
 }
@@ -98,6 +102,7 @@
     width: 25%;
     padding-left: 32px;
     padding-top: 32px;
+    box-sizing: border-box;
 }
 
 .stock-page-offer-item {
@@ -125,7 +130,7 @@
 }
 
 .stock-page-form__inner {
-    width: 640px;
+    width: 800px;
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;

@@ -1413,11 +1413,6 @@ hr {
     }
 }
 
-span.wpcf7-list-item {
-	display: inline-block;
-	margin: initial;
-}
-
 div.wpcf7-response-output {
     margin: 0;
     border: 2px solid #ff9c9c;
@@ -1446,8 +1441,4 @@ div.wpcf7-spam-blocked {
 div.wpcf7-validation-errors, div.wpcf7-acceptance-missing {
     border: 2px solid #f7e700;
     background: #fffab1;
-}
-
-span.wpcf7-list-item {
-	margin: 0;
 }

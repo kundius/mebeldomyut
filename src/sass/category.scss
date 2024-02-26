@@ -520,13 +520,14 @@
     }
   }
   .form-checkbox {
-    width: 28px;
-    height: 28px;
-  }
-  .wpcf7-acceptance {
+    // width: 28px;
+    // height: 28px;
     float: left;
-    margin-top: 2px;
-    margin-right: 12px;
+    margin-right: 16px;
+  }
+  span.wpcf7-list-item {
+    margin: 0;
+    display: block;
   }
 	@media (max-width: $breakpoint-small-max) {
 		margin: 12px 0 0;
