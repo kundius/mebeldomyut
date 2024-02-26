@@ -109,9 +109,6 @@
     padding-top: 32px;
     box-sizing: border-box;
 
-	@media (max-width: $breakpoint-medium-max) {
-        width: 50%;
-	}
 	@media (max-width: $breakpoint-small-max) {
         width: 50%;
 	}
