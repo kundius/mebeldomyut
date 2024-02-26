@@ -14,6 +14,10 @@
 	@media (max-width: $breakpoint-small-max) {
         background-size: auto 80%;
 	}
+	@media (max-width: $breakpoint-xsmall-max) {
+        height: 100px;
+        background-size: auto 86px;
+	}
 }
 
 .stock-page-benefints {
@@ -21,6 +25,11 @@
     padding-top: 32px;
     background: url('../img/stock-2.jpg') no-repeat 50% 50%;
     background-size: cover;
+    
+	@media (max-width: $breakpoint-xsmall-max) {
+        padding-top: 32px;
+        padding-bottom: 48px;
+    }
 }
 
 .stock-page-benefints__text-1 {
@@ -35,6 +44,10 @@
         line-height: 32px;
         font-size: 24px;
 	}
+	@media (max-width: $breakpoint-xsmall-max) {
+        line-height: 24px;
+        font-size: 20px;
+	}
 }
 
 .stock-page-benefints__text-2 {
@@ -46,6 +59,12 @@
     background: url('../img/stock-4.png') no-repeat 50% 50%;
     margin-top: 32px;
     margin-bottom: 32px;
+    background-size: cover;
+
+	@media (max-width: $breakpoint-xsmall-max) {
+        width: calc(385px * 0.7);
+        height: calc(112px * 0.7);
+	}
 }
 
 .stock-page-benefints__text-3 {
@@ -60,6 +79,10 @@
 	@media (max-width: $breakpoint-small-max) {
         line-height: 28px;
         font-size: 20px;
+	}
+	@media (max-width: $breakpoint-xsmall-max) {
+        line-height: 24px;
+        font-size: 18px;
 	}
 }
 
@@ -80,6 +103,11 @@
     padding-top: 64px;
     background: url('../img/stock-3.jpg') no-repeat 50% 50%;
     background-size: cover;
+    
+	@media (max-width: $breakpoint-xsmall-max) {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
 }
 
 .stock-page-offer__text-1 {
@@ -91,6 +119,14 @@
     background: url('../img/stock-5.png') no-repeat 50% 50%;
     margin-top: 92px;
     margin-bottom: 92px;
+    background-size: cover;
+
+	@media (max-width: $breakpoint-xsmall-max) {
+        width: calc(361px * 0.7);
+        height: calc(55px * 0.7);
+        margin-top: 64px;
+        margin-bottom: 64px;
+	}
 }
 
 .stock-page-offer__text-2 {
@@ -105,6 +141,10 @@
         line-height: 24px;
         font-size: 24px;
 	}
+	@media (max-width: $breakpoint-xsmall-max) {
+        line-height: 24px;
+        font-size: 20px;
+	}
 }
 
 .stock-page-offer__text-3 {
@@ -116,6 +156,10 @@
     margin-top: 32px;
 
 	@media (max-width: $breakpoint-small-max) {
+        line-height: 24px;
+        font-size: 20px;
+	}
+	@media (max-width: $breakpoint-xsmall-max) {
         line-height: 24px;
         font-size: 20px;
 	}
@@ -180,4 +224,9 @@
     margin-top: 48px;
     color: #000;
     font-weight: 600;
+    
+	@media (max-width: $breakpoint-xsmall-max) {
+        font-size: 24px;
+        margin-top: 36px;
+	}
 }
