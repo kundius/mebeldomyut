@@ -1,5 +1,5 @@
 .container_stock {
-    width: 900px;
+    width: 940px;
 }
 
 .stock-page {
@@ -13,8 +13,8 @@
 }
 
 .stock-page-benefints {
-    padding-bottom: 80px;
-    padding-top: 20px;
+    padding-bottom: 64px;
+    padding-top: 32px;
     background: url('../img/stock-2.jpg') no-repeat 50% 50%;
     background-size: cover;
 }
@@ -35,6 +35,8 @@
     width: 385px;
     height: 112px;
     background: url('../img/stock-4.png') no-repeat 50% 50%;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 .stock-page-benefints__text-3 {
@@ -44,6 +46,7 @@
     font-size: 24px;
     text-align: center;
     font-weight: 600;
+    margin-bottom: 32px;
 }
 
 .stock-page-benefints__text-4 {
@@ -54,8 +57,8 @@
 }
 
 .stock-page-offer {
-    padding-bottom: 60px;
-    padding-top: 74px;
+    padding-bottom: 64px;
+    padding-top: 64px;
     background: url('../img/stock-3.jpg') no-repeat 50% 50%;
     background-size: cover;
 }
@@ -67,6 +70,8 @@
     width: 361px;
     height: 55px;
     background: url('../img/stock-5.png') no-repeat 50% 50%;
+    margin-top: -90px;
+    margin-bottom: 32px;
 }
 
 .stock-page-offer__text-2 {
@@ -84,7 +89,7 @@
     line-height: 30px;
     font-size: 24px;
     font-weight: 600;
-    margin-top: 30px;
+    margin-top: 32px;
 }
 
 .stock-page-offer__list {
@@ -130,7 +135,7 @@
 }
 
 .stock-page-form__inner {
-    width: 800px;
+    width: 740px;
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
