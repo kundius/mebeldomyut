@@ -40,15 +40,15 @@ Template Name: Акции
                 </div>
                 <div class="stock-page-offer">
                     <div class="container container_stock">
-                        <div class="stock-page-offer__text-1">
-                            
-                        </div>
                         <div class="stock-page-offer__text-2">
                             ДОПОЛНИТЕЛЬНЫЕ ПОДАРКИ
                         </div>
                         <div class="stock-page-offer__text-3">
                             - Петли с доводчиками в подарок на шкафы.<br />
                             - Зеркало графит, бронза по цене обычного.
+                        </div>
+                        <div class="stock-page-offer__text-1">
+                            
                         </div>
                         <div class="stock-page-offer__list">
                             <div class="stock-page-offer__grid">
