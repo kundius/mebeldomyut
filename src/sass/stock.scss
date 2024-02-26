@@ -7,9 +7,13 @@
 }
 
 .stock-page-top {
-    background: #fff url('../img/stock-1.jpg') no-repeat 50% 50%;
+    background: #fff url('../img/stock-1.jpg') no-repeat 50% 100%;
     height: 260px;
     width: 100%;
+
+	@media (max-width: $breakpoint-small-max) {
+        background-size: auto 80%;
+	}
 }
 
 .stock-page-benefints {
@@ -26,6 +30,11 @@
     font-size: 32px;
     text-align: center;
     font-weight: 600;
+
+	@media (max-width: $breakpoint-small-max) {
+        line-height: 32px;
+        font-size: 24px;
+	}
 }
 
 .stock-page-benefints__text-2 {
@@ -47,6 +56,11 @@
     text-align: center;
     font-weight: 600;
     margin-bottom: 32px;
+
+	@media (max-width: $breakpoint-small-max) {
+        line-height: 28px;
+        font-size: 20px;
+	}
 }
 
 .stock-page-benefints__text-4 {
@@ -54,6 +68,11 @@
     color: #000000;
     font-size: 18px;
     font-weight: 600;
+
+	@media (max-width: $breakpoint-small-max) {
+        line-height: 24px;
+        font-size: 16px;
+	}
 }
 
 .stock-page-offer {
@@ -81,6 +100,11 @@
     font-size: 30px;
     text-align: center;
     font-weight: 600;
+
+	@media (max-width: $breakpoint-small-max) {
+        line-height: 24px;
+        font-size: 24px;
+	}
 }
 
 .stock-page-offer__text-3 {
@@ -90,6 +114,11 @@
     font-size: 24px;
     font-weight: 600;
     margin-top: 32px;
+
+	@media (max-width: $breakpoint-small-max) {
+        line-height: 24px;
+        font-size: 20px;
+	}
 }
 
 .stock-page-offer__list {
