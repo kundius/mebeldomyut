@@ -27,13 +27,18 @@
             <div class="slideshow-slide__title"><div><?php echo $slide['title'] ?></div></div>
 
             <?php if (!empty($slide['link'])): ?>
-            <a href="<?php echo $slide['link'] ?>" class="slideshow-more circle-details">
+            <a href="/o-nas/akcii" class="slideshow-more circle-details">
+                <span class="circle-details__inner">
+                    <span>Акция</span>
+                </span>
+            </a>
+            <!--<a href="<?php echo $slide['link'] ?>" class="slideshow-more circle-details">
                 <span class="circle-details__inner">
                     <span>смотреть</span>
                     <span>все</span>
                     <span class="circle-details__arrow"></span>
                 </span>
-            </a>
+            </a>-->
             <?php endif; ?>
 
             <?php if (!empty($slide['desc'])): ?>
