@@ -31,7 +31,7 @@ $action = array_shift($actions);
                                 <?php if ($action): ?>
                                 <div class="main-action">
                                     <img class="main-action__image" src="<?php echo $action['image']['url'] ?>" alt="">
-                                    <div class="main-action__sticker">Акция</div>
+                                    <a href="/o-nas/akcii" class="main-action__sticker">Акция</a>
                                     <div class="main-action__bonus">Приятный бонус!</div>
                                     <div class="main-action__info">
                                         <div class="main-action__title"><?php echo $action['title'] ?></div>
